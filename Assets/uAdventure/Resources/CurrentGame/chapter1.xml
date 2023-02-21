@@ -2970,7 +2970,7 @@ Conseguiste el gran libro de ciencias...
           <condition />
           <generate-object idTarget="corazon" guid="da41ce0f-58ad-4b2e-8c0b-632890543a89" />
           <condition />
-          <speak-char idTarget="nohabitacion1" guid="a1e77f42-eec7-4709-8bb7-f9fec702cfe5">Siempre que tenga dudas usare el corazon del valor los colores no tienne genero, me ire a dormir</speak-char>
+          <speak-char idTarget="nohabitacion1" guid="a1e77f42-eec7-4709-8bb7-f9fec702cfe5">Siempre que tenga dudas usare el corazón del valor los colores no tienen género, me iré a dormir</speak-char>
           <condition />
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="b07792ba-6cdb-4fe8-9fdd-f6b561e60af0">Mas tarde en mis suenos...</show-text>
           <condition />
@@ -3035,7 +3035,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
           <generate-object idTarget="pergamino" guid="de98607f-cfed-4c86-b7d0-0fae9c6707fe" />
           <condition />
-          <speak-char idTarget="nohabitacion1" guid="37394fe9-a7f9-4a43-a334-03d4412d6243">Recuerda que los colores no tienne genero, vamos a intentar de nuevo</speak-char>
+          <speak-char idTarget="nohabitacion1" guid="37394fe9-a7f9-4a43-a334-03d4412d6243">Recuerda que los colores no tienen género, vamos a intentar de nuevo</speak-char>
           <condition />
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="55e7ea16-751d-4f08-8c36-4383c266456d">Mas tarde en mis suenos...</show-text>
           <condition />
@@ -3264,7 +3264,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
           <generate-object idTarget="sobre" guid="fac0b04b-8464-40f1-bf32-892aac24c88a" />
           <condition />
-          <speak-char idTarget="nasalaC2" guid="37bc99a7-af6b-46de-a8c8-3fb209a8dd68">Recuerda que los deportes no tienne genero, vamos a intentar de nuevo</speak-char>
+          <speak-char idTarget="nasalaC2" guid="37bc99a7-af6b-46de-a8c8-3fb209a8dd68">Recuerda que los deportes no tienen género, vamos a intentar de nuevo</speak-char>
           <condition />
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c19f4885-f979-49d2-8411-6a59687d7f16">Mas tarde en mis sueños...</show-text>
           <condition />
@@ -3692,7 +3692,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan: ¡Ven! Acompañame y te ensenaré algunas situaciones por las que hemos pasado.  </text>
+        <text>Juan: ¡Ven! Acompáñame y te enseñaré algunas situaciones por las que hemos pasado.  </text>
       </speak-char>
       <condition />
       <speak-char idTarget="naPuebloIntro">
@@ -3740,7 +3740,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>María: Muy bien. Comencemos con él sueno de Juan. </text>
+        <text>María: Muy bien. Comencemos con él sueño de Juan. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="noPueblo">
@@ -3778,7 +3778,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/typewriter.mp3" />
         </resources>
-        <text>13 de Febrero de 2020. Es nuestro primer día en casa y debemos escoger el color de las habitaciones.</text>
+        <text>13 de febrero de 2020. Es nuestro primer día en casa y debemos escoger el color de las habitaciones.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="noCasa">
@@ -3820,7 +3820,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>María: ¡A mi también me gustaría rosa!</text>
+        <text>María: ¡A mí también me gustaría rosa!</text>
       </speak-char>
       <condition />
       <speak-char idTarget="noCasa">
@@ -3957,21 +3957,21 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Lucy, aqui viviremos muy bien...</text>
+        <text>Lucy, aquí viviremos muy bien...</text>
       </speak-char>
       <condition />
       <speak-char idTarget="masalaEstar">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Los ninos creceran muy bien</text>
+        <text>Los niños crecerán muy bien</text>
       </speak-char>
       <condition />
       <speak-char idTarget="nosalaEstar">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Papa Maria ha seleccionado color rosa para su habitacion</text>
+        <text>Papa María ha seleccionado color rosa para su habitación</text>
       </speak-char>
       <condition />
       <speak-char idTarget="pasalaEstar">
@@ -3985,14 +3985,14 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>yo quiero tambien pintar de rosa mi habitacion</text>
+        <text>yo quiero también pintar de rosa mi habitación</text>
       </speak-char>
       <condition />
       <speak-char idTarget="pasalaEstar">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan Rosa es para las ninas</text>
+        <text>Juan Rosa es para las niñas</text>
       </speak-char>
       <condition />
       <child nodeindex="2" />
@@ -4038,7 +4038,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>en la escuela nos dijeron que los colores no tienen genero</text>
+        <text>en la escuela nos dijeron que los colores no tienen género</text>
       </speak-char>
       <condition />
       <child nodeindex="4" />
@@ -4068,14 +4068,14 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>si, claro</text>
+        <text>sí, claro</text>
       </speak-char>
       <condition />
       <speak-char idTarget="masalaEstar">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>ese dia usaste una camisa rosa</text>
+        <text>ese día usaste una camisa rosa</text>
       </speak-char>
       <condition />
       <child nodeindex="5" />
@@ -4091,7 +4091,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>es cierto...  era una camisa fantastica</text>
+        <text>es cierto...  era una camisa fantástica</text>
       </speak-char>
       <condition />
       <speak-char idTarget="masalaEstar">
@@ -4115,14 +4115,14 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>hijo, perdoname</text>
+        <text>hijo, perdóname</text>
       </speak-char>
       <condition />
       <speak-char idTarget="pasalaEstar">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>tienes razon acerca de los colores</text>
+        <text>tienes razón acerca de los colores</text>
       </speak-char>
       <condition />
       <speak-char idTarget="pasalaEstar">
@@ -4143,7 +4143,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Tu puedes usar el color que quieras </text>
+        <text>Tú puedes usar el color que quieras </text>
       </speak-char>
       <condition />
       <child nodeindex="8" />
@@ -4159,7 +4159,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Recuerda hijo: Los colores no tienen genero</text>
+        <text>Recuerda hijo: Los colores no tienen género</text>
       </speak-char>
       <condition />
       <end-conversation />
@@ -4192,7 +4192,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan: Papa, Maria eligió color rosa para su habitación. </text>
+        <text>Juan: Papa, María eligió color rosa para su habitación. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="pasalaEstar">
@@ -4283,7 +4283,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Roberto: Exacto, es un color de niñas. Maria lo puede usar, tu deberás elegir otro. </text>
+        <text>Roberto: Exacto, es un color de niñas. María lo puede usar, tú deberás elegir otro. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="masalaEstar">
@@ -4351,7 +4351,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan: Ahora que me ayudaron a decidir, iré con Maria... Por cierto, mi habitación esta a la izquierda.</text>
+        <text>Juan: Ahora que me ayudaron a decidir, iré con María... Por cierto, mi habitación está a la izquierda.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -4447,7 +4447,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Roberto: ¡Es cierto! Hijo, disculpame… </text>
+        <text>Roberto: ¡Es cierto! Hijo, discúlpame… </text>
       </speak-char>
       <condition />
       <speak-char idTarget="pasalaEstar">
@@ -4517,7 +4517,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan: ¡Ahora que me ayudaron a decidir, iré con Maria! Por cierto, mi habitación esta a la izquierda.</text>
+        <text>Juan: ¡Ahora que me ayudaron a decidir, iré con María! Por cierto, mi habitación está a la izquierda.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -4647,7 +4647,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan: Tengo mucho sueno me iré a dormir...</text>
+        <text>Juan: Tengo mucho sueño me iré a dormir...</text>
       </speak-char>
       <condition />
       <end-conversation />
@@ -4836,12 +4836,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="nohabC2">
         <resources name="No name" />
-        <text>Juan:! Lo sé! Pero por suerte ya terminó. </text>
+        <text>Juan: ¡Lo sé! Pero por suerte ya terminó. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="nahabC2">
         <resources name="No name" />
-        <text>María: Hablando de estar cerca, ¿no sientes que esta acercándose alguna pesadilla?</text>
+        <text>María: Hablando de estar cerca, ¿no sientes que está acercándose una pesadilla?</text>
       </speak-char>
       <condition />
       <speak-char idTarget="nahabC2">
@@ -4866,7 +4866,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="nohabC2">
         <resources name="No name" />
-        <text>Juan: Ah, si recuerdo ese folleto de actividades verde.</text>
+        <text>Juan: Ah, sí recuerdo ese folleto de actividades verdes.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="nahabC2">
@@ -4923,12 +4923,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     <dialogue-node nodeindex="2" editor-x="635" editor-y="21">
       <speak-char idTarget="pasalaC2">
         <resources name="No name" />
-        <text>#O Roberto: Maria podría hacer ballet, y Juan podría jugar futbol. </text>
+        <text>#O Roberto: María podría hacer ballet, y Juan podría jugar futbol. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="nasalaC2">
         <resources name="No name" />
-        <text>María: ¡Seria fantástico! </text>
+        <text>María: ¡Sería fantástico! </text>
       </speak-char>
       <condition />
       <speak-char idTarget="nosalaC2">
@@ -4946,17 +4946,17 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="nasalaC2">
         <resources name="No name" />
-        <text>María: Eso es cierto me gustaría hacer muchos amigos. </text>
+        <text>María: Eso es cierto, me gustaría hacer muchos amigos. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="pasalaC2">
         <resources name="No name" />
-        <text>Roberto: Maria podría hacer ballet, y Juan podría jugar futbol.  </text>
+        <text>Roberto: María podría hacer ballet, y Juan podría jugar futbol.  </text>
       </speak-char>
       <condition />
       <speak-char idTarget="nasalaC2">
         <resources name="No name" />
-        <text>María: ¡Seria fantástico!  </text>
+        <text>María: ¡Sería fantástico!  </text>
       </speak-char>
       <condition />
       <speak-char idTarget="nosalaC2">
@@ -4969,12 +4969,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     <dialogue-node nodeindex="4" editor-x="921" editor-y="108">
       <speak-char idTarget="masalaC2">
         <resources name="No name" />
-        <text>Lucy: Tranquilos, primero vamos a decidir que actividad van a realizar. </text>
+        <text>Lucy: Tranquilos, primero vamos a decidir qué actividad van a realizar. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="pasalaC2">
         <resources name="No name" />
-        <text>Roberto: Para Juan, encontramos futbol, futbol americano, artes marciales, beisbol, natación, boxeo, ¡y hasta lucha libre! </text>
+        <text>Roberto: Para Juan, encontramos fútbol, fútbol americano, artes marciales, beisbol, natación, boxeo, ¡y hasta lucha libre! </text>
       </speak-char>
       <condition />
       <speak-player>
@@ -4989,12 +4989,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="nosalaC2">
         <resources name="No name" />
-        <text>Juan: ¡A mí me gustaría nadar o ser un luchador enmascarado!… ¿y a ti Maria?  </text>
+        <text>Juan: ¡A mí me gustaría nadar o ser un luchador enmascarado!… ¿y a ti María?  </text>
       </speak-char>
       <condition />
       <speak-char idTarget="nasalaC2">
         <resources name="No name" />
-        <text>María: A mi también me gustaría un deporte…   </text>
+        <text>María: A mí también me gustaría un deporte…   </text>
       </speak-char>
       <condition />
       <speak-player>
@@ -5026,17 +5026,17 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     <dialogue-node nodeindex="6" editor-x="1653" editor-y="25">
       <speak-char idTarget="masalaC2">
         <resources name="No name" />
-        <text>Lucy: Probablemente le haría bien a Maria aprender a defenderse, ¿no lo crees Roberto?  </text>
+        <text>Lucy: Probablemente le haría bien a María aprender a defenderse, ¿no lo crees Roberto?  </text>
       </speak-char>
       <condition />
       <speak-char idTarget="pasalaC2">
         <resources name="No name" />
-        <text>Roberto: Ella no necesita aprender a defenderse, para eso esta su hermano.  </text>
+        <text>Roberto: Ella no necesita aprender a defenderse, para eso está su hermano.  </text>
       </speak-char>
       <condition />
       <speak-char idTarget="nasalaC2">
         <resources name="No name" />
-        <text>María: Pero papa…  </text>
+        <text>María: Pero papá…  </text>
       </speak-char>
       <condition />
       <speak-char idTarget="pasalaC2">
@@ -5057,7 +5057,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     <dialogue-node nodeindex="7" editor-x="1642" editor-y="290">
       <speak-player>
         <resources name="No name" />
-        <text>Lucy: oye Maria ese deporte es para los niños </text>
+        <text>Lucy: oye María ese deporte es para los niños </text>
       </speak-player>
       <condition />
       <speak-char idTarget="pasalaC2">
@@ -5087,7 +5087,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     </dialogue-node>
     <option-node nodeindex="8" keepShowing="yes" preListening="yes" editor-x="2313" editor-y="27" x="2313" y="27">
       <speak-player>
-        <text>(SI) (Tienes razón, lo siento)</text>
+        <text>(Sí) (Tienes razón, lo siento)</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -5103,7 +5103,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     </option-node>
     <option-node nodeindex="9" keepShowing="yes" preListening="yes" editor-x="2337" editor-y="490" x="2337" y="490">
       <speak-player>
-        <text>(Si) (Tienes razón, lo siento)</text>
+        <text>(Sí) (Tienes razón, lo siento)</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -5232,7 +5232,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>#! Ayuda a María a vencer a Sportino, Busca los objetos que necesita María para ir a clases de Boxeo.</text>
+        <text>#! Ayuda a María a vencer a Sportino, Busca los objetos que necesita María para ir a clases de boxeo.</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -5277,7 +5277,7 @@ Son 7 objetos</show-text>
     <dialogue-node nodeindex="0" editor-x="53" editor-y="38">
       <speak-char idTarget="sportino">
         <resources name="No name" />
-        <text>¿Tienes los 7 Objetos?</text>
+        <text>¿Tienes los 7 objetos?</text>
       </speak-char>
       <condition>
         <active flag="convMariaMostroc2" />
@@ -5341,7 +5341,7 @@ Revisa bien tus objetos.</show-text>
       </condition>
       <speak-player>
         <resources name="No name" />
-        <text>#! Después de seleccionar que no te falta ningún objeto, no podrás volver</text>
+        <text>#! Después de seleccionar qué no te falta ningún objeto, no podrás volver</text>
       </speak-player>
       <condition />
       <child nodeindex="1" />
@@ -5362,7 +5362,7 @@ Son 7 objetos</show-text>
     <dialogue-node nodeindex="1" editor-x="256" editor-y="55">
       <speak-char idTarget="nasueno2">
         <resources name="No name" />
-        <text>¿Te falta algun objeto?</text>
+        <text>¿Te falta algún objeto?</text>
       </speak-char>
       <condition />
       <child nodeindex="2" />
@@ -5420,14 +5420,14 @@ Son 7 objetos</show-text>
         <resources name="No name">
           <asset type="image" uri="" />
         </resources>
-        <text>Muy Bien has demostrado que las niñas pueden hacer box y que pueden hacer otros deportes y actividades con futbol, boxeo, natación, etc.</text>
+        <text>Muy Bien has demostrado que las niñas pueden hacer box y que pueden hacer otros deportes y actividades con fútbol, boxeo, natación, etc.</text>
       </speak-char>
       <condition>
         <equals var="ListaObjetosBox" value="7" />
       </condition>
       <speak-char idTarget="sportino">
         <resources name="No name" />
-        <text>nooooooo, como lo he prometido me voy de tus sueños Adíos María, tú ganaste.</text>
+        <text>Nooooooo, como lo he prometido me voy de tus sueños. Adiós María, tú ganaste.</text>
       </speak-char>
       <condition>
         <equals var="ListaObjetosBox" value="7" />
@@ -5491,7 +5491,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="michelle">
         <resources name="No name" />
-        <text>Michell: Hola, María Soy Michell la entrenadora de Box, recuerda que para poder inscribirte necesitarás romper un estereotipo y para ellos ocuparas la poción del valor</text>
+        <text>Michell: Hola, María Soy Michell la entrenadora de Box, recuerda que para poder inscribirte necesitarás romper un estereotipo y para ellos ocupará la poción del valor</text>
       </speak-char>
       <condition />
       <speak-char idTarget="michelle">
@@ -5555,7 +5555,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Tengo mucho sueno, primero revisaré mi mochila y luego iré a dormir...</text>
+        <text>Tengo mucho sueño, primero revisaré mi mochila y luego iré a dormir...</text>
       </speak-char>
       <condition />
       <end-conversation />
@@ -5567,7 +5567,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan: La escuela esta muy cercade casa</text>
+        <text>Juan: La escuela está muy cerca de casa</text>
       </speak-char>
       <condition />
       <speak-char idTarget="naPueblo">
@@ -5599,7 +5599,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="c3napasillo">
         <resources name="No name" />
-        <text>María: Hoy es  nuestro primer día de clases en esta escuela,</text>
+        <text>María: Hoy es nuestro primer día de clases en esta escuela,</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3nopasillo">
@@ -5689,7 +5689,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c3Rocio">
         <resources name="No name" />
-        <text>Rocío: Las manualidades y las artes son para niñas,  ¿Estás de acuerdo María? </text>
+        <text>Rocío: Las manualidades y las artes son para niñas, ¿Estás de acuerdo María? </text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
@@ -5721,12 +5721,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c3nasalon1">
         <resources name="No name" />
-        <text>María: ¡Yo también soy buena en matemáticas! y nunca ha visto los dibujos de Juan…</text>
+        <text>María: ¡Yo también soy buena en matemáticas! y nunca he visto los dibujos de Juan…</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3nasalon1">
         <resources name="No name" />
-        <text>María: Puedo participar en las actividades de ciencia? </text>
+        <text>María: ¿Puedo participar en las actividades de ciencia? </text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3RocioSalon1">
@@ -5754,7 +5754,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c3nasalon1">
         <resources name="No name" />
-        <text>María: En mi escuela anterior gane un concurso de matemáticas rápidas...</text>
+        <text>María: En mi escuela anterior gané un concurso de matemáticas rápidas...</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3nosalon1">
@@ -5769,7 +5769,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Jess: A mi me regalaron un microscopio</text>
+        <text>Jess: A mí me regalaron un microscopio</text>
       </speak-player>
       <condition />
       <speak-char idTarget="c3Rocio">
@@ -5784,12 +5784,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c3RocioSalon1">
         <resources name="No name" />
-        <text>Rocio: el grupo de la derecha será para los que quieran concursar en ciencias.</text>
+        <text>Rocío: el grupo de la derecha será para los que quieran concursar en ciencias.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3nosalon1">
         <resources name="No name" />
-        <text>Rocío: Toma este libro de ciencia estudialo mucho</text>
+        <text>Rocío: Toma este libro de ciencia estúdialo mucho</text>
       </speak-char>
       <condition />
       <child nodeindex="5" />
@@ -5830,17 +5830,17 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     <dialogue-node nodeindex="6" editor-x="1602" editor-y="7">
       <speak-char idTarget="c3nasalon1">
         <resources name="No name" />
-        <text>Maria: Yo soy muy buena en matemáticas, me gusta la ciencia y quisiera participar en el grupo de ciencia.</text>
+        <text>María: Yo soy muy buena en matemáticas, me gusta la ciencia y quisiera participar en el grupo de ciencia.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3RocioSalon1">
         <resources name="No name" />
-        <text>Rocío: No Maria, las mujeres debemos ser buenas amas de casa y realizar actividades que vayan de acuerdo a nuestro género.</text>
+        <text>Rocío: No María, las mujeres debemos ser buenas amas de casa y realizar actividades que vayan de acuerdo a nuestro género.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3nasalon1">
         <resources name="No name" />
-        <text>Maria: Está bien maestra. </text>
+        <text>María: Está bien maestra. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3RocioSalon1">
@@ -5853,12 +5853,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     <dialogue-node nodeindex="7" editor-x="1436" editor-y="486">
       <speak-char idTarget="c3nasalon1">
         <resources name="No name" />
-        <text>Maria:¡No! No estoy lista. Yo quiero participar en las actividades de ciencia. Y seguro que a otras niñas les gustaría hacerlo también.</text>
+        <text>María: ¡No! No estoy lista. Yo quiero participar en las actividades de ciencia. Y seguro que a otras niñas les gustaría hacerlo también.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>X: yo tambien quiero participar en el concurso de ciencia</text>
+        <text>X: yo también quiero participar en el concurso de ciencia</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -5873,7 +5873,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c3RocioSalon1">
         <resources name="No name" />
-        <text>Rocio: Jamás habría imaginado todo esto…¿realmente quiere que cada quien pueda elegir su actividad?</text>
+        <text>Rocío: Jamás habría imaginado todo esto… ¿realmente quiere que cada uno pueda elegir su actividad?</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3nosalon1">
@@ -5893,12 +5893,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c3RocioSalon1">
         <resources name="No name" />
-        <text>Rocío: Está bien niños, lamento traer estereotipos  viejos a la clase. Tomen asiento donde se sientan más cómodo, y vamos a elegir nuestras actividades </text>
+        <text>Rocío: Está bien niños, lamento traer estereotipos viejos a la clase. Tomen asiento donde se sientan más cómodo, y vamos a elegir nuestras actividades </text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3RocioSalon1">
         <resources name="No name" />
-        <text>Rocío: Toma este libro de ciencia estudialo mucho</text>
+        <text>Rocío: Toma este libro de ciencia estúdialo mucho</text>
       </speak-char>
       <condition />
       <child nodeindex="9" />
@@ -5949,7 +5949,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c3monstruo3">
         <resources name="No name" />
-        <text>Monstruo: Maria tú jamás podrás ser buena en matemáticas, y juan siempre será mejor en ciencia, tú como buena niña debes estudiar cosas adecuadas a tu género. </text>
+        <text>Monstruo: María tú jamás podrás ser buena en matemáticas, y juan siempre será mejor en ciencia, tú como buena niña debes estudiar cosas adecuadas a tu género. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3napesadilla">
@@ -6004,12 +6004,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c3napesadilla">
         <resources name="No name" />
-        <text>María: claro que si buscaré en mi mochila y te demostraré que soy buena</text>
+        <text>María: claro que sí buscaré en mi mochila y te demostraré que soy buena</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3napesadilla">
         <resources name="No name" />
-        <text>María: usar la tecnología para apreder tambien es inteligente</text>
+        <text>María: usar la tecnología para aprender también es inteligente</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3napesadilla">
@@ -6034,7 +6034,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="naPueblo">
         <resources name="No name" />
-        <text>María: Investigaré más acerca de ciencias en mi télefono.</text>
+        <text>María: Investigaré más acerca de ciencias en mi teléfono.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -6064,17 +6064,17 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c3Maite">
         <resources name="No name" />
-        <text>Tengo 10 años y estoy estudiando dos ingenierias en la universidad</text>
+        <text>Tengo 10 años y estoy estudiando dos ingenierías en la universidad</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3naSala">
         <resources name="No name" />
-        <text>Maria: Hay más mujeres como yo interesadas en las ciencias</text>
+        <text>María: Hay más mujeres como yo interesadas en las ciencias</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3naSala">
         <resources name="No name" />
-        <text>María: Insvestigaré más en mi teléfono </text>
+        <text>María: Investigaré más en mi teléfono </text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -6096,7 +6096,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c4noparque">
         <resources name="No name" />
-        <text>Juan: si, es fantastico, el parque tiene muchos juegos</text>
+        <text>Juan: si, es fantástico, el parque tiene muchos juegos</text>
       </speak-char>
       <condition />
       <end-conversation />
