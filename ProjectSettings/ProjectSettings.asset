@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Kiddo-Capitulo2-v8c
+  companyName: Alma Barrera
+  productName: Kiddo-Project
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -174,10 +174,10 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.Capitulo2v1
-    Standalone: com.DefaultCompany.Capitulo2-v1
-    WebGL: com.DefaultCompany.Capitulo2-v1
-    iPhone: com.DefaultCompany.Capitulo2-v1
+    Android: es.eucm.kiddo
+    Standalone: es.e-ucm.kiddo
+    WebGL: es.e-ucm.kiddo
+    iPhone: es.e-ucm.kiddo
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
@@ -687,6 +687,7 @@ PlayerSettings:
   ps5UseAudio3dBackend: 0
   ps5ScriptOptimizationLevel: 2
   ps5Audio3dVirtualSpeakerCount: 14
+  ps5VrrSupport: 0
   ps5UpdateReferencePackage: 
   ps5disableAutoHideSplash: 0
   ps5OperatingSystemCanDisableSplashScreen: 0
