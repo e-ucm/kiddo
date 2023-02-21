@@ -66,7 +66,14 @@ namespace Simva
             DisclaimerAccepted = true;
             disclaimer.SetActive(false);
             login.SetActive(true);
-            preview.SetActive(true);
+            if (Application.isEditor)
+            {
+                preview.SetActive(true);
+            }
+            else
+            {
+                Destroy(preview);
+            }
         }
 
         public void Demo()
