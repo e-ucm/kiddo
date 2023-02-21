@@ -3,7 +3,7 @@
   <title>Kiddoproject</title>
   <description>Juego para educar en igualdad</description>
   <application-identifier>com.DefaultCompany.Capitulo2-v1</application-identifier>
-  <configuration keepShowing="no" keyboard-navigation="disabled" defaultClickAction="showDetails" perspective="regular" dragBehaviour="considerNonTargets" show-save-load="yes" show-reset="yes" autosave="yes" save-on-suspend="no" restore-after-open="no">
+  <configuration keepShowing="no" keyboard-navigation="disabled" defaultClickAction="showDetails" perspective="regular" dragBehaviour="considerNonTargets" show-save-load="no" show-reset="no" autosave="yes" save-on-suspend="no" restore-after-open="yes">
     <gui type="contextual" inventoryPosition="icon" inventoryImage="assets/special/DefaultInventory.png" inventoryX="710.3325" inventoryY="569.6912" inventoryScale="0.2" />
     <mode playerTransparent="yes" />
     <graphics mode="windowed" />
