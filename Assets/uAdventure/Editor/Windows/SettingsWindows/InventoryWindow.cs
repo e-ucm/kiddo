@@ -93,10 +93,10 @@ namespace uAdventure.Editor
                 if (defaultBackground != null)
                 {
                     GUI.DrawTexture(rect, defaultBackground, ScaleMode.ScaleToFit);
-                    backgroundScale = Mathf.Min(rect.width / 800, rect.height / 600);
+                    backgroundScale = Mathf.Min(rect.width / defaultBackground.width, rect.height / defaultBackground.height);
                 }
 
-                var matrix = Matrix4x4.TRS(rect.center - ((new Vector2(800, 600) * backgroundScale) / 2f),
+                var matrix = Matrix4x4.TRS(rect.center - (new Vector2(defaultBackground.width, defaultBackground.height) * backgroundScale / 2f),
                     Quaternion.identity, new Vector3(backgroundScale, backgroundScale));
                 if(Event.current.type == EventType.Repaint)
                 {
