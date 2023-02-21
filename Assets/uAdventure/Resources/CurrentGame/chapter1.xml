@@ -71,7 +71,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="nino" behaviour="normal">
+  <character id="nino" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/normalito.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -102,7 +102,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="naPueblo" behaviour="normal">
+  <character id="naPueblo" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/normalita.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -133,7 +133,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="noPueblo" behaviour="normal">
+  <character id="noPueblo" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/normalito.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -183,7 +183,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="naCasa" behaviour="normal">
+  <character id="naCasa" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/normalita.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -226,7 +226,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="noCasa" behaviour="normal">
+  <character id="noCasa" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/normalito.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -257,7 +257,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="lifeCasa" behaviour="normal">
+  <character id="lifeCasa" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/bien.eaa.xml" />
       <asset type="standdown" uri="assets/animation/duda.eaa.xml" />
@@ -288,7 +288,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="pasalaEstar" behaviour="normal">
+  <character id="pasalaEstar" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/panormal.eaa.xml" />
       <asset type="standdown" uri="assets/animation/pafuria.eaa.xml" />
@@ -319,7 +319,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="masalaEstar" behaviour="normal">
+  <character id="masalaEstar" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/manormal.eaa.xml" />
       <asset type="standdown" uri="assets/animation/mafuria.eaa.xml" />
@@ -359,7 +359,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="nosalaEstar" behaviour="normal">
+  <character id="nosalaEstar" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/normalito.eaa.xml" />
       <asset type="standdown" uri="assets/animation/nosorprendido.eaa.xml" />
@@ -390,7 +390,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="nahabitacion1" behaviour="normal">
+  <character id="nahabitacion1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/nanormal.eaa.xml" />
       <asset type="standdown" uri="assets/animation/natriste.eaa.xml" />
@@ -421,7 +421,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="nohabitacion1" behaviour="normal">
+  <character id="nohabitacion1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/normalito.eaa.xml" />
       <asset type="standdown" uri="assets/animation/notriste.eaa.xml" />
@@ -461,7 +461,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="nolibrero" behaviour="normal">
+  <character id="nolibrero" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/normalito.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -501,7 +501,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="monstruo1" behaviour="normal">
+  <character id="monstruo1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/monstruoup.eaa.xml" />
       <asset type="standdown" uri="assets/animation/montruoataque.eaa.xml" />
@@ -532,7 +532,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="nosueno" behaviour="normal">
+  <character id="nosueno" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/normalito.eaa.xml" />
       <asset type="standdown" uri="assets/animation/notriste.eaa.xml" />
@@ -571,7 +571,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="nosalaEstar1" behaviour="normal">
+  <character id="nosalaEstar1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/normalito.eaa.xml" />
       <asset type="standdown" uri="assets/animation/notriste.eaa.xml" />
@@ -602,7 +602,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="nahabC2" behaviour="normal">
+  <character id="nahabC2" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
@@ -642,7 +642,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="nohabC2" behaviour="normal">
+  <character id="nohabC2" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -673,7 +673,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="napuebloC2" behaviour="normal">
+  <character id="napuebloC2" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
@@ -704,7 +704,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="nopuebloC2" behaviour="normal">
+  <character id="nopuebloC2" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -735,7 +735,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="masalaC2" behaviour="normal">
+  <character id="masalaC2" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/manormal.eaa.xml" />
@@ -774,7 +774,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="pasalaC2" behaviour="normal">
+  <character id="pasalaC2" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/panormal.eaa.xml" />
@@ -805,7 +805,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="nasalaC2" behaviour="normal">
+  <character id="nasalaC2" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
@@ -839,7 +839,7 @@
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no" />
     </actions>
   </character>
-  <character id="nosalaC2" behaviour="normal">
+  <character id="nosalaC2" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -870,7 +870,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="naPuebloIntro" behaviour="normal">
+  <character id="naPuebloIntro" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
@@ -901,7 +901,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="noPuebloIntro" behaviour="normal">
+  <character id="noPuebloIntro" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -940,7 +940,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="nacofre" behaviour="normal">
+  <character id="nacofre" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/nanormal.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -979,7 +979,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="sportino" behaviour="normal">
+  <character id="sportino" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/sup.eaa.xml" />
       <asset type="standdown" uri="assets/animation/sportinovencido.eaa.xml" />
@@ -1033,7 +1033,7 @@
         <documentation>Created with target conversation: cSportinoAdios</documentation>
         <condition>
           <either>
-            <equals var="ListaObjetosBox" value="2" />
+            <equals var="ListaObjetosBox" value="7" />
             <active flag="convMostroAdios" />
           </either>
         </condition>
@@ -1044,7 +1044,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="nasueno2" behaviour="normal">
+  <character id="nasueno2" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/nanormal.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -1095,7 +1095,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="naEntresueno" behaviour="normal">
+  <character id="naEntresueno" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/nanormal.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -1165,7 +1165,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c3napasillo" behaviour="normal">
+  <character id="c3napasillo" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
@@ -1204,7 +1204,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="c3nopasillo" behaviour="normal">
+  <character id="c3nopasillo" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -1235,7 +1235,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c3Rocio" behaviour="normal">
+  <character id="c3Rocio" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/ProfeNatural.eaa.xml" />
@@ -1266,7 +1266,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c3nasalon1" behaviour="normal">
+  <character id="c3nasalon1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/natriste.eaa.xml" />
       <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
@@ -1305,7 +1305,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="c3nosalon1" behaviour="normal">
+  <character id="c3nosalon1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/notriste.eaa.xml" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -1336,7 +1336,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c3RocioSalon1" behaviour="normal">
+  <character id="c3RocioSalon1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/ProfeNatural.eaa.xml" />
@@ -1375,7 +1375,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="c3monstruo3" behaviour="normal">
+  <character id="c3monstruo3" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/a3mounstruo3a.eaa.xml" />
       <asset type="standdown" uri="assets/animation/a3monstruo3.eaa.xml" />
@@ -1414,7 +1414,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="c3napesadilla" behaviour="normal">
+  <character id="c3napesadilla" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/natriste.eaa.xml" />
       <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
@@ -1448,7 +1448,7 @@
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no" />
     </actions>
   </character>
-  <character id="c3Maite" behaviour="normal">
+  <character id="c3Maite" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/Maiteneutral.eaa.xml" />
@@ -1479,7 +1479,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c3naSala" behaviour="normal">
+  <character id="c3naSala" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
@@ -1518,7 +1518,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="c4nacocina" behaviour="normal">
+  <character id="c4nacocina" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
@@ -1549,7 +1549,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c4nococina" behaviour="normal">
+  <character id="c4nococina" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -1580,7 +1580,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c4naparque" behaviour="normal">
+  <character id="c4naparque" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
@@ -1620,7 +1620,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="c4noparque" behaviour="normal">
+  <character id="c4noparque" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -1651,7 +1651,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c4paparque" behaviour="normal">
+  <character id="c4paparque" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/panormal.eaa.xml" />
@@ -1682,7 +1682,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c4maparque" behaviour="normal">
+  <character id="c4maparque" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/manormal.eaa.xml" />
@@ -1713,7 +1713,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <scene id="ControlesJuego" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="ControlesJuego" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -1728,7 +1728,7 @@
       </exit>
     </exits>
   </scene>
-  <scene id="Intro" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Intro" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -1820,7 +1820,7 @@
       </exit>
     </exits>
   </scene>
-  <scene id="elpueblo" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="elpueblo" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -1935,7 +1935,7 @@
       <character-ref idTarget="nohabitacion1" x="190" y="436" scale="0.5185649" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="librero1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="librero1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -1952,7 +1952,7 @@
       <character-ref idTarget="nolibrero" x="128" y="529" scale="0.6" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="librero2" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="librero2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -1987,11 +1987,8 @@
       <character-ref idTarget="nosueno" x="581" y="257" scale="0.5022091" orientation="0" glow="yes" layer="0" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="mostroArea1" rectangular="no" x="36" y="85" width="185" height="297" hasInfluenceArea="yes" influenceX="0" influenceY="0" influenceWidth="225" influenceHeight="337" behaviour="normal">
+      <active-area id="mostroArea1" rectangular="no" x="36" y="85" width="185" height="297" hasInfluenceArea="yes" influenceX="0" influenceY="0" influenceWidth="225" influenceHeight="337" behaviour="first-action">
         <description>
-          <condition>
-            <active flag="dosvidasmenos" />
-          </condition>
           <name>
           </name>
           <brief>
@@ -1999,6 +1996,14 @@
           <detailed>
           </detailed>
         </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <speak-player guid="be024bb6-873d-4c09-9890-2f1ce3b95bd9">O Debo revisar mi mochila si quiero vencer al monstruo</speak-player>
+              <condition />
+            </effect>
+          </examine>
+        </actions>
         <point x="129" y="221" />
         <point x="211" y="190" />
         <point x="221" y="234" />
@@ -2020,7 +2025,7 @@
       </active-area>
     </active-areas>
   </scene>
-  <scene id="aprende" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="aprende" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2048,7 +2053,7 @@
     </name>
     <default-initial-position x="400" y="450" />
   </scene>
-  <scene id="aprende2" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="aprende2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2066,7 +2071,7 @@
       <object-ref idTarget="aprendeCap2-Andy" x="366" y="306" scale="0.2735651" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
   </scene>
-  <scene id="capitulo2" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="capitulo2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2115,7 +2120,7 @@
       <character-ref idTarget="nohabC2" x="546" y="486" scale="0.5" orientation="2" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="C2folletozoom" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="C2folletozoom" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2130,7 +2135,7 @@
       </exit>
     </exits>
   </scene>
-  <scene id="cofre3" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="cofre3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2147,7 +2152,7 @@
       <character-ref idTarget="nacofre" x="142" y="519" scale="0.7" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="cofre4" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="cofre4" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2291,7 +2296,7 @@
       <character-ref idTarget="c3Rocio" x="851" y="478" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="prohibidoelpaso" rectangular="no" x="247" y="192" width="69" height="180" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="prohibidoelpaso" rectangular="no" x="247" y="192" width="69" height="180" hasInfluenceArea="no" behaviour="first-action">
         <description>
           <name>
           </name>
@@ -2303,7 +2308,7 @@
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="99dc125e-4142-46b3-b647-f3373f07d12b">Este no es mi aula de clases</show-text>
+              <show-text x="400" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="99dc125e-4142-46b3-b647-f3373f07d12b">Este no es mi aula de clases</show-text>
               <condition />
             </effect>
           </examine>
@@ -2313,7 +2318,7 @@
         <point x="314" y="360" />
         <point x="254" y="372" />
       </active-area>
-      <active-area id="prohibidoelpaso2" rectangular="no" x="432" y="217" width="161" height="101" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="prohibidoelpaso2" rectangular="no" x="432" y="217" width="161" height="101" hasInfluenceArea="no" behaviour="first-action">
         <description>
           <name>
           </name>
@@ -2325,7 +2330,7 @@
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="fd1b5804-3405-4300-8bde-226cc6590c34">Todavía no es hora de ir a casa</show-text>
+              <show-text x="400" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="fd1b5804-3405-4300-8bde-226cc6590c34">Todavía no es hora de ir a casa</show-text>
               <condition />
             </effect>
           </examine>
@@ -2366,7 +2371,7 @@
       <character-ref idTarget="c3napesadilla" x="515" y="471" scale="0.4143467" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="c3elpuebloCAS" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c3elpuebloCAS" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2414,7 +2419,7 @@
       <character-ref idTarget="c3naSala" x="159" y="382" scale="0.4669155" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="validatelefono" rectangular="yes" x="596" y="132" width="197" height="102" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="validatelefono" rectangular="yes" x="596" y="132" width="197" height="102" hasInfluenceArea="no" behaviour="first-action">
         <condition>
           <inactive flag="validatlefono" />
         </condition>
@@ -2429,7 +2434,7 @@
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="2a141e40-e1a3-4962-b279-3151a82cd75a">Habla con María...</show-text>
+              <show-text x="400" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="2a141e40-e1a3-4962-b279-3151a82cd75a">Habla con María...</show-text>
               <condition />
             </effect>
           </examine>
@@ -2449,6 +2454,10 @@
     <exits>
       <exit rectangular="yes" x="375" y="188" width="167" height="20" hasInfluenceArea="no" idTarget="c3p2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
+        <effect>
+          <speak-char idTarget="c3monstruo3" guid="6801923a-b404-4e9f-9d12-8628c7368f7f">Maldición... Bueno cualquiera acierta una de casualidad...</speak-char>
+          <condition />
+        </effect>
       </exit>
     </exits>
     <characters>
@@ -2456,7 +2465,7 @@
       <character-ref idTarget="c3napesadilla" x="586" y="468" scale="0.4" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="p1err1" rectangular="yes" x="406" y="237" width="119" height="25" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="p1err1" rectangular="yes" x="406" y="237" width="119" height="25" hasInfluenceArea="no" behaviour="first-action">
         <description>
           <name>
           </name>
@@ -2468,14 +2477,14 @@
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="db9752a0-e373-4bc8-b0e5-6a2daf74e063">Te lo dije...
-No eres buena en ciencias</show-text>
+              <speak-char idTarget="c3monstruo3" guid="9f933376-79eb-4cb6-a708-4a0451fc2d99">Te lo dije...
+No eres buena en ciencias</speak-char>
               <condition />
             </effect>
           </examine>
         </actions>
       </active-area>
-      <active-area id="p1eer2" rectangular="yes" x="423" y="288" width="83" height="19" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="p1eer2" rectangular="yes" x="423" y="288" width="83" height="19" hasInfluenceArea="no" behaviour="first-action">
         <description>
           <name>
           </name>
@@ -2487,7 +2496,7 @@ No eres buena en ciencias</show-text>
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="b0b3e982-f41b-4d89-a5ca-e46a235be7d9">Ve jugar a las muñecas...</show-text>
+              <speak-char idTarget="c3monstruo3" guid="b2fbf3cb-f9ad-4009-a5c5-518d8e8c54ba">Ve jugar a las muñecas...</speak-char>
               <condition />
             </effect>
           </examine>
@@ -2507,6 +2516,12 @@ No eres buena en ciencias</show-text>
     <exits>
       <exit rectangular="yes" x="395" y="239" width="140" height="17" hasInfluenceArea="no" idTarget="c3p3" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
+        <post-effect>
+          <speak-char idTarget="c3monstruo3" guid="9fd1902a-44ac-4083-a246-123cbc447f21">¡Demonios! Has acertado otra...</speak-char>
+          <condition />
+          <speak-char idTarget="c3monstruo3" guid="2d6b9c12-ec53-4693-b014-edbc1b89a4e1">! ¡Pero no podrás con la última pregunta!</speak-char>
+          <condition />
+        </post-effect>
       </exit>
     </exits>
     <characters>
@@ -2514,7 +2529,7 @@ No eres buena en ciencias</show-text>
       <character-ref idTarget="c3napesadilla" x="623" y="468" scale="0.4" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="p2eer1" rectangular="yes" x="421" y="285" width="93" height="26" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="p2eer1" rectangular="yes" x="421" y="285" width="93" height="26" hasInfluenceArea="no" behaviour="first-action">
         <description>
           <name>
           </name>
@@ -2526,13 +2541,13 @@ No eres buena en ciencias</show-text>
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="56751dc8-8259-4ac3-9a99-686c48228cdc">La ciencia es conpleja para las niñas</show-text>
+              <speak-char idTarget="c3monstruo3" guid="b7a7dfb0-cc7e-4d1b-9eec-66bb3581777b">La ciencia es conpleja para las niñas</speak-char>
               <condition />
             </effect>
           </examine>
         </actions>
       </active-area>
-      <active-area id="p2eer2" rectangular="yes" x="430" y="180" width="81" height="25" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="p2eer2" rectangular="yes" x="430" y="179" width="81" height="25" hasInfluenceArea="no" behaviour="first-action">
         <description>
           <name>
           </name>
@@ -2544,7 +2559,7 @@ No eres buena en ciencias</show-text>
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="bd202a8f-75ed-4b4c-ae78-52a4baed9bfd">Ja ja ja te falta mucho po aprender</show-text>
+              <speak-char idTarget="c3monstruo3" guid="48281fe6-200b-445d-a03e-be4629d33be1">Ja ja ja te falta mucho po aprender</speak-char>
               <condition />
             </effect>
           </examine>
@@ -2564,6 +2579,19 @@ No eres buena en ciencias</show-text>
     <exits>
       <exit rectangular="yes" x="421" y="235" width="90" height="17" hasInfluenceArea="no" idTarget="EndSlide" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
+        <effect>
+          <speak-char idTarget="c3monstruo3" guid="1d890bb5-0523-4118-92a4-f6ce628ce7fe">Después de todo, parece que al final sí eres buena en ciencias.</speak-char>
+          <condition />
+          <speak-char idTarget="c3monstruo3" guid="d154f6bf-9f8b-4700-9ddb-0c5e480f53a8">¡Te felicito, me has vencido! 
+-meow-</speak-char>
+          <condition />
+          <activate flag="Cap3End" guid="5117e929-73e9-4763-ab77-6515d4b2259a" />
+          <condition />
+          <trigger-cutscene idTarget="finCapitulo" guid="6eb706ec-e5f4-4162-9d0d-f4288f8dbca8" />
+          <condition />
+          <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="0" guid="89b374e9-df03-406a-b7b5-57bae2aa199c" />
+          <condition />
+        </effect>
       </exit>
     </exits>
     <characters>
@@ -2571,7 +2599,7 @@ No eres buena en ciencias</show-text>
       <character-ref idTarget="c3napesadilla" x="556" y="508" scale="0.5" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="p3err1" rectangular="yes" x="429" y="286" width="79" height="18" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="p3err1" rectangular="yes" x="429" y="286" width="79" height="18" hasInfluenceArea="no" behaviour="first-action">
         <description>
           <name>
           </name>
@@ -2583,14 +2611,14 @@ No eres buena en ciencias</show-text>
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="b94c0a2e-527e-4d20-a00c-4d03af1e1524">Con estas respuestas no podás venerme
--meow-</show-text>
+              <speak-char idTarget="c3monstruo3" guid="1de104f3-29f0-4e14-9b1c-5568af03353e">Con estas respuestas no podás venerme
+-meow-</speak-char>
               <condition />
             </effect>
           </examine>
         </actions>
       </active-area>
-      <active-area id="p3err2" rectangular="yes" x="416" y="182" width="98" height="25" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="p3err2" rectangular="yes" x="416" y="182" width="98" height="25" hasInfluenceArea="no" behaviour="first-action">
         <description>
           <name>
           </name>
@@ -2602,7 +2630,7 @@ No eres buena en ciencias</show-text>
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="e4f9b7c8-2c9b-4faf-a251-8bed6ec00365">Así nunca podrás vencenme</show-text>
+              <speak-char idTarget="c3monstruo3" guid="d4110e27-fa4c-4927-9345-73656e3a1388">Así nunca podrás vencenme</speak-char>
               <condition />
             </effect>
           </examine>
@@ -2610,7 +2638,7 @@ No eres buena en ciencias</show-text>
       </active-area>
     </active-areas>
   </scene>
-  <scene id="aprende3" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="aprende3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2654,7 +2682,7 @@ No eres buena en ciencias</show-text>
     </name>
     <default-initial-position x="400" y="450" />
   </scene>
-  <scene id="c4mapacasa" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c4mapacasa" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2664,7 +2692,7 @@ No eres buena en ciencias</show-text>
     </name>
     <default-initial-position x="400" y="450" />
   </scene>
-  <scene id="c4elpueblo" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c4elpueblo" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2811,8 +2839,6 @@ conseguiste la posión del valor.
     <documentation>
     </documentation>
     <effect>
-      <activate flag="Cap1End" guid="c7a728f2-a221-4bab-a47f-cbf007766a52" />
-      <condition />
       <macro-ref id="GameEndig" guid="011e9d96-70fc-40de-8abb-de7a0570bbdf" />
       <condition />
     </effect>
@@ -2887,7 +2913,7 @@ Conseguiste el gran libro de ciencias...
     <name>
     </name>
   </slidescene>
-  <object id="minimapa" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="minimapa" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <condition>
         <inactive flag="validaIntro" />
@@ -2904,7 +2930,7 @@ Conseguiste el gran libro de ciencias...
       </detailed>
     </description>
   </object>
-  <object id="mapa" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="mapa" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <condition>
         <inactive flag="unavidamenos" />
@@ -2921,7 +2947,7 @@ Conseguiste el gran libro de ciencias...
       </detailed>
     </description>
   </object>
-  <object id="corazon" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="corazon" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <condition>
         <inactive flag="validaCorazon" />
@@ -2979,15 +3005,17 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
           <wait-time time="5" guid="19c54c6e-a148-49ed-96bb-088c426f1d28" />
           <condition />
-          <trigger-cutscene idTarget="finCapitulo" guid="c56d1fb4-4b0d-400f-92c0-fd1017ca8acc" />
+          <activate flag="Cap1End" guid="ca1515db-7c1d-4663-92ec-4d165ac94699" />
           <condition />
-          <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="0" guid="fe17da31-fb46-4b17-8fb0-e921e6d8380c" />
+          <trigger-cutscene idTarget="finCapitulo" guid="369fb9f4-ebdc-483f-ad46-fe3220b62991" />
+          <condition />
+          <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="0" guid="fe457279-45c2-48b3-bf4f-b36d6999b485" />
           <condition />
         </effect>
       </give-to>
     </actions>
   </object>
-  <object id="pergamino" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="pergamino" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/008-pergamino.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3028,7 +3056,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </examine>
     </actions>
   </object>
-  <object id="star" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="star" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/007-coupon.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3047,7 +3075,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </examine>
     </actions>
   </object>
-  <object id="vidav1" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="vidav1" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="a">
       <condition>
         <inactive flag="cambiarSentimiento" />
@@ -3088,7 +3116,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </use>
     </actions>
   </object>
-  <object id="vidaCap2" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="vidaCap2" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="a">
       <condition>
         <inactive flag="CambiarSentimientoC2" />
@@ -3119,7 +3147,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </object>
-  <object id="vidav3" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="vidav3" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <documentation>
     </documentation>
     <resources name="">
@@ -3135,7 +3163,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </object>
-  <object id="aprendeCap1-Alex" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="aprendeCap1-Alex" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/Alex-mini.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3149,7 +3177,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </object>
-  <object id="aprendeCap2-Andy" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="aprendeCap2-Andy" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/Andymini.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3163,7 +3191,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </object>
-  <object id="aprendeCap3-Cris" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="aprendeCap3-Cris" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/cris2-mini.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3177,7 +3205,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </object>
-  <object id="folleto" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="folleto" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/Volante Kiddo Ep. 2.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3202,7 +3230,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </examine>
     </actions>
   </object>
-  <object id="reloj" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="reloj" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/relojArena-sinfondo.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3216,7 +3244,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </object>
-  <object id="sobre" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="sobre" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/sobre.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3254,7 +3282,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </examine>
     </actions>
   </object>
-  <object id="posion" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="posion" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/posion.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3292,7 +3320,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </give-to>
     </actions>
   </object>
-  <object id="c2Guantes" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c2Guantes" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/guaantes.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3328,7 +3356,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </give-to>
     </actions>
   </object>
-  <object id="c2short" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c2short" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/short.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3364,7 +3392,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </give-to>
     </actions>
   </object>
-  <object id="c2playera" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c2playera" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/playera.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3400,7 +3428,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </give-to>
     </actions>
   </object>
-  <object id="c2zapatos" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c2zapatos" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/zapatos.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3436,7 +3464,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </give-to>
     </actions>
   </object>
-  <object id="c2bucal" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c2bucal" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/bucal.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3472,7 +3500,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </give-to>
     </actions>
   </object>
-  <object id="c2casco" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c2casco" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/casco.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3508,7 +3536,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </give-to>
     </actions>
   </object>
-  <object id="c2espinilleras" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c2espinilleras" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/espinilleras.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3544,7 +3572,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </give-to>
     </actions>
   </object>
-  <object id="c3telefono" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c3telefono" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/video-marketing opt.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -3566,7 +3594,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </examine>
     </actions>
   </object>
-  <object id="c3librociencia" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c3librociencia" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/libro-de-ciencia opt.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -5287,7 +5315,9 @@ Si respondes que NO te falta uno recuerda que no podrás volver.
 Revisa bien tus objetos.</show-text>
           <condition />
           <activate flag="convMostroAdios" guid="a5e80d26-d064-462b-83c2-76c035f37c16" />
-          <condition />
+          <condition>
+            <equals var="vCurrentChapter" value="7" />
+          </condition>
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -5393,42 +5423,42 @@ Son 7 objetos</show-text>
         <text>Muy Bien has demostrado que las niñas pueden hacer box y que pueden hacer otros deportes y actividades con futbol, boxeo, natación, etc.</text>
       </speak-char>
       <condition>
-        <equals var="ListaObjetosBox" value="2" />
+        <equals var="ListaObjetosBox" value="7" />
       </condition>
       <speak-char idTarget="sportino">
         <resources name="No name" />
         <text>nooooooo, como lo he prometido me voy de tus sueños Adíos María, tú ganaste.</text>
       </speak-char>
       <condition>
-        <equals var="ListaObjetosBox" value="2" />
+        <equals var="ListaObjetosBox" value="7" />
       </condition>
       <child nodeindex="1" />
       <effect>
         <move-npc idTarget="sportino" x="1415" y="815" guid="9c87b2c0-59c7-47d6-8008-6ecc78858d05" />
         <condition>
-          <equals var="ListaObjetosBox" value="2" />
+          <equals var="ListaObjetosBox" value="7" />
         </condition>
         <move-npc idTarget="sportino" x="1420" y="820" guid="f7e68f46-1d8c-47cf-9384-b88450d14900" />
         <condition>
-          <equals var="ListaObjetosBox" value="2" />
+          <equals var="ListaObjetosBox" value="7" />
         </condition>
         <move-npc idTarget="sportino" x="1425" y="825" guid="cc816972-37d7-475f-bf28-595b69ee75b1" />
         <condition>
-          <equals var="ListaObjetosBox" value="2" />
+          <equals var="ListaObjetosBox" value="7" />
         </condition>
         <move-npc idTarget="sportino" x="1430" y="830" guid="54ac69f4-b157-4dee-a66b-64bc3fdc82f2" />
         <condition>
-          <equals var="ListaObjetosBox" value="2" />
+          <equals var="ListaObjetosBox" value="7" />
         </condition>
         <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="6bf54ecd-13d6-4f9f-9e19-58f60c3263eb">Toma esta estrella. 
 Si me pudiste vencer, tal vez te pueda ayudar a vencer al mas fuerte de los monstruos de genero. 
 Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <condition>
-          <equals var="ListaObjetosBox" value="2" />
+          <equals var="ListaObjetosBox" value="7" />
         </condition>
         <generate-object idTarget="star" guid="e973fc40-f8b8-41ac-a0bc-49e0c48f5bc6" />
         <condition>
-          <equals var="ListaObjetosBox" value="2" />
+          <equals var="ListaObjetosBox" value="7" />
         </condition>
       </effect>
     </dialogue-node>
@@ -5438,18 +5468,16 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>¡Los deportes se hicieron para divertirnos con nuestros amigos y para mantenernos saludables! No dejes que nadie te diga que no puedes hacer algún deporte solo por ser niño o niña. ¡Todos tenemos las mismas capacidades y oportunidades!</text>
       </speak-char>
       <condition>
-        <equals var="ListaObjetosBox" value="2" />
+        <equals var="ListaObjetosBox" value="7" />
       </condition>
       <end-conversation>
         <effect>
-          <trigger-cutscene idTarget="finCapitulo" guid="4996364c-6300-493f-a050-951b7c128830" />
-          <condition>
-            <equals var="ListaObjetosBox" value="2" />
-          </condition>
-          <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="0" guid="b9f65a75-38fa-401e-a7e5-0c7196e88228" />
-          <condition>
-            <equals var="ListaObjetosBox" value="2" />
-          </condition>
+          <activate flag="Cap2End" guid="52c5631c-5448-4bcc-a934-b7638cde2551" />
+          <condition />
+          <trigger-cutscene idTarget="finCapitulo" guid="c926af6e-6f12-4431-8c57-1342137c06b2" />
+          <condition />
+          <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="0" guid="fa22883b-410e-4551-bea5-bb7239064de7" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -6107,6 +6135,63 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     <trigger-cutscene idTarget="EndSlide" guid="b3eab735-f193-43be-89a6-125ae6727644" />
     <condition>
       <active flag="Cap1End" />
+      <active flag="Cap2End" />
+      <active flag="Cap3End" />
     </condition>
   </macro>
+  <completable id="CompletableCapitulo1" repeatable="false" type="completable">
+    <start-milestone type="SCENE" targetId="elpueblo" />
+    <end-milestone type="CONDITION">
+      <condition>
+        <active flag="Cap1End" />
+      </condition>
+    </end-milestone>
+    <progress type="SUM">
+      <milestone type="SCENE" targetId="elpueblo" />
+      <milestone type="SCENE" targetId="laCasa" />
+      <milestone type="SCENE" targetId="salaEstar" />
+      <milestone type="SCENE" targetId="habitacion" />
+      <milestone type="SCENE" targetId="hipnosis" />
+      <milestone type="SCENE" targetId="pesadilla" />
+    </progress>
+    <score type="VARIABLE" method="SINGLE" id="vSentimiento" />
+  </completable>
+  <completable id="CompletableCapitulo2" repeatable="false" type="completable">
+    <start-milestone type="SCENE" targetId="cap2vid" />
+    <end-milestone type="CONDITION">
+      <condition>
+        <active flag="Cap2End" />
+      </condition>
+    </end-milestone>
+    <progress type="SUM">
+      <milestone type="SCENE" targetId="cap2vid" />
+      <milestone type="SCENE" targetId="C2habitacion" />
+      <milestone type="SCENE" targetId="C2folletozoom" />
+      <milestone type="SCENE" targetId="c2Sala" />
+      <milestone type="SCENE" targetId="entresueno" />
+      <milestone type="SCENE" targetId="pesadilla2" />
+      <milestone type="SCENE" targetId="elMonitor" />
+    </progress>
+    <score type="VARIABLE" method="SINGLE" id="vSentirCap2" />
+  </completable>
+  <completable id="CompletableCapitulo3" repeatable="false" type="completable">
+    <start-milestone type="SCENE" targetId="c3elpuebloES" />
+    <end-milestone type="CONDITION">
+      <condition>
+        <active flag="Cap3End" />
+      </condition>
+    </end-milestone>
+    <progress type="SUM">
+      <milestone type="SCENE" targetId="c3elpuebloES" />
+      <milestone type="SCENE" targetId="c3escuela" />
+      <milestone type="SCENE" targetId="c3Salon" />
+      <milestone type="SCENE" targetId="c3elpuebloCAS" />
+      <milestone type="SCENE" targetId="c3sala1" />
+      <milestone type="SCENE" targetId="c3pesadilla" />
+      <milestone type="SCENE" targetId="c3p1" />
+      <milestone type="SCENE" targetId="c3p2" />
+      <milestone type="SCENE" targetId="c3p3" />
+    </progress>
+    <score type="VARIABLE" method="SINGLE" id="vSentirCap3" />
+  </completable>
 </eAdventure>
