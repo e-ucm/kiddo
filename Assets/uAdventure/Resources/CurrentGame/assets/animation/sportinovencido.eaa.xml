@@ -2,11 +2,11 @@
 <animation id="sportinovencido.eaa.xml" usetransitions="yes" slides="yes">
   <documentation />
   <transition type="0" time="0" />
-  <frame uri="assets/animation/sportino1a.png" type="image" time="40" waitforclick="no" soundUri="" maxSoundTime="1000">
+  <frame uri="assets/animation/sportino1a.png" type="image" time="40" waitforclick="no" soundUri="assets/animation/glassBroken.mp3" maxSoundTime="1000">
     <documentation>
     </documentation>
   </frame>
-  <transition type="1" time="0" />
+  <transition type="3" time="10" />
   <frame uri="assets/animation/sportino1a.png" type="image" time="40" waitforclick="no" soundUri="" maxSoundTime="1000">
     <documentation>
     </documentation>
