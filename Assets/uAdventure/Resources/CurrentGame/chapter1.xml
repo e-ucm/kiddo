@@ -1744,6 +1744,15 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: cv4limpiarCasa</documentation>
+        <effect>
+          <trigger-conversation idTarget="cv4limpiarCasa" guid="25f82893-23e3-436d-af8a-6dcedfdc7dd1" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <character id="c4paparque" behaviour="first-action">
     <resources name="No name">
@@ -1837,6 +1846,45 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="c4noCasa" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="cv4limpiarCasa" guid="62b1b24a-a6ae-4e08-9610-99845254d7ce" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <scene id="ControlesJuego" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2868,6 +2916,22 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="noPueblo" x="148" y="370" scale="0.5" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
+  <scene id="c4mapacasa" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/mapacasa.png" />
+      <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="756" y="1113" width="468" height="236" hasInfluenceArea="no" idTarget="c4lacocina" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="5" transitionTime="10" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
+  </scene>
   <scene id="c4lacocina" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
@@ -2878,17 +2942,24 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="c4mapacasa" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/background/mapacasa.png" />
-      <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="c4copas-sucias" x="233" y="346" scale="0.6747807" glow="no" layer="1" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4noCasa" x="802" y="326" scale="0.3586387" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+    <active-areas>
+      <active-area id="fregadero" rectangular="yes" x="345" y="225" width="146" height="53" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+      </active-area>
+    </active-areas>
   </scene>
   <scene id="creditosCap1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2900,7 +2971,7 @@ No eres buena en ciencias</speak-char>
     </name>
     <default-initial-position x="400" y="450" />
   </scene>
-  <videoscene canSkip="no" id="PesentacionKidoo1" start="yes" idTarget="introvideo" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="PesentacionKidoo1" start="no" idTarget="introvideo" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3831,6 +3902,51 @@ Gracias
   <object id="c2minimonitor" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/monitormini.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="c4copas-sucias" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="sucio">
+      <condition>
+        <inactive flag="c4copasflag" />
+      </condition>
+      <asset type="image" uri="assets/image/001-vidrio.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <resources name="limpio">
+      <asset type="image" uri="assets/image/004-vidrio-1.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <drag-to idTarget="fregadero" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="c4copasflag" guid="8819d627-cdf3-45b8-910d-ee764bd15e33" />
+          <condition />
+          <trigger-scene idTarget="c4lacocina" x="512" y="307" transitionTime="0" transitionType="0" guid="d6fe379f-ec64-43cb-8b6e-502a19da1a5b" />
+          <condition />
+        </effect>
+      </drag-to>
+    </actions>
+  </object>
+  <object id="c4copas-limpias" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/004-vidrio-1.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
@@ -6773,7 +6889,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Cap4parque">
-    <dialogue-node nodeindex="0" editor-x="53" editor-y="73">
+    <dialogue-node nodeindex="0" editor-x="7" editor-y="31">
       <speak-player>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/typewriter.mp3" />
@@ -6807,12 +6923,22 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c4naparque">
         <resources name="No name" />
-        <text>María:  ¡Claro que sí!, podría pasar todo el dia en este lugar</text>
+        <text>María: Claro que si</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4maparque">
         <resources name="No name" />
-        <text>Lucy: Creo que es hora de irnos, tenemos muchas labores domésticas por hacer…</text>
+        <text>Lucy: ¡oh,  cielos!, es muy muy tarde</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4maparque">
+        <resources name="No name" />
+        <text>Lucy: Es hora de irnos, tenemos muchas labores domésticas por hacer…</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4maparque">
+        <resources name="No name" />
+        <text>Lucy: Debemos limpiar la casa María.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4paparque">
@@ -6827,7 +6953,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="napuebloC2">
         <resources name="No name" />
-        <text>Roberto: Juan y yo nos quedaremos a divertirnos un poco más, vamos a jugar juegos de hombres, ¿qué dices, hijo?</text>
+        <text>Roberto: Juan y yo nos quedaremos a divertirnos un poco más, vamos a jugar futbol un deporte de hombres, ¿qué dices, hijo?</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4noparque">
@@ -6847,21 +6973,61 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" question="M: ¿Puedo quedarme con ustedes?" keepShowing="yes" preListening="yes" editor-x="407" editor-y="77" x="407" y="77">
+    <option-node nodeindex="1" question="M: ¿Puedo quedarme con ustedes?" preListening="yes" editor-x="717" editor-y="49" x="717" y="49">
       <speak-player>
-        <text>Si</text>
-        <resources name="No name" />
+        <text>No</text>
       </speak-player>
       <condition />
       <child nodeindex="2" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="972" editor-y="50">
+      <speak-char idTarget="c4paparque">
+        <resources name="No name" />
+        <text>Roberto: No María, debes aprender desde ahora a hacer labores domésticas…</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4naparque">
+        <resources name="No name" />
+        <text>Maria: mmm</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4noparque">
+        <resources name="No name" />
+        <text>Juan: Papá yo puedo ayudar más tarde en casa </text>
+      </speak-char>
+      <condition />
+      <child nodeindex="3" />
+    </dialogue-node>
+    <option-node nodeindex="3" question="J: ¿Se puede quedar María un poco más?" preListening="yes" editor-x="1319" editor-y="62" x="1319" y="62">
+      <speak-player>
+        <text>Roberto: No</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="4" editor-x="1742" editor-y="80">
+      <speak-char idTarget="c4naparque">
+        <resources name="No name" />
+        <text>María: ¿Puedo quedarme con ustedes?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <option-node nodeindex="5" question="M: ¿Puedo quedarme con ustedes?" keepShowing="yes" preListening="yes" editor-x="1876" editor-y="279" x="1876" y="279">
+      <speak-player>
+        <text>Tal vez</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="6" />
       <speak-player>
         <text>No</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="3" />
+      <child nodeindex="7" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="806" editor-y="13">
+    <dialogue-node nodeindex="6" editor-x="2210" editor-y="46">
       <speak-char idTarget="c4paparque">
         <resources name="No name" />
         <text>Roberto: María, creo que debes aprender desde ahora a hacer labores domésticas…</text>
@@ -6869,12 +7035,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c4paparque">
         <resources name="No name" />
-        <text>Roberto: cuando seas una mujer adulta tal vez deberás atender a tu esposo... </text>
+        <text>Roberto: Cuando seas una mujer adulta tal vez deberás atender a tu esposo e hijos... </text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4paparque">
         <resources name="No name" />
-        <text>Roberto: Debes aprender a asear la casa, lavar los platos, hacer la comida y cuidar de tus hijos.</text>
+        <text>Roberto: Debes aprender a asear la casa, lavar los platos, hacer la comida y cuidar bien de tus hijos.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4naparque">
@@ -6884,7 +7050,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c4paparque">
         <resources name="No name" />
-        <text>Roberto: Mmm, puede ser…pero he dicho que ayudes a tu madre…</text>
+        <text>Roberto: Mmm, puede ser… pero he dicho que ayudes a tu madre…</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4naparque">
+        <resources name="No name" />
+        <text>Maria: mmm</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4noparque">
@@ -6892,9 +7063,9 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Juan: ¿Será que papá y yo deberiamos ayudar en las labores de casa?</text>
       </speak-char>
       <condition />
-      <child nodeindex="4" />
+      <child nodeindex="8" />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="802" editor-y="311">
+    <dialogue-node nodeindex="7" editor-x="2229" editor-y="466">
       <speak-char idTarget="c4paparque">
         <resources name="No name" />
         <text>Roberto: No María, debes aprender desde ahora a hacer labores domésticas…</text>
@@ -6920,34 +7091,44 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Roberto: Pero papá nada, he dicho que ayudes a tu madre</text>
       </speak-char>
       <condition />
+      <speak-char idTarget="c4paparque">
+        <resources name="No name" />
+        <text>Roberto: ve con tu madre que se hace tarde</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4naparque">
+        <resources name="No name" />
+        <text>María: mmm</text>
+      </speak-char>
+      <condition />
       <speak-char idTarget="c4noparque">
         <resources name="No name" />
         <text>Juan: ¿Será que papá y yo deberiamos ayudar en las labores de casa?</text>
       </speak-char>
       <condition />
-      <child nodeindex="5" />
+      <child nodeindex="9" />
     </dialogue-node>
-    <option-node nodeindex="4" question="¿Crees que papá y juan deben ayudar en las labores de casa?" keepShowing="yes" preListening="yes" editor-x="1337" editor-y="41" x="1337" y="41">
+    <option-node nodeindex="8" question="Juan: ¿Será que papá y yo deberiamos ayudar en las labores de casa?" keepShowing="yes" preListening="yes" editor-x="2955" editor-y="78" x="2955" y="78">
       <speak-player correct="true">
         <text>Sí</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="6" />
+      <child nodeindex="10" />
     </option-node>
-    <option-node nodeindex="5" question="¿Crees que papá y juan deben ayudar en las labores de casa?" keepShowing="yes" preListening="yes" editor-x="1331" editor-y="323" x="1331" y="323">
+    <option-node nodeindex="9" question="Juan: ¿Será que papá y yo deberiamos ayudar en las labores de casa?" keepShowing="yes" preListening="yes" editor-x="2933" editor-y="486" x="2933" y="486">
       <speak-player>
         <text>SI</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="6" />
-      <speak-player>
+      <child nodeindex="10" />
+      <speak-player correct="true">
         <text>No</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="7" />
+      <child nodeindex="11" />
       <effect>
         <move-npc idTarget="c4naparque" x="650" y="310" guid="587b4a43-7cd0-4f05-824c-c258ed83716d" />
         <condition />
@@ -6955,7 +7136,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <condition />
       </effect>
     </option-node>
-    <dialogue-node nodeindex="6" editor-x="1747" editor-y="22">
+    <dialogue-node nodeindex="10" editor-x="3438" editor-y="37">
       <speak-char idTarget="c4noparque">
         <resources name="No name" />
         <text>Juan: papá nosotros también podemos ayudar,</text>
@@ -6963,7 +7144,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c4paparque">
         <resources name="No name" />
-        <text>Roberto: Claro que SÍ </text>
+        <text>Roberto: Claro que SÍ.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4maparque">
@@ -6973,12 +7154,12 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c4paparque">
         <resources name="No name" />
-        <text>Roberto: Eso suena bastante bie</text>
+        <text>Roberto: Eso suena bastante bien</text>
       </speak-char>
       <condition />
-      <child nodeindex="8" />
+      <child nodeindex="12" />
     </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="1834" editor-y="324">
+    <dialogue-node nodeindex="11" editor-x="3231" editor-y="631">
       <speak-char idTarget="c4paparque">
         <resources name="No name" />
         <text>Roberto: Las actividades domésticas son cosas de mujeres. deben limpiar, el hogar, barrer, trapear, lavar los trastes, hacer de comer, lavar la ropa. </text>
@@ -6999,9 +7180,9 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Juan: Claro que sí, yo quiero ser como tú cuando sea grande.</text>
       </speak-char>
       <condition />
-      <child nodeindex="9" />
+      <child nodeindex="13" />
     </dialogue-node>
-    <dialogue-node nodeindex="8" editor-x="1982" editor-y="22">
+    <dialogue-node nodeindex="12" editor-x="4244" editor-y="28">
       <speak-char idTarget="c4naparque">
         <resources name="No name" />
         <text>María: Las actividades domésticas deben realizarse entre todos, ya que mantienen una convivencia sana en el hogar. </text>
@@ -7017,6 +7198,11 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Lucy: vamos a casa a limpiar</text>
       </speak-char>
       <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#! Ayuda a Juan y María a limpiar la casa</text>
+      </speak-player>
+      <condition />
       <end-conversation>
         <effect>
           <trigger-scene idTarget="c4mapacasa" x="960" y="1224" transitionTime="1000" transitionType="4" guid="e9c79e51-b62d-42b0-9b91-2d884276b99d" />
@@ -7024,18 +7210,18 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="9" editor-x="2178" editor-y="327">
-      <speak-player>
+    <dialogue-node nodeindex="13" editor-x="3835" editor-y="626">
+      <speak-char idTarget="c4maparque">
         <resources name="No name" />
-        <text>Lucy: Vamos María debemos ir a casa a limpiar</text>
-      </speak-player>
+        <text>Lucy: Vamos María debemos ir a casa a limpiar y preparar la comida</text>
+      </speak-char>
       <condition />
-      <speak-player>
+      <speak-char idTarget="c4naparque">
         <resources name="No name" />
-        <text>María: vamos Juan tu puedes ayudar...</text>
-      </speak-player>
+        <text>María: Mamá creo que juan y papá podrian ayudarnos. </text>
+      </speak-char>
       <condition />
-      <child nodeindex="10" />
+      <child nodeindex="14" />
       <effect>
         <move-npc idTarget="c4maparque" x="850" y="300" guid="8304121c-4121-4627-b7d9-8b4360dc5403" />
         <condition />
@@ -7045,16 +7231,21 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="10" editor-x="2483" editor-y="364">
+    <dialogue-node nodeindex="14" editor-x="4446" editor-y="616">
       <speak-char idTarget="c4noparque">
         <resources name="No name" />
-        <text>Juan: Papá yo tambien vivo en esa casa y creo que debo ayudar a María </text>
+        <text>Juan: Papá yo tambien vivo en esa casa y creo que debo ayudar a María ella estaba muy triste</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4paparque">
         <resources name="No name" />
-        <text>Roberto: Claro hijo, tienes razón.</text>
+        <text>Roberto: Claro hijo, tienes razón vamos a ayudar en casa.</text>
       </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#! Ayuda a Juan y María a limpiar la casa</text>
+      </speak-player>
       <condition />
       <end-conversation>
         <effect>
@@ -7079,6 +7270,29 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
         </effect>
       </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="cv4limpiarCasa">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>#! Ayuda a Juan a limpiar la cocina</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="619" editor-y="25">
+      <speak-char idTarget="c4noCasa">
+        <resources name="No name" />
+        <text>Juan: oh son muchos trastes, pero terminaré pronto.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#! Lleva los trastes sucios al fregadero para lavarlos</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <book id="historia" xNextPage="707" yNextPage="507" xPreviousPage="20" yPreviousPage="507">
