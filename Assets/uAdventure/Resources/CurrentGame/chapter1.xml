@@ -1886,6 +1886,46 @@
       </talk-to>
     </actions>
   </character>
+  <character id="c4nasala" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: cv4limpiaSala</documentation>
+        <effect>
+          <trigger-conversation idTarget="cv4limpiaSala" guid="c327e633-27b7-44f6-853b-cc95dcacd1dd" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
   <scene id="ControlesJuego" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
@@ -2930,6 +2970,9 @@ No eres buena en ciencias</speak-char>
       <exit rectangular="yes" x="756" y="1113" width="468" height="236" hasInfluenceArea="no" idTarget="c4lacocina" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="5" transitionTime="10" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
+      <exit rectangular="yes" x="608" y="536" width="580" height="541" hasInfluenceArea="no" idTarget="c4sala" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
     </exits>
   </scene>
   <scene id="c4lacocina" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -2943,13 +2986,17 @@ No eres buena en ciencias</speak-char>
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="c4copas-sucias" x="233" y="346" scale="0.6747807" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4copas" x="270" y="346" scale="0.6747807" glow="no" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="c4platos" x="668" y="261" scale="0.4043634" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4tazas" x="412" y="365" scale="0.5492455" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4vasos" x="575" y="347" scale="0.5497922" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4tarja" x="416" y="271" scale="0.7" glow="yes" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="c4noCasa" x="802" y="326" scale="0.3586387" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="c4noCasa" x="802" y="326" scale="0.3586387" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="fregadero" rectangular="yes" x="345" y="225" width="146" height="53" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="fregadero" rectangular="yes" x="364" y="179" width="99" height="91" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -2960,6 +3007,26 @@ No eres buena en ciencias</speak-char>
         </description>
       </active-area>
     </active-areas>
+  </scene>
+  <scene id="c4sala" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/saladoslimpia.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="c4botebasura" x="524" y="326" scale="0.7633139" glow="no" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="c4bolsapapas" x="224" y="357" scale="0.4310166" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4lata" x="624" y="359" scale="0.3899693" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4hojapapel" x="326" y="280" scale="0.3899693" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4platano" x="139" y="278" scale="0.3899693" glow="no" layer="2" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4nasala" x="205" y="273" scale="0.2739332" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
   </scene>
   <scene id="creditosCap1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3913,7 +3980,7 @@ Gracias
       </detailed>
     </description>
   </object>
-  <object id="c4copas-sucias" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4copas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="sucio">
       <condition>
         <inactive flag="c4copasflag" />
@@ -3944,9 +4011,172 @@ Gracias
       </drag-to>
     </actions>
   </object>
-  <object id="c4copas-limpias" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4platos" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="sucio">
+      <condition>
+        <inactive flag="c4platosflag" />
+      </condition>
+      <asset type="image" uri="assets/image/010-bochas.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <resources name="limpio">
+      <asset type="image" uri="assets/image/014-platos-2.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <drag-to idTarget="fregadero" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="c4platosflag" guid="12801c20-2531-4df7-bd93-ec1d4b5903e8" />
+          <condition />
+          <trigger-scene idTarget="c4lacocina" x="512" y="307" transitionTime="0" transitionType="0" guid="5eb22774-6403-4b92-a043-d55766594c6f" />
+          <condition />
+        </effect>
+      </drag-to>
+    </actions>
+  </object>
+  <object id="c4tazas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="sucio">
+      <condition>
+        <inactive flag="c4tazasflag" />
+      </condition>
+      <asset type="image" uri="assets/image/005-taza.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <resources name="limpio">
+      <asset type="image" uri="assets/image/007-taza-1.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <drag-to idTarget="fregadero" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="c4tazasflag" guid="0cdba6ec-6be5-4ba4-a9d5-e11f49e4e927" />
+          <condition />
+          <trigger-scene idTarget="c4lacocina" x="512" y="307" transitionTime="0" transitionType="0" guid="75a77dea-160a-4af3-b81c-08aa67688745" />
+          <condition />
+        </effect>
+      </drag-to>
+    </actions>
+  </object>
+  <object id="c4vasos" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="sucio">
+      <condition>
+        <inactive flag="c4vasosflag" />
+      </condition>
+      <asset type="image" uri="assets/image/vidrio.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <resources name="limpio">
+      <asset type="image" uri="assets/image/vaso-de-plastico.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <drag-to idTarget="fregadero" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="c4vasosflag" guid="606bc7a2-b598-47e1-ad39-cf92136a893b" />
+          <condition />
+          <trigger-scene idTarget="c4lacocina" x="512" y="307" transitionTime="0" transitionType="0" guid="ee0d8c00-2b4e-485a-8594-20f44aae6637" />
+          <condition />
+        </effect>
+      </drag-to>
+    </actions>
+  </object>
+  <object id="c4tarja" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
-      <asset type="image" uri="assets/image/004-vidrio-1.png" />
+      <asset type="image" uri="assets/image/fregadero.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="c4platano" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/024-platano.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="c4hojapapel" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/034-archivo.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="c4lata" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/026-lata-de-cerveza.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="c4bolsapapas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/029-bocadillo.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="c4botebasura" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/028-bote-de-basura-1.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
@@ -7290,6 +7520,16 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <speak-player>
         <resources name="No name" />
         <text>#! Lleva los trastes sucios al fregadero para lavarlos</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="cv4limpiaSala">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Ayuda a María a limpiar la sala de estar</text>
       </speak-player>
       <condition />
       <end-conversation />
