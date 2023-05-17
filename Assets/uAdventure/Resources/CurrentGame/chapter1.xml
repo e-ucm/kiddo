@@ -3018,14 +3018,15 @@ No eres buena en ciencias</speak-char>
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="c4botebasura" x="524" y="326" scale="0.7633139" glow="no" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="c4bolsapapas" x="224" y="357" scale="0.4310166" glow="no" layer="4" hasInfluenceArea="no" />
-      <object-ref idTarget="c4lata" x="624" y="359" scale="0.3899693" glow="no" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="c4hojapapel" x="326" y="280" scale="0.3899693" glow="no" layer="1" hasInfluenceArea="no" />
-      <object-ref idTarget="c4platano" x="139" y="278" scale="0.3899693" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4botebasura" x="524" y="326" scale="0.7633139" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4bolsapapas" x="224" y="357" scale="0.4310166" glow="no" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="c4lata" x="624" y="359" scale="0.3899693" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4hojapapel" x="348" y="287" scale="0.3899693" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4platano" x="138" y="278" scale="0.3899693" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4botella" x="601" y="242" scale="0.4098773" glow="no" layer="3" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="c4nasala" x="205" y="273" scale="0.2739332" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="c4nasala" x="244" y="277" scale="0.2739332" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="creditosCap1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3033,6 +3034,26 @@ No eres buena en ciencias</speak-char>
     </documentation>
     <resources name="No name">
       <asset type="background" uri="assets/special/EmptyBackground.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="c4habjuan" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion juan opt.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="c4habMaria" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/hab maria opt.png" />
     </resources>
     <name>
     </name>
@@ -4131,6 +4152,16 @@ Gracias
       <detailed>
       </detailed>
     </description>
+    <actions>
+      <drag-to idTarget="c4botebasura" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4platano" guid="7dd6bfc0-1dc6-4583-8f9c-538d60496467" />
+          <condition />
+          <speak-char idTarget="c4nasala" guid="4e12a07b-a4d9-4f3f-8611-1ac6a25bea89">Entre todos podemos terminar mmás rápido</speak-char>
+          <condition />
+        </effect>
+      </drag-to>
+    </actions>
   </object>
   <object id="c4hojapapel" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
@@ -4145,6 +4176,16 @@ Gracias
       <detailed>
       </detailed>
     </description>
+    <actions>
+      <drag-to idTarget="c4botebasura" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4hojapapel" guid="e29d1236-5009-4de3-a8f0-cdb7e1820f4e" />
+          <condition />
+          <speak-char idTarget="c4nasala" guid="c92d3764-ef31-478e-889b-a67639d5e5b3">Entre todos podemos terminar mmás rápido</speak-char>
+          <condition />
+        </effect>
+      </drag-to>
+    </actions>
   </object>
   <object id="c4lata" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
@@ -4159,6 +4200,14 @@ Gracias
       <detailed>
       </detailed>
     </description>
+    <actions>
+      <drag-to idTarget="c4botebasura" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4lata" guid="b6b7428c-0cc8-43a4-94b1-edeb7c75f0da" />
+          <condition />
+        </effect>
+      </drag-to>
+    </actions>
   </object>
   <object id="c4bolsapapas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
@@ -4173,6 +4222,16 @@ Gracias
       <detailed>
       </detailed>
     </description>
+    <actions>
+      <drag-to idTarget="c4botebasura" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4bolsapapas" guid="40f67aec-a5ad-4c56-9fd6-bad667a69c5c" />
+          <condition />
+          <speak-char idTarget="c4nasala" guid="9679ef43-4355-40c5-b225-8ffe247d20d9">Entre todos podemos terminar mmás rápido</speak-char>
+          <condition />
+        </effect>
+      </drag-to>
+    </actions>
   </object>
   <object id="c4botebasura" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
@@ -4187,6 +4246,28 @@ Gracias
       <detailed>
       </detailed>
     </description>
+  </object>
+  <object id="c4botella" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/reciclar-botella.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <drag-to idTarget="c4botebasura" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4botella" guid="077d3f4f-6996-4f84-ab88-ac5b1cb03602" />
+          <condition />
+        </effect>
+      </drag-to>
+    </actions>
   </object>
   <graph-conversation id="cintro">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
