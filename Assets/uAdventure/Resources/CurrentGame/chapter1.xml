@@ -1612,6 +1612,37 @@
       </talk-to>
     </actions>
   </character>
+  <character id="c3Jess" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/c3JessNormal.eaa.xml" />
+      <asset type="standright" uri="assets/animation/c3JessNormal.eaa.xml" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
   <character id="c4nacocina" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
@@ -1816,37 +1847,6 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c3Jess" behaviour="normal">
-    <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
-      <asset type="standdown" uri="assets/animation/c3JessNormal.eaa.xml" />
-      <asset type="standright" uri="assets/animation/c3JessNormal.eaa.xml" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
-      <asset type="speakup" uri="assets/special/EmptyAnimation" />
-      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
-      <asset type="speakright" uri="assets/special/EmptyAnimation" />
-      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
-      <asset type="useright" uri="assets/special/EmptyAnimation" />
-      <asset type="useleft" uri="assets/special/EmptyAnimation" />
-      <asset type="walkup" uri="assets/special/EmptyAnimation" />
-      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
-      <asset type="walkright" uri="assets/special/EmptyAnimation" />
-      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
-      <bordercolor color="#000000" />
-    </textcolor>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-    <voice name="" synthesizeAlways="no" />
-  </character>
   <character id="c4noCasa" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
@@ -1881,6 +1881,115 @@
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <effect>
           <trigger-conversation idTarget="cv4limpiarCasa" guid="62b1b24a-a6ae-4e08-9610-99845254d7ce" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="c4nosala1" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="cv4lasalauno" guid="a66af262-7510-4b7c-8f1f-42ed926e1e2d" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="c4nasala1" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/natriste.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="c4nopesadilla" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="cv4p1pesadilla" guid="7635860d-6d71-4f89-8709-705a5a976851" />
           <condition />
         </effect>
       </talk-to>
@@ -1921,6 +2030,224 @@
         <documentation>Created with target conversation: cv4limpiaSala</documentation>
         <effect>
           <trigger-conversation idTarget="cv4limpiaSala" guid="c327e633-27b7-44f6-853b-cc95dcacd1dd" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="c4nohabitacion" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="cv4nohabitacion" guid="628fa7d9-5197-4a3f-a2de-ecd0927f7acc" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="c4nahabitacion" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/nanormal.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="cv4nahabitacion" guid="2ddf88a8-fde9-4440-9adb-7b5e6abf45cb" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="c4mamapa" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/mafuria.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/mapensando.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="c4nomapahome" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="cv4mapahome" guid="8a433233-a9a5-4e8f-b67c-a8723dadf0c7" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="c4namapahome" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/normalita.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="c4montruo1" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/SportinoFinal.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="cv4p1pesadilla" guid="04654dd2-267c-4df1-a155-3c0a0832c73f" />
           <condition />
         </effect>
       </talk-to>
@@ -2938,7 +3265,7 @@ No eres buena en ciencias</speak-char>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="286" y="347" width="100" height="100" hasInfluenceArea="no" idTarget="c4lacocina" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="286" y="349" width="100" height="100" hasInfluenceArea="no" idTarget="c4sala1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="validaMapac4" />
@@ -2956,24 +3283,88 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="noPueblo" x="148" y="370" scale="0.5" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="c4mapacasa" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c4sala1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/saladoslimpia.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="c4botebasura" x="524" y="326" scale="0.7633139" glow="no" layer="8" hasInfluenceArea="no" />
+      <object-ref idTarget="c4bolsapapas" x="225" y="357" scale="0.4310166" glow="no" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="c4lata" x="624" y="359" scale="0.3899693" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4hojapapel" x="521" y="132" scale="0.3899693" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4platano" x="138" y="278" scale="0.3899693" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4botella" x="601" y="242" scale="0.4098773" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="113" y="90" scale="0.3893066" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4nosala1" x="326" y="279" scale="0.2877687" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="c4nasala1" x="247" y="280" scale="0.2760754" orientation="0" glow="no" layer="5" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="c4p1pesadilla" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/FONDO MONSTRUOS-1-opt.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <characters>
+      <character-ref idTarget="c4montruo1" x="164" y="369" scale="0.5388556" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="c4MapaCasaDos" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
       <asset type="background" uri="assets/background/mapacasa.png" />
-      <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="756" y="1113" width="468" height="236" hasInfluenceArea="no" idTarget="c4lacocina" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="5" transitionTime="10" not-effects="no">
+      <exit rectangular="yes" x="120" y="532" width="418" height="446" hasInfluenceArea="no" idTarget="c4habjuan" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
-      <exit rectangular="yes" x="608" y="536" width="580" height="541" hasInfluenceArea="no" idTarget="c4sala" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="1239" y="514" width="414" height="440" hasInfluenceArea="no" idTarget="c4habMaria" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+      <exit rectangular="yes" x="611" y="546" width="562" height="514" hasInfluenceArea="no" idTarget="c4sala" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+      <exit rectangular="yes" x="796" y="1127" width="388" height="226" hasInfluenceArea="no" idTarget="c4lacocina" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
+    <objects>
+      <object-ref idTarget="c4lavadora" x="506" y="1456" scale="2.951157" glow="no" layer="2" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4nomapahome" x="306" y="464" scale="1" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c4namapahome" x="1434" y="474" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+    <active-areas>
+      <active-area id="tareasdomesticas" rectangular="yes" x="118" y="508" width="1538" height="1024" hasInfluenceArea="no" behaviour="normal">
+        <condition>
+          <inactive flag="validamapahome" />
+        </condition>
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+      </active-area>
+    </active-areas>
   </scene>
   <scene id="c4lacocina" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2986,14 +3377,15 @@ No eres buena en ciencias</speak-char>
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="c4copas" x="270" y="346" scale="0.6747807" glow="no" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="c4platos" x="668" y="261" scale="0.4043634" glow="no" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="c4tazas" x="412" y="365" scale="0.5492455" glow="no" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="c4vasos" x="575" y="347" scale="0.5497922" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4copas" x="270" y="346" scale="0.6747807" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4platos" x="668" y="261" scale="0.4043634" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4tazas" x="412" y="365" scale="0.5492455" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4vasos" x="575" y="347" scale="0.5497922" glow="no" layer="2" hasInfluenceArea="no" />
       <object-ref idTarget="c4tarja" x="416" y="271" scale="0.7" glow="yes" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="177" y="135" scale="0.3706205" glow="no" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="c4noCasa" x="802" y="326" scale="0.3586387" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="c4noCasa" x="802" y="326" scale="0.3586387" orientation="2" glow="no" layer="5" hasInfluenceArea="no" />
     </characters>
     <active-areas>
       <active-area id="fregadero" rectangular="yes" x="364" y="179" width="99" height="91" hasInfluenceArea="no" behaviour="normal">
@@ -3018,26 +3410,17 @@ No eres buena en ciencias</speak-char>
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="c4botebasura" x="524" y="326" scale="0.7633139" glow="no" layer="6" hasInfluenceArea="no" />
-      <object-ref idTarget="c4bolsapapas" x="224" y="357" scale="0.4310166" glow="no" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="c4lata" x="624" y="359" scale="0.3899693" glow="no" layer="4" hasInfluenceArea="no" />
-      <object-ref idTarget="c4hojapapel" x="348" y="287" scale="0.3899693" glow="no" layer="1" hasInfluenceArea="no" />
-      <object-ref idTarget="c4platano" x="138" y="278" scale="0.3899693" glow="no" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="c4botella" x="601" y="242" scale="0.4098773" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4botebasura" x="524" y="326" scale="0.7633139" glow="no" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="c4bolsapapas" x="225" y="357" scale="0.4310166" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4lata" x="624" y="359" scale="0.3899693" glow="no" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="c4hojapapel" x="348" y="287" scale="0.3899693" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4platano" x="138" y="278" scale="0.3899693" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4botella" x="601" y="242" scale="0.4098773" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="113" y="90" scale="0.3893066" glow="no" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="c4nasala" x="244" y="277" scale="0.2739332" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
-  </scene>
-  <scene id="creditosCap1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
   </scene>
   <scene id="c4habjuan" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3048,12 +3431,40 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="c4ropaJ" x="696" y="142" scale="0.53464" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="c4calcetas" x="303" y="232" scale="0.3606828" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4playera" x="161" y="200" scale="0.4705485" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="227" y="122" scale="0.3757482" glow="no" layer="4" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4nohabitacion" x="410" y="247" scale="0.3094963" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
+    </characters>
   </scene>
   <scene id="c4habMaria" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
       <asset type="background" uri="assets/background/hab maria opt.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="c4ropaM" x="617" y="223" scale="0.4202371" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="c4calcetasM" x="166" y="334" scale="0.442893" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4playeraM" x="542" y="292" scale="0.4431922" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="226" y="120" scale="0.4383395" glow="no" layer="2" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4nahabitacion" x="414" y="259" scale="0.249084" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="creditosCap1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/special/EmptyBackground.png" />
     </resources>
     <name>
     </name>
@@ -4157,8 +4568,14 @@ Gracias
         <effect>
           <remove-element idTarget="c4platano" guid="7dd6bfc0-1dc6-4583-8f9c-538d60496467" />
           <condition />
-          <speak-char idTarget="c4nasala" guid="4e12a07b-a4d9-4f3f-8611-1ac6a25bea89">Entre todos podemos terminar mmás rápido</speak-char>
+          <speak-char idTarget="c4nasala" guid="4e12a07b-a4d9-4f3f-8611-1ac6a25bea89">Entre todos podemos terminar más rápido</speak-char>
           <condition />
+          <increment var="MListaBasura" value="1" guid="c85a8cd9-605b-4e47-af67-c555daa2d82a" />
+          <condition />
+          <speak-player guid="c424206e-469c-459d-a8f1-b4694782ffc1">Muy bien he terminado de limpiar la sala.</speak-player>
+          <condition>
+            <equals var="MListaBasura" value="5" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
@@ -4183,6 +4600,12 @@ Gracias
           <condition />
           <speak-char idTarget="c4nasala" guid="c92d3764-ef31-478e-889b-a67639d5e5b3">Entre todos podemos terminar mmás rápido</speak-char>
           <condition />
+          <increment var="MListaBasura" value="1" guid="3bc2e0b3-88a1-404a-8143-7da3295ead5d" />
+          <condition />
+          <speak-player guid="d5625794-4b99-4939-a367-ef51385d6f5d">Muy bien he terminado de limpiar la sala.</speak-player>
+          <condition>
+            <equals var="MListaBasura" value="5" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
@@ -4205,6 +4628,12 @@ Gracias
         <effect>
           <remove-element idTarget="c4lata" guid="b6b7428c-0cc8-43a4-94b1-edeb7c75f0da" />
           <condition />
+          <increment var="MListaBasura" value="1" guid="6bd52d96-b654-4752-9ec7-a984cd3d43e3" />
+          <condition />
+          <speak-player guid="546ac73e-08b0-4c9f-b0e4-7a5ef93daf00">Muy bien he terminado de limpiar la sala.</speak-player>
+          <condition>
+            <equals var="MListaBasura" value="5" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
@@ -4227,8 +4656,14 @@ Gracias
         <effect>
           <remove-element idTarget="c4bolsapapas" guid="40f67aec-a5ad-4c56-9fd6-bad667a69c5c" />
           <condition />
-          <speak-char idTarget="c4nasala" guid="9679ef43-4355-40c5-b225-8ffe247d20d9">Entre todos podemos terminar mmás rápido</speak-char>
+          <speak-char idTarget="c4nasala" guid="9679ef43-4355-40c5-b225-8ffe247d20d9">Entre todos podemos terminar más rápido</speak-char>
           <condition />
+          <increment var="MListaBasura" value="1" guid="451efc62-8253-446b-80b0-415f24a225b4" />
+          <condition />
+          <speak-player guid="76afa6e7-3998-4f37-858a-908ce5a6cda1">Muy bien he terminado de limpiar la sala.</speak-player>
+          <condition>
+            <equals var="MListaBasura" value="5" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
@@ -4265,8 +4700,302 @@ Gracias
         <effect>
           <remove-element idTarget="c4botella" guid="077d3f4f-6996-4f84-ab88-ac5b1cb03602" />
           <condition />
+          <increment var="MListaBasura" value="1" guid="137d6073-d828-4717-9b10-1fa01d39f7b4" />
+          <condition />
+          <speak-player guid="dc79e878-12a6-42ce-aaf4-e5413a7d9c78">Muy bien he terminado de limpiar la sala.</speak-player>
+          <condition>
+            <equals var="MListaBasura" value="5" />
+          </condition>
         </effect>
       </drag-to>
+    </actions>
+  </object>
+  <object id="c4ropaJ" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/016-ropa.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4ropaJ" guid="e6e9e91b-2cd9-4dc4-947b-7dccbd59ca6a" />
+          <condition />
+          <generate-object idTarget="c4ropaJ" guid="365e14e3-104d-465c-aad6-623f883d17c3" />
+          <condition />
+          <increment var="JListaRopa" value="1" guid="ed6b0bba-8b09-4d30-aa52-8d962135773d" />
+          <condition />
+          <speak-char idTarget="c4nohabitacion" guid="3cae6ad2-bdac-4d1b-9be5-5b990c32114e">Ahora hay que llevar la ropa sucia a la lavadora</speak-char>
+          <condition>
+            <equals var="JListaRopa" value="3" />
+          </condition>
+        </effect>
+      </grab>
+      <use-with idTarget="c4lavadora" needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <consume-object idTarget="c4ropaJ" guid="73bcacc6-2417-4d5a-881b-a046c3bcb10a" />
+          <condition />
+          <increment var="JListaRopa" value="1" guid="f73e9785-e453-4420-bd14-0f07a8f8bfe7" />
+          <condition />
+          <speak-player guid="4d1fd470-794c-4f69-acc8-bc02b724cced">Genial, he terminado de lavar la ropa</speak-player>
+          <condition>
+            <equals var="JListaRopa" value="6" />
+          </condition>
+        </effect>
+      </use-with>
+    </actions>
+  </object>
+  <object id="c4ropaM" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/dress.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4ropaM" guid="3fa4fc1f-cb64-4e36-9e3d-730a7cba7f7f" />
+          <condition />
+          <generate-object idTarget="c4ropaM" guid="c0660243-1eed-4336-b6b0-1ea0b6759de4" />
+          <condition />
+          <increment var="MListaRopa" value="1" guid="f0e0ff40-832e-4c60-8c6c-31f3595e249c" />
+          <condition />
+          <speak-char idTarget="c4nahabitacion" guid="d93e9302-47fa-4a71-b667-f17b771d75a2">Ahora hay que llevar la ropa sucia a la lavadora</speak-char>
+          <condition>
+            <equals var="MListaRopa" value="3" />
+          </condition>
+        </effect>
+      </grab>
+      <use-with idTarget="c4lavadora" needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <consume-object idTarget="c4ropaM" guid="2a832226-e850-49ed-b5d9-412485a961f9" />
+          <condition />
+          <increment var="MListaRopa" value="1" guid="e2e91732-6f94-4c7d-9e9a-c3203dc14049" />
+          <condition />
+          <speak-player guid="dc25edca-956a-4cb8-b5c3-3747310bc91f">Genial, he terminado de lavar la ropa</speak-player>
+          <condition>
+            <equals var="MListaRopa" value="6" />
+          </condition>
+        </effect>
+      </use-with>
+    </actions>
+  </object>
+  <object id="c4calcetas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/017-calcetines.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4calcetas" guid="66ab7bda-aa8f-43f1-92a6-88eae29f97c3" />
+          <condition />
+          <generate-object idTarget="c4calcetas" guid="92a05974-310d-452b-9feb-ca2fb428b692" />
+          <condition />
+          <increment var="JListaRopa" value="1" guid="11a03051-1e26-467c-85ff-e60b6b7f82f0" />
+          <condition />
+          <speak-char idTarget="c4nohabitacion" guid="a22acde6-f6c8-4c70-bb78-010a00b735e3">Ahora hay que llevar la ropa sucia a la lavadora</speak-char>
+          <condition>
+            <equals var="JListaRopa" value="3" />
+          </condition>
+        </effect>
+      </grab>
+      <use-with idTarget="c4lavadora" needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <consume-object idTarget="c4calcetas" guid="14dcacd7-c26e-4301-9ad0-2d7d14304db3" />
+          <condition />
+          <increment var="JListaRopa" value="1" guid="f82d6af2-00f1-40d9-b705-6260f603ee29" />
+          <condition />
+          <speak-player guid="84c4f9ca-3396-47c3-940b-bdb6458b079a">Genial, he terminado de lavar la ropa</speak-player>
+          <condition>
+            <equals var="JListaRopa" value="6" />
+          </condition>
+        </effect>
+      </use-with>
+    </actions>
+  </object>
+  <object id="c4calcetasM" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/socks.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4calcetasM" guid="24b41592-cec9-4f42-8fe2-b4b8e1e0305e" />
+          <condition />
+          <generate-object idTarget="c4calcetasM" guid="7ebbcc78-1d67-44db-81dc-b752d1073c21" />
+          <condition />
+          <increment var="MListaRopa" value="1" guid="1a47116e-b035-44af-9387-168798140b78" />
+          <condition />
+          <speak-char idTarget="c4nahabitacion" guid="870fd9e7-414a-4aa2-8b60-d500d9345959">Ahora hay que llevar la ropa sucia a la lavadora</speak-char>
+          <condition>
+            <equals var="MListaRopa" value="3" />
+          </condition>
+        </effect>
+      </grab>
+      <use-with idTarget="c4lavadora" needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <consume-object idTarget="c4calcetasM" guid="627bef5b-f0f1-4261-b53d-773a06652c1c" />
+          <condition />
+          <increment var="MListaRopa" value="1" guid="25192901-e690-4190-8c9a-d20d77b55afb" />
+          <condition />
+          <speak-player guid="05cc825b-a7b7-43cb-9fd9-23dafd567aeb">Genial, he terminado de lavar la ropa</speak-player>
+          <condition>
+            <equals var="MListaRopa" value="6" />
+          </condition>
+        </effect>
+      </use-with>
+    </actions>
+  </object>
+  <object id="c4playera" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/018-ropa-sucia.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4playera" guid="158e7200-408b-47af-9c19-076ef9c79049" />
+          <condition />
+          <generate-object idTarget="c4playera" guid="98a4cbaf-8525-4f2c-8887-e54d28784a16" />
+          <condition />
+          <increment var="JListaRopa" value="1" guid="1a76dc3e-d038-4519-9ad5-7673b19f7b31" />
+          <condition />
+          <speak-char idTarget="c4nohabitacion" guid="09e5616d-fffc-4458-9b37-b50f83e0edc0">Ahora hay que llevar la ropa sucia a la lavadora</speak-char>
+          <condition>
+            <equals var="JListaRopa" value="3" />
+          </condition>
+        </effect>
+      </grab>
+      <use-with idTarget="c4lavadora" needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <consume-object idTarget="c4playera" guid="b7f3c981-47b4-44e9-aff2-4462a9cfe97f" />
+          <condition />
+          <increment var="JListaRopa" value="1" guid="403c6d03-4877-4507-bbff-2ca1fd7c5f23" />
+          <condition />
+          <speak-player guid="7573280b-43da-4b54-aa41-e279da55661d">Genial, he terminado de lavar la ropa</speak-player>
+          <condition>
+            <equals var="JListaRopa" value="6" />
+          </condition>
+        </effect>
+      </use-with>
+    </actions>
+  </object>
+  <object id="c4playeraM" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/dirty-clothes.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4playeraM" guid="3ea68a4a-ee05-44ce-966d-19fb7dd5a834" />
+          <condition />
+          <generate-object idTarget="c4playeraM" guid="91001e3d-6749-489e-8ded-25a3a33a46c9" />
+          <condition />
+          <increment var="MListaRopa" value="1" guid="5bab1acf-465f-49b4-9a60-c5a0ee3985e8" />
+          <condition />
+          <speak-char idTarget="c4nahabitacion" guid="2f9723f3-eee9-4671-955b-f190c61b75e4">Ahora hay que llevar la ropa sucia a la lavadora</speak-char>
+          <condition>
+            <equals var="MListaRopa" value="3" />
+          </condition>
+        </effect>
+      </grab>
+      <use-with idTarget="c4lavadora" needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <consume-object idTarget="c4playeraM" guid="6b924fce-4aae-4e8d-81a3-1eb744877390" />
+          <condition />
+          <increment var="MListaRopa" value="1" guid="1098718b-ef37-4ecc-a058-5b2801e5ba87" />
+          <condition />
+          <speak-player guid="33b7a47b-3b57-44b4-820e-aeaf59966307">Genial, he terminado de lavar la ropa</speak-player>
+          <condition>
+            <equals var="MListaRopa" value="6" />
+          </condition>
+        </effect>
+      </use-with>
+    </actions>
+  </object>
+  <object id="c4lavadora" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/machine.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="c4minimapahome" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/mapacasaopt2.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="0" transitionType="0" guid="f7836bf0-caf1-4d11-af44-268f6ee5db16" />
+          <condition />
+        </effect>
+      </examine>
     </actions>
   </object>
   <graph-conversation id="cintro">
@@ -7514,12 +8243,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>#! Ayuda a Juan y María a limpiar la casa</text>
       </speak-player>
       <condition />
-      <end-conversation>
-        <effect>
-          <trigger-scene idTarget="c4mapacasa" x="960" y="1224" transitionTime="1000" transitionType="4" guid="e9c79e51-b62d-42b0-9b91-2d884276b99d" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <end-conversation />
     </dialogue-node>
     <dialogue-node nodeindex="13" editor-x="3835" editor-y="626">
       <speak-char idTarget="c4maparque">
@@ -7614,6 +8338,235 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </speak-player>
       <condition />
       <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="cv4nohabitacion">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>#! Ayuda a Juan a lavar su ropa.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="677" editor-y="50">
+      <speak-char idTarget="c4nohabitacion">
+        <resources name="No name" />
+        <text>Juan: Soy un niño grande y es hora e aprender a lavar mi ropa</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="cv4nahabitacion">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>#! Ayuda a Juan a lavar su ropa.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="285" editor-y="50">
+      <speak-char idTarget="c4nahabitacion">
+        <resources name="No name" />
+        <text>María: Juan y yo tenemos las mismas tareas y las mismas responsabilidades ayudar en casa es una de ellas.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="cv4mapahome">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Es hora de ayudar con la limpieza de la casa.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>María limpiará la sala y su habitación, Juan limpiará la cocina y su habitación</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#! Ayuda a los gemelos a limpiar la casa</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <activate flag="validamapahome" guid="fd0b8e2d-f65d-4674-b48c-b4f534fa1f9e" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="cv4lasalauno">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="c4nasala1">
+        <resources name="No name" />
+        <text>María: Ay... tengo que limpiar la casa yo sola</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4nosala1">
+        <resources name="No name" />
+        <text>Juan: Ay ... yo tengo mucho sueño..</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4nosala1">
+        <resources name="No name" />
+        <text>¿Será que me iré a dormir?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" question="¿Será que me iré a dormir?" keepShowing="yes" preListening="yes" editor-x="653" editor-y="50" x="653" y="50">
+      <speak-player correct="true">
+        <text>Si</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="1281" editor-y="33">
+      <speak-char idTarget="c4nosala1">
+        <resources name="No name" />
+        <text>Juan: Claro que si, eso de la limpieza es cosa de mujeres</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="c4p1pesadilla" x="400" y="450" transitionTime="0" transitionType="0" guid="d56f05ea-d489-4712-b2ba-ba588443d52d" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="cv4p1pesadilla">
+    <dialogue-node nodeindex="0" editor-x="63" editor-y="47">
+      <speak-player>
+        <resources name="No name" />
+        <text>Pesadilla 4  Las labores domésticas son cosa de mujeres </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="c4montruo1">
+        <resources name="No name" />
+        <text>Hola Juan mi nombre es xcvb </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4montruo1">
+        <resources name="No name" />
+        <text>Soy el monstruo del estereotipo de las labores domésticas</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Soy invencible, JaJaJaJa</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Soy el monstruo más fuerte, Soy tan poderoso que domino el mundo</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>
+        </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Mientras más hombres esten deacuerdo con la frase</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>"Las labores domésticas son cosa de mujeres"</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Yo soy cada día más poderoso</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="867" editor-y="46">
+      <speak-player>
+        <resources name="No name" />
+        <text>JAJAJA</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Finalmente has decidido dormir, te felicito Juan</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Los hombres no hacemos la limpieza, eso es cosa de niñas</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="c4nopesadilla">
+        <resources name="No name" />
+        <text>Juan: ¡oh santo cielo!</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4nopesadilla">
+        <resources name="No name" />
+        <text>Me he quedado dormido, mi hermana debe estar muy triste</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4nopesadilla">
+        <resources name="No name" />
+        <text>Le he fallado, yo quiero ayudara limpiar la casa</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Jajaja, Juan pero eso escosa de niñas, tu eres un niño.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+    </dialogue-node>
+    <dialogue-node nodeindex="2" editor-x="1545" editor-y="46">
+      <speak-player>
+        <resources name="No name" />
+        <text>No ayudes a María. Ella debe saber su lugar</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="c4nopesadilla">
+        <resources name="No name" />
+        <text>Nooo, tu eres un mounstruo malvado, Eres despiadado y egoista</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>JaJaja, no me vencerás </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>A menos que consigas la estampa del gato mágico.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Para ello deberan limpiar toda la casa y tú te has quedado dormido jajajaja</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="c4nosala1">
+        <resources name="No name" />
+        <text>Claro que no eres invensible y te lo demostraré</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="9543ba86-114b-478a-87a7-8962b3f79c5e" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <book id="historia" xNextPage="707" yNextPage="507" xPreviousPage="20" yPreviousPage="507">
