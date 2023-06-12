@@ -2213,6 +2213,17 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="vLugarenCasa" value="4" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="c4cvCasalimpia" guid="34e3d5af-cba2-4954-ae98-49987511850f" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <character id="c4montruo1" behaviour="normal">
     <resources name="No name">
@@ -3283,7 +3294,7 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="noPueblo" x="148" y="370" scale="0.5" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="c4sala1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c4sala1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3320,7 +3331,7 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="c4MapaCasaDos" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c4MapaCasaDos" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3332,26 +3343,43 @@ No eres buena en ciencias</speak-char>
     <exits>
       <exit rectangular="yes" x="120" y="532" width="418" height="446" hasInfluenceArea="no" idTarget="c4habjuan" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
+        <effect>
+          <set-value var="vLugarenCasa" value="3" guid="21cd7cf2-bfaf-4d78-9bd7-6e2590027081" />
+          <condition />
+        </effect>
       </exit>
       <exit rectangular="yes" x="1239" y="514" width="414" height="440" hasInfluenceArea="no" idTarget="c4habMaria" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
+        <effect>
+          <set-value var="vLugarenCasa" value="4" guid="f80fb59c-e8ca-4784-993d-ece1b3c93a7d" />
+          <condition />
+        </effect>
       </exit>
       <exit rectangular="yes" x="611" y="546" width="562" height="514" hasInfluenceArea="no" idTarget="c4sala" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
+        <effect>
+          <set-value var="vLugarenCasa" value="2" guid="d35cf44b-45dc-4d48-8faf-749f27ce33f1" />
+          <condition />
+        </effect>
       </exit>
       <exit rectangular="yes" x="796" y="1127" width="388" height="226" hasInfluenceArea="no" idTarget="c4lacocina" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
+        <effect>
+          <set-value var="vLugarenCasa" value="1" guid="710ba44a-d911-401e-8183-0762e448ff89" />
+          <condition />
+        </effect>
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4lavadora" x="506" y="1456" scale="2.951157" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4lavadora" x="506" y="1456" scale="2.951157" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4ayuda" x="1716" y="259" scale="0.7951251" glow="no" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="c4nomapahome" x="306" y="464" scale="1" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
       <character-ref idTarget="c4namapahome" x="1434" y="474" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="tareasdomesticas" rectangular="yes" x="118" y="508" width="1538" height="1024" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="tareasdomesticas" rectangular="yes" x="124" y="501" width="1538" height="1024" hasInfluenceArea="no" behaviour="normal">
         <condition>
           <inactive flag="validamapahome" />
         </condition>
@@ -3459,6 +3487,16 @@ No eres buena en ciencias</speak-char>
     <characters>
       <character-ref idTarget="c4nahabitacion" x="414" y="259" scale="0.249084" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
+  </scene>
+  <scene id="c4pesadilla2" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/skullblueOPT-neg.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
   </scene>
   <scene id="creditosCap1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -4412,7 +4450,7 @@ Gracias
       </detailed>
     </description>
   </object>
-  <object id="c4copas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4copas" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="sucio">
       <condition>
         <inactive flag="c4copasflag" />
@@ -4439,11 +4477,21 @@ Gracias
           <condition />
           <trigger-scene idTarget="c4lacocina" x="512" y="307" transitionTime="0" transitionType="0" guid="d6fe379f-ec64-43cb-8b6e-502a19da1a5b" />
           <condition />
+          <increment var="vPlatosLista" value="1" guid="dc7e938b-4f6d-477f-9e90-9e0aa738beac" />
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c41d3fa1-b038-457c-bf7f-a5c66246044f">Genial he terminado de lavar los platos</show-text>
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+          </condition>
+          <increment var="vActividadesCasa" value="1" guid="8622fe72-b6f7-44b5-9925-dd7b00a9fee7" />
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
   </object>
-  <object id="c4platos" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4platos" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="sucio">
       <condition>
         <inactive flag="c4platosflag" />
@@ -4470,11 +4518,21 @@ Gracias
           <condition />
           <trigger-scene idTarget="c4lacocina" x="512" y="307" transitionTime="0" transitionType="0" guid="5eb22774-6403-4b92-a043-d55766594c6f" />
           <condition />
+          <increment var="vPlatosLista" value="1" guid="b31c5188-4a68-4f0f-9517-d1af9762b22f" />
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c1de0f64-be8d-44aa-8f64-027a9bb971e5">Genial he terminado de lavar los platos</show-text>
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+          </condition>
+          <increment var="vActividadesCasa" value="1" guid="72fce7d9-2f8e-4b59-9715-2af186dea3e4" />
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
   </object>
-  <object id="c4tazas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4tazas" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="sucio">
       <condition>
         <inactive flag="c4tazasflag" />
@@ -4501,11 +4559,21 @@ Gracias
           <condition />
           <trigger-scene idTarget="c4lacocina" x="512" y="307" transitionTime="0" transitionType="0" guid="75a77dea-160a-4af3-b81c-08aa67688745" />
           <condition />
+          <increment var="vPlatosLista" value="1" guid="d8ee5d2f-e0ce-4336-88f5-ea250b91856d" />
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1e9d466f-ab6c-40e3-b2f1-e20ea294169b">Genial he terminado de lavar los platos</show-text>
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+          </condition>
+          <increment var="vActividadesCasa" value="1" guid="483dacc0-14af-4c9d-9bd2-4e115b2d67ca" />
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
   </object>
-  <object id="c4vasos" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4vasos" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="sucio">
       <condition>
         <inactive flag="c4vasosflag" />
@@ -4532,11 +4600,22 @@ Gracias
           <condition />
           <trigger-scene idTarget="c4lacocina" x="512" y="307" transitionTime="0" transitionType="0" guid="ee0d8c00-2b4e-485a-8594-20f44aae6637" />
           <condition />
+          <increment var="vPlatosLista" value="1" guid="e84dc481-69e8-41b5-8189-f73fe1310d85" />
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="e13dff39-cd3a-4c77-a368-cf81d1a58bb9">
+          </show-text>
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+          </condition>
+          <increment var="vActividadesCasa" value="1" guid="79c81f26-5315-4546-932b-539029e5b5c8" />
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
   </object>
-  <object id="c4tarja" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4tarja" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/fregadero.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -4550,7 +4629,7 @@ Gracias
       </detailed>
     </description>
   </object>
-  <object id="c4platano" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4platano" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/024-platano.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -4576,11 +4655,15 @@ Gracias
           <condition>
             <equals var="MListaBasura" value="5" />
           </condition>
+          <increment var="vActividadesCasa" value="1" guid="b6665232-1796-4548-8381-e97a7f3bbc9c" />
+          <condition>
+            <equals var="MListaBasura" value="5" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
   </object>
-  <object id="c4hojapapel" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4hojapapel" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/034-archivo.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -4606,11 +4689,15 @@ Gracias
           <condition>
             <equals var="MListaBasura" value="5" />
           </condition>
+          <increment var="vActividadesCasa" value="1" guid="0083a3a4-a08c-4f5e-8102-565756f5fddf" />
+          <condition>
+            <equals var="MListaBasura" value="5" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
   </object>
-  <object id="c4lata" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4lata" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/026-lata-de-cerveza.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -4634,11 +4721,15 @@ Gracias
           <condition>
             <equals var="MListaBasura" value="5" />
           </condition>
+          <increment var="vActividadesCasa" value="1" guid="1f56b4aa-dd23-4ac2-8f61-11b1f12b96e0" />
+          <condition>
+            <equals var="MListaBasura" value="5" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
   </object>
-  <object id="c4bolsapapas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4bolsapapas" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/029-bocadillo.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -4664,25 +4755,15 @@ Gracias
           <condition>
             <equals var="MListaBasura" value="5" />
           </condition>
+          <increment var="vActividadesCasa" value="1" guid="6a62400a-55db-49cf-99c1-bfec475cd1b5" />
+          <condition>
+            <equals var="MListaBasura" value="5" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
   </object>
-  <object id="c4botebasura" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
-    <resources name="No name">
-      <asset type="image" uri="assets/image/028-bote-de-basura-1.png" />
-      <asset type="icon" uri="assets/special/EmptyIcon.png" />
-    </resources>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-  </object>
-  <object id="c4botella" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4botella" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/reciclar-botella.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -4706,9 +4787,27 @@ Gracias
           <condition>
             <equals var="MListaBasura" value="5" />
           </condition>
+          <increment var="vActividadesCasa" value="1" guid="211d4c60-202a-40c3-84d5-f7284fc22e30" />
+          <condition>
+            <equals var="MListaBasura" value="5" />
+          </condition>
         </effect>
       </drag-to>
     </actions>
+  </object>
+  <object id="c4botebasura" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/028-bote-de-basura-1.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
   </object>
   <object id="c4ropaJ" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
@@ -4725,6 +4824,7 @@ Gracias
     </description>
     <actions>
       <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Mira en tu mochila</documentation>
         <effect>
           <remove-element idTarget="c4ropaJ" guid="e6e9e91b-2cd9-4dc4-947b-7dccbd59ca6a" />
           <condition />
@@ -4739,6 +4839,7 @@ Gracias
         </effect>
       </grab>
       <use-with idTarget="c4lavadora" needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Coloca la ropa en la lavadora</documentation>
         <effect>
           <consume-object idTarget="c4ropaJ" guid="73bcacc6-2417-4d5a-881b-a046c3bcb10a" />
           <condition />
@@ -4962,7 +5063,7 @@ Gracias
       </use-with>
     </actions>
   </object>
-  <object id="c4lavadora" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4lavadora" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/machine.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -4976,7 +5077,7 @@ Gracias
       </detailed>
     </description>
   </object>
-  <object id="c4minimapahome" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="c4minimapahome" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/mapacasaopt2.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -4992,7 +5093,73 @@ Gracias
     <actions>
       <examine needsGoTo="no" keepDistance="0" not-effects="no">
         <effect>
-          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="0" transitionType="0" guid="f7836bf0-caf1-4d11-af44-268f6ee5db16" />
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="69c3b037-cd48-4b19-9aed-6627bbd173c9" />
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+            <equals var="vLugarenCasa" value="1" />
+          </condition>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="aafa2014-9a6e-49cc-8a15-48ab486a86b1" />
+          <condition>
+            <equals var="JListaRopa" value="3" />
+            <equals var="vLugarenCasa" value="3" />
+          </condition>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="bf61c026-3085-487f-88a7-7e30044c3037" />
+          <condition>
+            <equals var="MListaRopa" value="3" />
+            <equals var="vLugarenCasa" value="4" />
+          </condition>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="3640c1fa-d3ae-4946-8caa-102f3cab81d1" />
+          <condition>
+            <equals var="MListaBasura" value="5" />
+            <equals var="vLugarenCasa" value="2" />
+          </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="e6cf3425-347f-44b6-9708-e74291f0e4e7">Aún me faltan cosas por hacer en la habitación</show-text>
+          <condition>
+            <less-than var="JListaRopa" value="3" />
+            <equals var="vLugarenCasa" value="3" />
+          </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="0cc104eb-1172-4d78-bbcb-32915d584980">Aún me faltan cosas por hacer en la habitación</show-text>
+          <condition>
+            <less-than var="MListaRopa" value="3" />
+            <equals var="vLugarenCasa" value="4" />
+          </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="d5189a3e-bdbf-436d-89a7-84e75a072c30">Aún me faltan cosas por hacer en la sala</show-text>
+          <condition>
+            <less-than var="MListaBasura" value="5" />
+            <equals var="vLugarenCasa" value="2" />
+          </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="f9e7a589-d96b-4e98-b2c5-501ec9d35903">Aún me faltan cosas por hacer en la cocina</show-text>
+          <condition>
+            <less-than var="vPlatosLista" value="4" />
+            <equals var="vLugarenCasa" value="1" />
+          </condition>
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="c4ayuda" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/pregunta.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="aa61db2d-cfa3-4f29-a102-e7d4047439a7">Tareas por hacer
+1.- Limpiar la habitación de de Juan
+2.- Limpiar la habitación de María
+3.- Limpiar la sal
+4.- Limpiar la cocina 
+5.- Colocar la ropa de María en la lavadora
+6.- Colocar la ropa de Juan en la lavadora</show-text>
           <condition />
         </effect>
       </examine>
@@ -8376,31 +8543,6 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
-  <graph-conversation id="cv4mapahome">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-player>
-        <resources name="No name" />
-        <text>Es hora de ayudar con la limpieza de la casa.</text>
-      </speak-player>
-      <condition />
-      <speak-player>
-        <resources name="No name" />
-        <text>María limpiará la sala y su habitación, Juan limpiará la cocina y su habitación</text>
-      </speak-player>
-      <condition />
-      <speak-player>
-        <resources name="No name" />
-        <text>#! Ayuda a los gemelos a limpiar la casa</text>
-      </speak-player>
-      <condition />
-      <end-conversation>
-        <effect>
-          <activate flag="validamapahome" guid="fd0b8e2d-f65d-4674-b48c-b4f534fa1f9e" />
-          <condition />
-        </effect>
-      </end-conversation>
-    </dialogue-node>
-  </graph-conversation>
   <graph-conversation id="cv4lasalauno">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="c4nasala1">
@@ -8446,17 +8588,22 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     <dialogue-node nodeindex="0" editor-x="63" editor-y="47">
       <speak-player>
         <resources name="No name" />
-        <text>Pesadilla 4  Las labores domésticas son cosa de mujeres </text>
+        <text>Pesadilla 4  </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Las labores domésticas son cosa de mujeres...</text>
       </speak-player>
       <condition />
       <speak-char idTarget="c4montruo1">
         <resources name="No name" />
-        <text>Hola Juan mi nombre es xcvb </text>
+        <text>Hola Juan mi nombre es Cochinon </text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4montruo1">
         <resources name="No name" />
-        <text>Soy el monstruo del estereotipo de las labores domésticas</text>
+        <text>Soy el monstruo más fuerte, soy el estereotipo de las labores domésticas</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -8466,13 +8613,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Soy el monstruo más fuerte, Soy tan poderoso que domino el mundo</text>
-      </speak-player>
-      <condition />
-      <speak-player>
-        <resources name="No name" />
-        <text>
-        </text>
+        <text>Soy el monstruo más fuerte, el estereotipo más fuerte en el mundo, Soy tan poderoso que domino el mundo</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -8487,7 +8628,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Yo soy cada día más poderoso</text>
+        <text>#! yo seguiré siendo invensible</text>
       </speak-player>
       <condition />
       <child nodeindex="1" />
@@ -8520,7 +8661,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c4nopesadilla">
         <resources name="No name" />
-        <text>Le he fallado, yo quiero ayudara limpiar la casa</text>
+        <text>Le he fallado, yo quiero y debo ayudar a limpiar la casa</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -8558,7 +8699,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <speak-char idTarget="c4nosala1">
         <resources name="No name" />
-        <text>Claro que no eres invensible y te lo demostraré</text>
+        <text>¡No eres invensible y te lo demostraré!</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -8567,6 +8708,51 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
         </effect>
       </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="cv4mapahome">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Es hora de ayudar con la limpieza de la casa.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#! Ayuda a los gemelos a limpiar la casa</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#! María limpiará la sala y su habitación, Juan limpiará la cocina y su habitación</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <activate flag="validamapahome" guid="fd0b8e2d-f65d-4674-b48c-b4f534fa1f9e" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="c4cvCasalimpia">
+    <dialogue-node nodeindex="0" editor-x="646" editor-y="31">
+      <speak-char idTarget="c4namapahome">
+        <resources name="No name" />
+        <text>Hemos reminado de limpiar la casa</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4nomapahome">
+        <resources name="No name" />
+        <text>El trabajo en euipo es mucho mejor</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4namapahome">
+        <resources name="No name" />
+        <text>Mamá y papá estarán muy orgullosos de nosotros</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <book id="historia" xNextPage="707" yNextPage="507" xPreviousPage="20" yPreviousPage="507">
