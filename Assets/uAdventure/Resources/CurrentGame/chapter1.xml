@@ -1989,8 +1989,10 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <effect>
-          <trigger-conversation idTarget="cv4p1pesadilla" guid="7635860d-6d71-4f89-8709-705a5a976851" />
-          <condition />
+          <trigger-conversation idTarget="cv4Pesadilla2" guid="e6791fed-2e71-4e99-a604-a8639da063ba" />
+          <condition>
+            <equals var="vpesadillac4" value="2" />
+          </condition>
         </effect>
       </talk-to>
     </actions>
@@ -2215,22 +2217,24 @@
     <voice name="" synthesizeAlways="no" />
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <condition>
-          <equals var="vLugarenCasa" value="4" />
-        </condition>
         <effect>
           <trigger-conversation idTarget="c4cvCasalimpia" guid="34e3d5af-cba2-4954-ae98-49987511850f" />
-          <condition />
+          <condition>
+            <equals var="MListaRopa" value="6" />
+            <equals var="JListaRopa" value="6" />
+            <equals var="MListaBasura" value="5" />
+            <equals var="vPlatosLista" value="4" />
+          </condition>
         </effect>
       </talk-to>
     </actions>
   </character>
   <character id="c4montruo1" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
-      <asset type="standdown" uri="assets/animation/SportinoFinal.eaa.xml" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/c4apestosinanimate.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/c4Apestosin.eaa.xml" />
+      <asset type="standright" uri="assets/animation/c4apestosinanimate.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/c4apestosinanimate.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -2259,7 +2263,9 @@
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <effect>
           <trigger-conversation idTarget="cv4p1pesadilla" guid="04654dd2-267c-4df1-a155-3c0a0832c73f" />
-          <condition />
+          <condition>
+            <equals var="vpesadillac4" value="1" />
+          </condition>
         </effect>
       </talk-to>
     </actions>
@@ -3294,7 +3300,7 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="noPueblo" x="148" y="370" scale="0.5" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="c4sala1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c4sala1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3331,7 +3337,7 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="c4MapaCasaDos" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c4MapaCasaDos" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3488,16 +3494,6 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="c4nahabitacion" x="414" y="259" scale="0.249084" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="c4pesadilla2" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/background/skullblueOPT-neg.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
   <scene id="creditosCap1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
@@ -3507,6 +3503,23 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="c4p1pesadilla2" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/FONDO MONSTRUOS-1-opt.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="c4ayuda" x="737" y="105" scale="0.3393672" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4montruo1" x="193" y="447" scale="0.6807835" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+    </characters>
   </scene>
   <videoscene canSkip="no" id="PesentacionKidoo1" start="no" idTarget="introvideo" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
@@ -5078,6 +5091,144 @@ Gracias
     </description>
   </object>
   <object id="c4minimapahome" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/mapacasaopt2.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="69c3b037-cd48-4b19-9aed-6627bbd173c9" />
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+            <equals var="vLugarenCasa" value="1" />
+          </condition>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="aafa2014-9a6e-49cc-8a15-48ab486a86b1" />
+          <condition>
+            <equals var="JListaRopa" value="3" />
+            <equals var="vLugarenCasa" value="3" />
+          </condition>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="bf61c026-3085-487f-88a7-7e30044c3037" />
+          <condition>
+            <equals var="MListaRopa" value="3" />
+            <equals var="vLugarenCasa" value="4" />
+          </condition>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="3640c1fa-d3ae-4946-8caa-102f3cab81d1" />
+          <condition>
+            <equals var="MListaBasura" value="5" />
+            <equals var="vLugarenCasa" value="2" />
+          </condition>
+          <trigger-conversation idTarget="cv4mapahome1" guid="e64fecad-d89a-4e34-b08f-b01f27dae2a8" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="c4cubeta" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/cubo-de-agua.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <remove-element idTarget="c4cubeta" guid="24a23244-7876-49dc-950f-2bb96dd61cb3" />
+          <condition />
+          <generate-object idTarget="c4cubeta" guid="f5464ac1-895b-4174-ba9a-00e501b35095" />
+          <condition />
+        </effect>
+      </grab>
+      <give-to idTarget="c4montruo1" needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <consume-object idTarget="c4cubeta" guid="3fb66fda-3a77-4a88-a97d-d7871fed8962" />
+          <condition />
+          <move-npc idTarget="c4montruo1" x="150" y="365" guid="678db4e4-a157-4ed7-a58d-767d741aa476" />
+          <condition />
+          <play-sound background="no" uri="" guid="2ade35bb-2946-4e52-a666-4c9b385419e3" />
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="2f22f1a1-f741-4522-845e-bd99caa2602c">Noooooooo</show-text>
+          <condition />
+        </effect>
+      </give-to>
+    </actions>
+  </object>
+  <object id="c4espuma" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/burbujas.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="69c3b037-cd48-4b19-9aed-6627bbd173c9" />
+          <condition>
+            <equals var="vPlatosLista" value="4" />
+            <equals var="vLugarenCasa" value="1" />
+          </condition>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="aafa2014-9a6e-49cc-8a15-48ab486a86b1" />
+          <condition>
+            <equals var="JListaRopa" value="3" />
+            <equals var="vLugarenCasa" value="3" />
+          </condition>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="bf61c026-3085-487f-88a7-7e30044c3037" />
+          <condition>
+            <equals var="MListaRopa" value="3" />
+            <equals var="vLugarenCasa" value="4" />
+          </condition>
+          <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="3640c1fa-d3ae-4946-8caa-102f3cab81d1" />
+          <condition>
+            <equals var="MListaBasura" value="5" />
+            <equals var="vLugarenCasa" value="2" />
+          </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="e6cf3425-347f-44b6-9708-e74291f0e4e7">Aún me faltan cosas por hacer en la habitación</show-text>
+          <condition>
+            <less-than var="JListaRopa" value="3" />
+            <equals var="vLugarenCasa" value="3" />
+          </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="0cc104eb-1172-4d78-bbcb-32915d584980">Aún me faltan cosas por hacer en la habitación</show-text>
+          <condition>
+            <less-than var="MListaRopa" value="3" />
+            <equals var="vLugarenCasa" value="4" />
+          </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="d5189a3e-bdbf-436d-89a7-84e75a072c30">Aún me faltan cosas por hacer en la sala</show-text>
+          <condition>
+            <less-than var="MListaBasura" value="5" />
+            <equals var="vLugarenCasa" value="2" />
+          </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="f9e7a589-d96b-4e98-b2c5-501ec9d35903">Aún me faltan cosas por hacer en la cocina</show-text>
+          <condition>
+            <less-than var="vPlatosLista" value="4" />
+            <equals var="vLugarenCasa" value="1" />
+          </condition>
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="c4minimapahome3" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/mapacasaopt2.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -8578,7 +8729,9 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="c4p1pesadilla" x="400" y="450" transitionTime="0" transitionType="0" guid="d56f05ea-d489-4712-b2ba-ba588443d52d" />
+          <set-value var="vpesadillac4" value="1" guid="61261ff5-925d-4d64-b313-ca8c05857ea3" />
+          <condition />
+          <trigger-scene idTarget="c4p1pesadilla" x="400" y="380" transitionTime="200" transitionType="5" guid="ff13b5fe-247f-4e2d-aca2-43613ee430b7" />
           <condition />
         </effect>
       </end-conversation>
@@ -8727,12 +8880,79 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>#! María limpiará la sala y su habitación, Juan limpiará la cocina y su habitación</text>
       </speak-player>
       <condition />
-      <end-conversation>
-        <effect>
-          <activate flag="validamapahome" guid="fd0b8e2d-f65d-4674-b48c-b4f534fa1f9e" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <child nodeindex="1" />
+      <effect>
+        <activate flag="validamapahome" guid="fd0b8e2d-f65d-4674-b48c-b4f534fa1f9e" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="699" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Aún me faltan cosas por hacer en la cocina</text>
+      </speak-player>
+      <condition>
+        <equals var="IdVar" value="1" />
+      </condition>
+      <speak-player>
+        <resources name="No name" />
+        <text>Aún me faltan cosas por hacer en la sala</text>
+      </speak-player>
+      <condition>
+        <equals var="IdVar" value="2" />
+      </condition>
+      <speak-player>
+        <resources name="No name" />
+        <text>Aún me faltan cosas por hacer en la habitación de Jaun</text>
+      </speak-player>
+      <condition>
+        <equals var="IdVar" value="3" />
+      </condition>
+      <speak-player>
+        <resources name="No name" />
+        <text>Aún me faltan cosas por hacer en la habitación de María</text>
+      </speak-player>
+      <condition>
+        <equals var="IdVar" value="4" />
+      </condition>
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="cv4mapahome1">
+    <dialogue-node nodeindex="0" editor-x="138" editor-y="30">
+      <speak-player>
+        <resources name="No name" />
+        <text>Aún me faltan cosas por hacer en la sala</text>
+      </speak-player>
+      <condition>
+        <equals var="vLugarenCasa" value="2" />
+        <less-than var="MListaBasura" value="5" />
+      </condition>
+      <speak-player>
+        <resources name="No name" />
+        <text>Aún me faltan cosas por hacer en la cocina</text>
+      </speak-player>
+      <condition>
+        <equals var="vLugarenCasa" value="1" />
+        <less-than var="vPlatosLista" value="4" />
+      </condition>
+      <speak-player>
+        <resources name="No name" />
+        <text>Aún me faltan cosas por hacer en la habitación de Juan</text>
+      </speak-player>
+      <condition>
+        <equals var="vLugarenCasa" value="3" />
+        <less-than var="JListaRopa" value="3" />
+      </condition>
+      <speak-player>
+        <resources name="No name" />
+        <text>Aún me faltan cosas por hacer en la habitación de María</text>
+      </speak-player>
+      <condition>
+        <equals var="vLugarenCasa" value="4" />
+        <less-than var="MListaRopa" value="3" />
+      </condition>
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="c4cvCasalimpia">
@@ -8751,6 +8971,108 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name" />
         <text>Mamá y papá estarán muy orgullosos de nosotros</text>
       </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <generate-object idTarget="c4cubeta" guid="8212bab5-0340-4021-8ec3-003578c62d34" />
+          <condition />
+          <set-value var="vpesadillac4" value="2" guid="d3537fc5-b7ef-49b5-98e1-e0471b22e7da" />
+          <condition />
+          <trigger-scene idTarget="c4p1pesadilla2" x="400" y="380" transitionTime="200" transitionType="5" guid="bcf9742d-0bae-4aca-bddc-051c5b600528" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="cv4Pesadilla2">
+    <dialogue-node nodeindex="0" editor-x="44" editor-y="28">
+      <speak-player>
+        <resources name="No name" />
+        <text>Lo has logrado, has ayudado en casa</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Sin embargo no tienes manera de vencerme,</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text> ¿a caso tienes un jabón mágico?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" question=" ¿a caso tienes un jabón mágico?" keepShowing="yes" preListening="yes" editor-x="765" editor-y="36" x="765" y="36">
+      <speak-player>
+        <text>Si</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>No</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="1073" editor-y="27">
+      <speak-player>
+        <resources name="No name" />
+        <text>Nooooo puede ser,</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Juan, tu eres niño... deja esas actividades</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Lavar platos es cosa de niñas</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="1190" editor-y="419">
+      <speak-player>
+        <resources name="No name" />
+        <text>Jajaja soy invensible</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="1631" editor-y="27">
+      <speak-player>
+        <resources name="No name" />
+        <text>No, yo vivo en esta casa y debo ayudar</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>MAría y yo somos invencibles</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>tu solo eres un estereotipo viejo.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>un estereotipo sucio y anticuado.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Así que te limpiaremos com a la casa.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#! Tira la cubeta de agua con jabón al monstruo apestosin.</text>
+      </speak-player>
       <condition />
       <end-conversation />
     </dialogue-node>
