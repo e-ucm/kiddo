@@ -88,7 +88,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
       <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -305,7 +305,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
       <frontcolor color="#96FFF3" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -549,7 +549,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
       <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -619,8 +619,8 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -660,7 +660,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -691,7 +691,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -722,7 +722,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -753,7 +753,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#CC83FA" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -792,7 +792,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#96FFF3" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -823,7 +823,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -857,7 +857,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -888,7 +888,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -918,9 +918,9 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
-      <bordercolor color="#000000" />
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#6DF308" />
+      <bordercolor color="#1F1F1E" />
     </textcolor>
     <description>
       <name>
@@ -958,7 +958,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#A0FF10" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -997,7 +997,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#FA0B87" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1062,7 +1062,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1113,7 +1113,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1152,7 +1152,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#08F8C2" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1183,7 +1183,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1222,7 +1222,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1253,7 +1253,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#DD18BA" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1284,7 +1284,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1323,7 +1323,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1354,7 +1354,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#DD18BA" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1393,7 +1393,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#D2C1DC" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1444,7 +1444,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1478,7 +1478,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F87BE2" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1509,7 +1509,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#7AC3FA" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1540,7 +1540,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1579,7 +1579,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1630,7 +1630,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#C09CD4" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1661,7 +1661,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1692,7 +1692,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1723,7 +1723,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1763,7 +1763,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1803,7 +1803,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#96FFF3" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1834,7 +1834,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#CC83FA" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1865,7 +1865,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1904,7 +1904,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1943,7 +1943,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -1974,7 +1974,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -2015,7 +2015,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -2055,7 +2055,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -2094,7 +2094,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -2133,7 +2133,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#CC83FA" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -2164,7 +2164,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -2203,7 +2203,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -2247,7 +2247,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#FF10A6" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -2288,7 +2288,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#F3E108" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -2319,7 +2319,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#A0FF10" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -2374,7 +2374,7 @@
     </objects>
     <characters>
       <character-ref idTarget="nina" x="250" y="550" scale="0.7" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="nino" x="770" y="556" scale="0.7" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="nino" x="768" y="556" scale="0.7" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="elpuebloIntro" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -2388,7 +2388,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="367" y="224" width="252" height="312" hasInfluenceArea="no" idTarget="relojgif" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="367" y="226" width="252" height="312" hasInfluenceArea="no" idTarget="relojgif" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="validaReloj" />
@@ -2404,7 +2404,7 @@
     </objects>
     <characters>
       <character-ref idTarget="naPuebloIntro" x="766" y="395" scale="0.5" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="noPuebloIntro" x="219" y="393" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="noPuebloIntro" x="215" y="393" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Menu" hideInventory="no" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -2753,7 +2753,7 @@
       <object-ref idTarget="folleto" x="132" y="279" scale="0.04466672" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="nahabC2" x="234" y="488" scale="0.5" orientation="2" glow="yes" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="nahabC2" x="232" y="489" scale="0.5" orientation="2" glow="yes" layer="2" hasInfluenceArea="no" />
       <character-ref idTarget="nohabC2" x="546" y="486" scale="0.5" orientation="2" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
@@ -2865,7 +2865,7 @@
       <object-ref idTarget="c2espinilleras" x="1026" y="964" scale="2.132813" glow="no" layer="6" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="nasueno2" x="228" y="1369" scale="1.319601" orientation="0" glow="no" layer="7" hasInfluenceArea="no" />
+      <character-ref idTarget="nasueno2" x="228" y="1372" scale="1.319601" orientation="0" glow="no" layer="7" hasInfluenceArea="no" />
       <character-ref idTarget="sportino" x="1385" y="1380" scale="1.168896" orientation="0" glow="no" layer="8" hasInfluenceArea="no" />
     </characters>
   </scene>
@@ -3330,7 +3330,7 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="c4naparque" x="327" y="309" scale="0.2" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
       <character-ref idTarget="c4noparque" x="151" y="282" scale="0.2" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
       <character-ref idTarget="c4paparque" x="462" y="320" scale="0.2" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
-      <character-ref idTarget="c4maparque" x="599" y="321" scale="0.2" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="c4maparque" x="599" y="322" scale="0.2" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="c4elpueblo" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3605,7 +3605,7 @@ No eres buena en ciencias</speak-char>
       <object-ref idTarget="c4ropaM" x="617" y="223" scale="0.4202371" glow="no" layer="0" hasInfluenceArea="no" />
       <object-ref idTarget="c4calcetasM" x="166" y="334" scale="0.442893" glow="no" layer="4" hasInfluenceArea="no" />
       <object-ref idTarget="c4playeraM" x="542" y="292" scale="0.4431922" glow="no" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="c4minimapahome" x="226" y="120" scale="0.4383395" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="641" y="827" scale="3.972653" glow="no" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="c4nahabitacion" x="414" y="259" scale="0.249084" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
@@ -3632,14 +3632,14 @@ No eres buena en ciencias</speak-char>
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/58914 opt.png" />
+      <asset type="background" uri="assets/background/backgroundsmall optimo.jpg" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="c4Mafinal" x="468" y="491" scale="0.5" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="c4Jufinal" x="101" y="487" scale="0.5" orientation="0" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="c4Mafinal" x="817" y="491" scale="0.5" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c4Jufinal" x="176" y="487" scale="0.5" orientation="0" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="creditosCap1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3656,7 +3656,7 @@ No eres buena en ciencias</speak-char>
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="video" uri="assets/video/KiddoPresentacionF.mp4" />
+      <asset type="video" uri="assets/video/KiddoPresentacionLogoComplutense.mp4" />
       <asset type="slides" uri="assets/special/EmptyAnimation" />
     </resources>
     <name>
@@ -5492,6 +5492,51 @@ Gracias
       </examine>
     </actions>
   </object>
+  <graph-conversation id="cpuebloIntro">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="noPuebloIntro">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>Juan: Este es el Reloj dorado del tiempo en el pueblo Escarlata.  </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="naPuebloIntro">
+        <resources name="No name">
+          <asset type="image" uri="" />
+        </resources>
+        <text>María: Este Reloj te permite viajar en el tiempo, puedes ver nuestros recuerdos. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="noPuebloIntro">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>Juan: ¡Ven! Acompáñame y te enseñaré algunas situaciones por las que hemos pasado.  </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="naPuebloIntro">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>#! María: Para explicarte lo que ha pasado da click en el reloj dorado</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="noPuebloIntro">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>#! Juan: Elige una de nuestras pesadillas.</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <activate flag="validaReloj" guid="68c11be3-dea0-41dc-a735-162bd1b8592c" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
   <graph-conversation id="cintro">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-player>
@@ -5560,49 +5605,6 @@ Gracias
       <end-conversation>
         <effect>
           <activate flag="validaIntro" guid="95abf6d2-5a49-4900-bb5c-a89b54b39c64" />
-          <condition />
-        </effect>
-      </end-conversation>
-    </dialogue-node>
-  </graph-conversation>
-  <graph-conversation id="cpuebloIntro">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="noPuebloIntro">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Juan: Este es el Reloj dorado del tiempo en el pueblo Escarlata.  </text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="naPuebloIntro">
-        <resources name="No name" />
-        <text>María: Este Reloj te permite viajar en el tiempo, puedes ver nuestros recuerdos. </text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="noPuebloIntro">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Juan: ¡Ven! Acompáñame y te enseñaré algunas situaciones por las que hemos pasado.  </text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="naPuebloIntro">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>#! María: Para explicarte lo que ha pasado da click en el reloj dorado</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="noPuebloIntro">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>#! Juan: Elige una de nuestras pesadillas.</text>
-      </speak-char>
-      <condition />
-      <end-conversation>
-        <effect>
-          <activate flag="validaReloj" guid="68c11be3-dea0-41dc-a735-162bd1b8592c" />
           <condition />
         </effect>
       </end-conversation>
