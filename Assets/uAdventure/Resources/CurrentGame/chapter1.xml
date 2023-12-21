@@ -2347,7 +2347,7 @@
       </exit>
     </exits>
   </scene>
-  <scene id="Intro" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Intro" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2407,32 +2407,32 @@
       <character-ref idTarget="noPuebloIntro" x="215" y="393" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Menu" hideInventory="no" allowsZoom="yes" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/Fig2 opt.png" />
+      <asset type="background" uri="assets/background/menu5-title telescope.jpg" />
       <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="81" y="54" width="230" height="147" hasInfluenceArea="no" idTarget="elpueblo" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="66" y="107" width="412" height="218" hasInfluenceArea="no" idTarget="elpueblo" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <set-value var="vCurrentChapter" value="1" guid="477966f7-ae29-4d28-8aab-35cf28507ab1" />
           <condition />
         </post-effect>
       </exit>
-      <exit rectangular="yes" x="77" y="289" width="220" height="147" hasInfluenceArea="no" idTarget="cap2vid" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="71" y="357" width="415" height="234" hasInfluenceArea="no" idTarget="cap2vid" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <set-value var="vCurrentChapter" value="1" guid="33cf4d11-ad6b-4a16-9f42-1a29528ae802" />
           <condition />
         </post-effect>
       </exit>
-      <exit rectangular="yes" x="451" y="37" width="264" height="180" hasInfluenceArea="no" idTarget="c3elpuebloES" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="4" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="542" y="98" width="418" height="232" hasInfluenceArea="no" idTarget="c3elpuebloES" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="4" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <set-value var="vCurrentChapter" value="3" guid="a638d737-66cf-4b59-8898-95c8a6e49db9" />
@@ -2441,7 +2441,7 @@
           <condition />
         </post-effect>
       </exit>
-      <exit rectangular="yes" x="477" y="282" width="222" height="161" hasInfluenceArea="no" idTarget="c4parque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="509" y="365" width="447" height="226" hasInfluenceArea="no" idTarget="c4parque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <set-value var="vCurrentMap" value="4" guid="94b9c3f2-ce63-48a5-aea3-a0e6d92ad1ea" />
@@ -2640,8 +2640,17 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="675" y="5" width="56" height="100" hasInfluenceArea="no" idTarget="ControlesJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+      <exit rectangular="yes" x="733" y="6" width="72" height="100" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
     <objects>
       <object-ref idTarget="vidav1" x="200" y="50" scale="0.3" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="MenuConfig" x="736" y="121" scale="0.4778356" glow="no" layer="3" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="monstruo1" x="135" y="363" scale="0.2508179" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
@@ -2879,9 +2888,20 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="1777" y="59" width="96" height="136" hasInfluenceArea="no" idTarget="ControlesJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+      <exit rectangular="yes" x="1880" y="60" width="124" height="136" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
+    <objects>
+      <object-ref idTarget="MenuConfig" x="1891" y="257" scale="1" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
     <characters>
-      <character-ref idTarget="sportino" x="1422" y="833" scale="1.715454" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="nasueno2" x="389" y="910" scale="1.244913" orientation="0" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="sportino" x="1435" y="1006" scale="1.715454" orientation="0" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="nasueno2" x="389" y="910" scale="1.244913" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="c3elpuebloES" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3081,9 +3101,20 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="696" y="11" width="50" height="58" hasInfluenceArea="no" idTarget="ControlesJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+      <exit rectangular="yes" x="750" y="8" width="48" height="74" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
+    <objects>
+      <object-ref idTarget="MenuConfig" x="754" y="99" scale="0.4129487" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
     <characters>
-      <character-ref idTarget="c3monstruo3" x="146" y="498" scale="1" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="c3napesadilla" x="515" y="471" scale="0.4143467" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="c3monstruo3" x="146" y="498" scale="1" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="c3napesadilla" x="515" y="471" scale="0.4143467" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="c3p1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3605,7 +3636,7 @@ No eres buena en ciencias</speak-char>
       <object-ref idTarget="c4ropaM" x="617" y="223" scale="0.4202371" glow="no" layer="0" hasInfluenceArea="no" />
       <object-ref idTarget="c4calcetasM" x="166" y="334" scale="0.442893" glow="no" layer="4" hasInfluenceArea="no" />
       <object-ref idTarget="c4playeraM" x="542" y="292" scale="0.4431922" glow="no" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="c4minimapahome" x="641" y="827" scale="3.972653" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="150" y="150" scale="0.7805417" glow="no" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="c4nahabitacion" x="414" y="259" scale="0.249084" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
@@ -3620,12 +3651,21 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="641" y="20" width="46" height="84" hasInfluenceArea="no" idTarget="ControlesJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+      <exit rectangular="yes" x="687" y="15" width="62" height="94" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
     <objects>
-      <object-ref idTarget="c4cubeta" x="401" y="385" scale="0.7161933" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="c4cubeta" x="401" y="385" scale="0.7161933" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="MenuConfig" x="695" y="109" scale="0.400542" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="c4montruo1" x="193" y="447" scale="0.6807835" orientation="3" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="c4montruo1" x="193" y="447" scale="0.6807835" orientation="3" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="c4finalchapter" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3637,9 +3677,20 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="865" y="9" width="70" height="100" hasInfluenceArea="no" idTarget="ControlesJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+      <exit rectangular="yes" x="945" y="14" width="72" height="100" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
+    <objects>
+      <object-ref idTarget="MenuConfig" x="944" y="145" scale="0.556665" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
     <characters>
-      <character-ref idTarget="c4Mafinal" x="817" y="491" scale="0.5" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="c4Jufinal" x="176" y="487" scale="0.5" orientation="0" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="c4Mafinal" x="817" y="491" scale="0.5" orientation="0" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="c4Jufinal" x="176" y="487" scale="0.5" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="creditosCap1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -5491,6 +5542,20 @@ Gracias
         </effect>
       </examine>
     </actions>
+  </object>
+  <object id="MenuConfig" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/boton-config.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
   </object>
   <graph-conversation id="cpuebloIntro">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
