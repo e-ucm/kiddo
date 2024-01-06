@@ -2347,7 +2347,7 @@
       </exit>
     </exits>
   </scene>
-  <scene id="Intro" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Intro" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2480,21 +2480,21 @@
       <character-ref idTarget="noPueblo" x="154" y="550" scale="0.5" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="laCasa" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="laCasa" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
       <condition>
         <inactive flag="validaEntarcasa" />
       </condition>
-      <asset type="background" uri="assets/background/FONDO CASA opt2.jpg" />
+      <asset type="background" uri="assets/background/FondoCasaFontal opt2.png" />
       <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="153" y="132" width="63" height="121" hasInfluenceArea="no" idTarget="salaEstar" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="257" y="340" width="106" height="312" hasInfluenceArea="no" idTarget="salaEstar" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="validaEntarcasa" />
@@ -2506,11 +2506,11 @@
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="vidav1" x="200" y="50" scale="0.3" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="vidav1" x="336" y="129" scale="0.7757576" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="naCasa" x="106" y="266" scale="0.2663677" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="noCasa" x="273" y="264" scale="0.2663677" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="naCasa" x="177" y="687" scale="0.6887892" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="noCasa" x="459" y="682" scale="0.6887892" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="salaEstar" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
