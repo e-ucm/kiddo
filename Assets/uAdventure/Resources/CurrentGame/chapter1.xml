@@ -221,7 +221,9 @@
         <documentation>Created with target conversation: cCasa</documentation>
         <effect>
           <trigger-conversation idTarget="cCasa" guid="c4eb62fe-a58d-405c-9667-fb67cf1da431" />
-          <condition />
+          <condition>
+            <equals var="vSentimiento" value="0" />
+          </condition>
         </effect>
       </talk-to>
     </actions>
@@ -1095,7 +1097,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="nasuenoc2mic" behaviour="first-action">
+  <character id="nasuenoc2mic" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/nanormal.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -1128,7 +1130,7 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <effect>
-          <trigger-conversation idTarget="cv2Mariasuenos" guid="e9b2b80f-8d2b-4fc5-8f41-5a2982aeafe5" />
+          <trigger-conversation idTarget="cv2Mariasuenos" guid="9c025586-2e25-43e8-9cb7-7714e9d9bb90" />
           <condition />
         </effect>
       </talk-to>
@@ -2407,11 +2409,11 @@
       <character-ref idTarget="noPuebloIntro" x="215" y="393" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/menu5-title telescope.jpg" />
+      <asset type="background" uri="assets/background/menu-new.jpg" />
       <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
     </resources>
     <name>
@@ -2425,14 +2427,14 @@
           <condition />
         </post-effect>
       </exit>
-      <exit rectangular="yes" x="71" y="357" width="415" height="234" hasInfluenceArea="no" idTarget="cap2vid" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="537" y="104" width="415" height="234" hasInfluenceArea="no" idTarget="cap2vid" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <set-value var="vCurrentChapter" value="1" guid="33cf4d11-ad6b-4a16-9f42-1a29528ae802" />
           <condition />
         </post-effect>
       </exit>
-      <exit rectangular="yes" x="542" y="98" width="418" height="232" hasInfluenceArea="no" idTarget="c3elpuebloES" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="4" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="61" y="368" width="418" height="232" hasInfluenceArea="no" idTarget="c3elpuebloES" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="4" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <set-value var="vCurrentChapter" value="3" guid="a638d737-66cf-4b59-8898-95c8a6e49db9" />
@@ -2480,7 +2482,7 @@
       <character-ref idTarget="noPueblo" x="154" y="550" scale="0.5" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="laCasa" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="laCasa" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2544,7 +2546,7 @@
           <active flag="validaSala" />
         </condition>
         <not-effect>
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="71db9c82-b83d-40de-aeb4-db1be71d7f75">Habla con mama</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="71db9c82-b83d-40de-aeb4-db1be71d7f75">Habla con mamá</show-text>
           <condition />
         </not-effect>
       </exit>
@@ -2607,7 +2609,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="pergamino" x="314" y="322" scale="2.397682" glow="yes" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="pergamino" x="304" y="358" scale="2.261683" glow="yes" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="nolibrero" x="128" y="529" scale="0.6" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
@@ -2657,7 +2659,7 @@
       <character-ref idTarget="nosueno" x="581" y="257" scale="0.5022091" orientation="0" glow="yes" layer="0" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="mostroArea1" rectangular="no" x="36" y="85" width="185" height="297" hasInfluenceArea="yes" influenceX="0" influenceY="0" influenceWidth="225" influenceHeight="337" behaviour="first-action">
+      <active-area id="mostroArea1" rectangular="no" x="36" y="86" width="185" height="297" hasInfluenceArea="yes" influenceX="0" influenceY="0" influenceWidth="225" influenceHeight="337" behaviour="first-action">
         <description>
           <name>
           </name>
@@ -2669,29 +2671,29 @@
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <speak-player guid="be024bb6-873d-4c09-9890-2f1ce3b95bd9">O Debo revisar mi mochila si quiero vencer al monstruo</speak-player>
+              <speak-player guid="be024bb6-873d-4c09-9890-2f1ce3b95bd9">¡Oh!, Debo revisar mi mochila si quiero vencer al monstruo</speak-player>
               <condition />
             </effect>
           </examine>
         </actions>
-        <point x="129" y="221" />
-        <point x="211" y="190" />
-        <point x="221" y="234" />
-        <point x="219" y="341" />
-        <point x="163" y="372" />
-        <point x="75" y="382" />
-        <point x="60" y="343" />
-        <point x="36" y="268" />
-        <point x="46" y="170" />
-        <point x="92" y="107" />
-        <point x="143" y="85" />
-        <point x="211" y="131" />
-        <point x="214" y="141" />
-        <point x="211" y="163" />
-        <point x="187" y="148" />
-        <point x="160" y="129" />
-        <point x="111" y="148" />
-        <point x="114" y="192" />
+        <point x="129" y="222" />
+        <point x="210" y="191" />
+        <point x="221" y="235" />
+        <point x="219" y="342" />
+        <point x="163" y="373" />
+        <point x="75" y="383" />
+        <point x="59" y="344" />
+        <point x="36" y="269" />
+        <point x="46" y="171" />
+        <point x="92" y="108" />
+        <point x="143" y="86" />
+        <point x="210" y="132" />
+        <point x="214" y="142" />
+        <point x="210" y="164" />
+        <point x="186" y="149" />
+        <point x="160" y="130" />
+        <point x="111" y="149" />
+        <point x="114" y="193" />
       </active-area>
     </active-areas>
   </scene>
@@ -2793,7 +2795,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="vidaCap2" x="395" y="70" scale="0.4268498" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="vidaCap2" x="392" y="70" scale="0.4268498" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="masalaC2" x="521" y="400" scale="0.3896091" orientation="2" glow="yes" layer="2" hasInfluenceArea="no" />
@@ -2813,7 +2815,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="sobre" x="313" y="328" scale="1.370705" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="sobre" x="311" y="330" scale="1.370705" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="nacofre" x="142" y="519" scale="0.7" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
@@ -2830,7 +2832,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="posion" x="347" y="321" scale="1.348842" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="posion" x="345" y="321" scale="1.348842" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="nacofre" x="150" y="507" scale="0.7" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
@@ -2847,7 +2849,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="vidaCap2" x="128" y="98" scale="0.4454051" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="vidaCap2" x="183" y="87" scale="0.4454051" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="nasuenoc2mic" x="188" y="414" scale="0.3901806" orientation="0" glow="no" layer="2" hasInfluenceArea="no" />
@@ -3991,7 +3993,7 @@ Conseguiste el gran libro de ciencias...
           <condition />
           <speak-char idTarget="nohabitacion1" guid="a1e77f42-eec7-4709-8bb7-f9fec702cfe5">Siempre que tenga dudas usare el corazón del valor los colores no tienen género, me iré a dormir</speak-char>
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="b07792ba-6cdb-4fe8-9fdd-f6b561e60af0">Mas tarde en mis suenos...</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="b07792ba-6cdb-4fe8-9fdd-f6b561e60af0">Más tarde en mis sueños...</show-text>
           <condition />
           <wait-time time="1" guid="87b0a4a4-c7ee-44d5-9e4b-5383ad6af61b" />
           <condition />
@@ -4054,7 +4056,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
           <speak-char idTarget="nohabitacion1" guid="37394fe9-a7f9-4a43-a334-03d4412d6243">Recuerda que los colores no tienen género, vamos a intentar de nuevo</speak-char>
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="55e7ea16-751d-4f08-8c36-4383c266456d">Mas tarde en mis suenos...</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="55e7ea16-751d-4f08-8c36-4383c266456d">Más tarde en mis sueños...</show-text>
           <condition />
           <wait-time time="1" guid="3d6f35b5-5dc1-41c2-bd40-0b94444ff47e" />
           <condition />
@@ -4163,8 +4165,80 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <detailed>
       </detailed>
     </description>
+    <actions>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <activate flag="CambiarSentimientoC2" guid="b68309e2-3003-49b1-b838-918b1031595e" />
+          <condition />
+          <increment var="vSentirCap2" value="1" guid="a5968170-c533-46b3-b70c-64527415559c" />
+          <condition />
+        </effect>
+      </use>
+    </actions>
   </object>
   <object id="vidaCap3" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="a">
+      <condition>
+        <inactive flag="CambiarSentimientoC3" />
+      </condition>
+      <asset type="image" uri="assets/image/feliz.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <resources name="b">
+      <condition>
+        <equals var="vSentirCap3" value="1" />
+      </condition>
+      <asset type="image" uri="assets/image/neutro.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <resources name="c">
+      <condition>
+        <equals var="vSentirCap3" value="2" />
+      </condition>
+      <asset type="image" uri="assets/image/triste.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="vidaCap4" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="a">
+      <condition>
+        <inactive flag="CambiarSentimientoC4" />
+      </condition>
+      <asset type="image" uri="assets/image/feliz.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <resources name="b">
+      <condition>
+        <equals var="vSentirCap4" value="1" />
+      </condition>
+      <asset type="image" uri="assets/image/neutro.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <resources name="c">
+      <condition>
+        <equals var="vSentirCap4" value="2" />
+      </condition>
+      <asset type="image" uri="assets/image/triste.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="vidaotro" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <documentation>
     </documentation>
     <resources name="">
@@ -4261,7 +4335,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </object>
-  <object id="sobre" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+  <object id="sobre" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/sobre.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -4299,7 +4373,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </examine>
     </actions>
   </object>
-  <object id="posion" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+  <object id="posion" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/posion.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -7097,12 +7171,12 @@ Gracias
       </effect>
     </dialogue-node>
     <dialogue-node nodeindex="7" editor-x="1642" editor-y="290">
-      <speak-player>
+      <speak-char idTarget="masalaC2">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
         <text>Lucy: oye María ese deporte es para los niños </text>
-      </speak-player>
+      </speak-char>
       <condition />
       <speak-char idTarget="pasalaC2">
         <resources name="No name">
@@ -7122,7 +7196,7 @@ Gracias
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>María, ya te dije que no. ¿Es que acaso no vas a cambiar de opinión?</text>
+        <text>Roberto: ¡Claro que no! </text>
       </speak-char>
       <condition />
       <child nodeindex="9" />
@@ -7145,30 +7219,18 @@ Gracias
       <condition />
       <child nodeindex="10" />
       <effect>
-        <activate flag="CambiarSentimientoC2" guid="bacb1362-6d65-4cab-8401-dc9e53ea00b2" />
-        <condition />
-        <increment var="vSentirCap2" value="1" guid="6c6d6bd1-b9fd-449d-b8e1-5954f1e9a155" />
+        <trigger-scene idTarget="c2Cparque" x="530" y="332" transitionTime="0" transitionType="0" guid="850c4041-12c5-4d91-a8e2-b9ec78364521" />
         <condition />
       </effect>
     </option-node>
-    <option-node nodeindex="9" keepShowing="yes" preListening="yes" editor-x="2337" editor-y="490" x="2337" y="490">
-      <speak-player>
-        <text>Sí, Tienes razón, lo siento</text>
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-      </speak-player>
+    <dialogue-node nodeindex="9" editor-x="2048" editor-y="324">
+      <speak-char idTarget="pasalaC2">
+        <resources name="No name" />
+        <text>Roberto: María, ya te dije que no. ¿Es que acaso no vas a cambiar de opinión?</text>
+      </speak-char>
       <condition />
       <child nodeindex="11" />
-      <speak-player>
-        <text>¡No voy a cambiar de opinión! El box es tan buen deporte como cualquier otro</text>
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-      </speak-player>
-      <condition />
-      <child nodeindex="12" />
-    </option-node>
+    </dialogue-node>
     <dialogue-node nodeindex="10" editor-x="3651" editor-y="68">
       <speak-char idTarget="c2naparque">
         <resources name="No name">
@@ -7186,14 +7248,30 @@ Gracias
       <condition />
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="c2cofre3" x="324" y="450" transitionTime="1000" transitionType="5" guid="8d187522-40c9-4a80-b4e4-a1d586ac4c8f" />
-          <condition />
-          <wait-time time="1" guid="e33549b8-8163-4905-afa2-cb6ff5f39ef2" />
+          <trigger-scene idTarget="c2cofre3" x="324" y="450" transitionTime="100" transitionType="5" guid="8d187522-40c9-4a80-b4e4-a1d586ac4c8f" />
           <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="11" editor-x="2954" editor-y="401">
+    <option-node nodeindex="11" keepShowing="yes" preListening="yes" editor-x="2484" editor-y="360" x="2484" y="360">
+      <speak-player>
+        <text>Sí, Tienes razón, lo siento</text>
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+      </speak-player>
+      <condition />
+      <child nodeindex="12" />
+      <speak-player>
+        <text>¡No voy a cambiar de opinión! El box es tan buen deporte como cualquier otro</text>
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+      </speak-player>
+      <condition />
+      <child nodeindex="13" />
+    </option-node>
+    <dialogue-node nodeindex="12" editor-x="2954" editor-y="401">
       <speak-char idTarget="c2naparque">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -7202,8 +7280,12 @@ Gracias
       </speak-char>
       <condition />
       <child nodeindex="10" />
+      <effect>
+        <trigger-scene idTarget="c2Cparque" x="530" y="332" transitionTime="0" transitionType="0" guid="d5742e23-7922-4c2f-9bc7-5b1b729b17ed" />
+        <condition />
+      </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="12" editor-x="3182" editor-y="767">
+    <dialogue-node nodeindex="13" editor-x="3182" editor-y="767">
       <speak-char idTarget="c2naparque">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -7239,9 +7321,9 @@ Gracias
         <text>Roberto: ¡Es verdad! Lo siento hija, me dejé llevar por ideas viejas, si tú quieres boxear seguro que lo harás muy bien.</text>
       </speak-char>
       <condition />
-      <child nodeindex="13" />
+      <child nodeindex="14" />
     </dialogue-node>
-    <dialogue-node nodeindex="13" editor-x="3697" editor-y="787">
+    <dialogue-node nodeindex="14" editor-x="3697" editor-y="787">
       <speak-char idTarget="pasalaC2">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -7265,16 +7347,14 @@ Gracias
       <condition />
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="c2cofre4" x="324" y="450" transitionTime="1000" transitionType="3" guid="dbc8368e-b386-4f3b-9349-bbc37b960ade" />
-          <condition />
-          <wait-time time="1" guid="9481aca9-4379-4b41-bff4-f51822a43459" />
+          <trigger-scene idTarget="c2cofre4" x="324" y="450" transitionTime="100" transitionType="3" guid="dbc8368e-b386-4f3b-9349-bbc37b960ade" />
           <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="cv2Cofre1">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="347" editor-y="55">
       <speak-char idTarget="nacofre">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -7293,7 +7373,7 @@ Gracias
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="cv2Mariasuenos">
-    <dialogue-node nodeindex="0" editor-x="95" editor-y="44">
+    <dialogue-node nodeindex="0" editor-x="47" editor-y="49">
       <speak-char idTarget="nasuenoc2mic">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -7305,7 +7385,14 @@ Gracias
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Michell: Hola, María Soy Michell la entrenadora de Box, recuerda que para poder inscribirte necesitarás romper un estereotipo y para ellos ocupará la poción del valor</text>
+        <text>Michell: Hola, María Soy Michell la entrenadora de Box,</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="michelle">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>Michell: Recuerda que para poder inscribirte necesitarás romper un estereotipo y para ellos ocupará la poción del valor</text>
       </speak-char>
       <condition />
       <speak-char idTarget="michelle">
@@ -7317,47 +7404,41 @@ Gracias
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="498" editor-y="3" x="498" y="3">
+    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="1327" editor-y="49" x="1327" y="49">
       <speak-player>
         <text>Si</text>
-        <resources name="No name">
-          <asset type="audio" uri="" />
-        </resources>
+        <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
       <speak-player>
         <text>No</text>
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
+        <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="898" editor-y="49">
+    <dialogue-node nodeindex="2" editor-x="1665" editor-y="23">
       <speak-char idTarget="michelle">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Michell: Usa la poción para entrar al ring</text>
+        <text>Michell: Usa la opción para entrar al ring</text>
       </speak-char>
       <condition />
       <speak-char idTarget="nasuenoc2mic">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>María: Genial, usaré la poción </text>
+        <text>María: Genial, usaré la poción</text>
       </speak-char>
       <condition />
       <end-conversation />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="762" editor-y="380">
+    <dialogue-node nodeindex="3" editor-x="1668" editor-y="243">
       <speak-char idTarget="michelle">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Michell: Usa la poción para entrar al ring </text>
+        <resources name="No name" />
+        <text>Michell: Es necesario tener la poción del valor</text>
       </speak-char>
       <condition />
       <speak-char idTarget="nasuenoc2mic">
@@ -7365,6 +7446,13 @@ Gracias
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
         <text>María: Revisaré si tengo algo en mi mochila</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="michelle">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>Michell: Recuerda Usar la poción para entrar al ring</text>
       </speak-char>
       <condition />
       <end-conversation />
