@@ -2333,6 +2333,14 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="FinCapitulos" guid="e0fbfa0d-a657-41c5-82fd-984edc467668" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <scene id="ControlesJuego" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2344,10 +2352,13 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="1115" y="25" width="100" height="100" hasInfluenceArea="no" idTarget="Intro" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="1113" y="23" width="100" height="100" hasInfluenceArea="no" idTarget="Intro" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
+    <atrezzo>
+      <atrezzo-ref idTarget="cerrar" x="1163" y="124" scale="1.515769" glow="no" layer="0" />
+    </atrezzo>
   </scene>
   <scene id="Intro" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2427,14 +2438,14 @@
           <condition />
         </post-effect>
       </exit>
-      <exit rectangular="yes" x="528" y="122" width="444" height="217" hasInfluenceArea="no" idTarget="cap2vid" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="527" y="128" width="445" height="211" hasInfluenceArea="no" idTarget="cap2vid" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <set-value var="vCurrentChapter" value="1" guid="33cf4d11-ad6b-4a16-9f42-1a29528ae802" />
           <condition />
         </post-effect>
       </exit>
-      <exit rectangular="yes" x="54" y="355" width="431" height="247" hasInfluenceArea="no" idTarget="c3elpuebloES" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="4" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="54" y="360" width="425" height="208" hasInfluenceArea="no" idTarget="c3elpuebloES" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="4" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <set-value var="vCurrentChapter" value="3" guid="a638d737-66cf-4b59-8898-95c8a6e49db9" />
@@ -2443,7 +2454,7 @@
           <condition />
         </post-effect>
       </exit>
-      <exit rectangular="yes" x="515" y="370" width="453" height="228" hasInfluenceArea="no" idTarget="c4parque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="515" y="370" width="452" height="197" hasInfluenceArea="no" idTarget="c4parque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <set-value var="vCurrentMap" value="4" guid="94b9c3f2-ce63-48a5-aea3-a0e6d92ad1ea" />
@@ -2474,9 +2485,6 @@
         </actions>
       </active-area>
     </active-areas>
-    <atrezzo>
-      <atrezzo-ref idTarget="Config" x="62" y="114" scale="0.1671101" glow="no" layer="1" />
-    </atrezzo>
   </scene>
   <scene id="elpueblo" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2534,12 +2542,15 @@
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="vidav1" x="336" y="129" scale="0.7757576" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="vidav1" x="250" y="178" scale="0.4" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="naCasa" x="177" y="687" scale="0.6887892" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="noCasa" x="459" y="682" scale="0.6887892" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="naCasa" x="177" y="687" scale="0.6887892" orientation="0" glow="yes" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="noCasa" x="459" y="682" scale="0.6887892" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
     </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="coche" x="925" y="768" scale="3.369543" glow="no" layer="1" />
+    </atrezzo>
   </scene>
   <scene id="salaEstar" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2578,12 +2589,12 @@
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="vidav1" x="200" y="50" scale="0.3" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="vidav1" x="201" y="50" scale="0.35" glow="no" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="pasalaEstar" x="329" y="200" scale="0.2" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
       <character-ref idTarget="masalaEstar" x="239" y="210" scale="0.2" orientation="0" glow="yes" layer="0" hasInfluenceArea="no" />
-      <character-ref idTarget="nosalaEstar" x="98" y="251" scale="0.2" orientation="0" glow="yes" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="nosalaEstar" x="98" y="251" scale="0.2" orientation="0" glow="yes" layer="6" hasInfluenceArea="no" />
     </characters>
     <active-areas>
       <active-area id="puerta" rectangular="yes" x="447" y="4" width="83" height="222" hasInfluenceArea="no" behaviour="first-action">
@@ -2605,6 +2616,11 @@
         </actions>
       </active-area>
     </active-areas>
+    <atrezzo>
+      <atrezzo-ref idTarget="CuadroJuan" x="56" y="95" scale="0.2" glow="no" layer="3" />
+      <atrezzo-ref idTarget="CuadroMari" x="490" y="94" scale="0.2" glow="no" layer="4" />
+      <atrezzo-ref idTarget="relojpared" x="366" y="118" scale="0.4259004" glow="no" layer="5" />
+    </atrezzo>
   </scene>
   <scene id="habitacion" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2617,12 +2633,15 @@
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="vidav1" x="200" y="50" scale="0.3" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="vidav1" x="200" y="60" scale="0.39" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="nahabitacion1" x="600" y="416" scale="0.4625" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="nohabitacion1" x="190" y="436" scale="0.5185649" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="nahabitacion1" x="600" y="416" scale="0.4625" orientation="0" glow="yes" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="nohabitacion1" x="190" y="436" scale="0.5185649" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
     </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="lampara" x="40" y="285" scale="1.8705" glow="no" layer="1" />
+    </atrezzo>
   </scene>
   <scene id="librero1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2635,7 +2654,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="pergamino" x="304" y="358" scale="2.261683" glow="yes" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="pergamino" x="310" y="304" scale="1.256877" glow="yes" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="nolibrero" x="128" y="529" scale="0.6" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
@@ -2652,13 +2671,13 @@
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="corazon" x="308" y="307" scale="0.9441355" glow="yes" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="corazon" x="324" y="337" scale="2.694849" glow="yes" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="nolibrero" x="124" y="517" scale="0.6" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="pesadilla" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="pesadilla" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2674,7 +2693,7 @@
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="vidav1" x="200" y="50" scale="0.3" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="vidav1" x="175" y="60" scale="0.38" glow="no" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="monstruo1" x="135" y="363" scale="0.2508179" orientation="0" glow="yes" layer="1" hasInfluenceArea="no" />
@@ -2760,6 +2779,30 @@
       <object-ref idTarget="aprendeCap2-Andy" x="366" y="306" scale="0.2735651" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
   </scene>
+  <scene id="c2Cparque" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/parque-opt ajustado.png" />
+      <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="vidaCap2" x="277" y="73" scale="0.4268498" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="masalaC2" x="516" y="405" scale="0.3896091" orientation="2" glow="yes" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="pasalaC2" x="709" y="399" scale="0.4008952" orientation="2" glow="yes" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="c2naparque" x="354" y="405" scale="0.4298752" orientation="2" glow="yes" layer="6" hasInfluenceArea="no" />
+      <character-ref idTarget="c2noparque" x="206" y="409" scale="0.4608378" orientation="2" glow="yes" layer="5" hasInfluenceArea="no" />
+    </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="ave" x="38" y="222" scale="1" glow="no" layer="2" />
+      <atrezzo-ref idTarget="aves" x="868" y="152" scale="1.443167" glow="no" layer="1" />
+    </atrezzo>
+  </scene>
   <scene id="C2habitacion" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
@@ -2774,7 +2817,7 @@
       <exit rectangular="yes" x="92" y="183" width="74" height="98" hasInfluenceArea="no" idTarget="C2folletozoom" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
-      <exit rectangular="yes" x="313" y="83" width="160" height="359" hasInfluenceArea="no" idTarget="c2Cparque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="312" y="80" width="160" height="359" hasInfluenceArea="no" idTarget="c2Cparque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="validaPuertaHab2" />
@@ -2789,9 +2832,13 @@
       <object-ref idTarget="folleto" x="132" y="279" scale="0.04466672" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="nahabC2" x="232" y="489" scale="0.5" orientation="2" glow="yes" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="nohabC2" x="546" y="486" scale="0.5" orientation="2" glow="yes" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="nahabC2" x="232" y="489" scale="0.5" orientation="2" glow="yes" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="nohabC2" x="546" y="486" scale="0.5" orientation="2" glow="yes" layer="3" hasInfluenceArea="no" />
     </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="lampara" x="35" y="286" scale="1.901905" glow="no" layer="1" />
+      <atrezzo-ref idTarget="ave" x="755" y="217" scale="0.4037757" glow="no" layer="2" />
+    </atrezzo>
   </scene>
   <scene id="C2folletozoom" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2808,26 +2855,6 @@
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
-  </scene>
-  <scene id="c2Cparque" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/background/parque-opt ajustado.png" />
-      <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-    <objects>
-      <object-ref idTarget="vidaCap2" x="392" y="70" scale="0.4268498" glow="no" layer="0" hasInfluenceArea="no" />
-    </objects>
-    <characters>
-      <character-ref idTarget="masalaC2" x="521" y="400" scale="0.3896091" orientation="2" glow="yes" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="pasalaC2" x="709" y="399" scale="0.4008952" orientation="2" glow="yes" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="c2naparque" x="354" y="405" scale="0.4298752" orientation="2" glow="yes" layer="4" hasInfluenceArea="no" />
-      <character-ref idTarget="c2noparque" x="206" y="409" scale="0.4608378" orientation="2" glow="yes" layer="3" hasInfluenceArea="no" />
-    </characters>
   </scene>
   <scene id="c2cofre3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2877,9 +2904,12 @@
       <object-ref idTarget="vidaCap2" x="183" y="87" scale="0.4454051" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="nasuenoc2mic" x="188" y="414" scale="0.3901806" orientation="0" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="michelle" x="462" y="409" scale="0.3209836" orientation="1" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="nasuenoc2mic" x="188" y="414" scale="0.3901806" orientation="0" glow="no" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="michelle" x="462" y="409" scale="0.3209836" orientation="1" glow="no" layer="2" hasInfluenceArea="no" />
     </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="luna" x="630" y="153" scale="2.102326" glow="no" layer="1" />
+    </atrezzo>
   </scene>
   <scene id="c2elMonitor" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2977,10 +3007,13 @@
         <point x="701" y="356" />
       </exit>
     </exits>
+    <objects>
+      <object-ref idTarget="vidaCap3" x="307" y="95" scale="0.42" glow="no" layer="2" hasInfluenceArea="no" />
+    </objects>
     <characters>
-      <character-ref idTarget="c3napasillo" x="345" y="479" scale="0.5" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="c3nopasillo" x="495" y="477" scale="0.5" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="c3Rocio" x="662" y="470" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="c3napasillo" x="345" y="479" scale="0.5" orientation="2" glow="no" layer="5" hasInfluenceArea="no" />
+      <character-ref idTarget="c3nopasillo" x="495" y="477" scale="0.5" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="c3Rocio" x="662" y="470" scale="0.5" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
     </characters>
     <active-areas>
       <active-area id="prohibidoelpaso" rectangular="no" x="247" y="192" width="69" height="180" hasInfluenceArea="no" behaviour="first-action">
@@ -3028,6 +3061,10 @@
         <point x="436" y="318" />
       </active-area>
     </active-areas>
+    <atrezzo>
+      <atrezzo-ref idTarget="relojpared" x="508" y="217" scale="0.3011388" glow="no" layer="0" />
+      <atrezzo-ref idTarget="grupo" x="647" y="259" scale="0.1244168" glow="no" layer="1" />
+    </atrezzo>
   </scene>
   <scene id="c3Salon" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3039,13 +3076,20 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="vidaCap3" x="215" y="96" scale="0.42" glow="no" layer="2" hasInfluenceArea="no" />
+    </objects>
     <characters>
-      <character-ref idTarget="c3nasalon1" x="340" y="394" scale="0.3" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
-      <character-ref idTarget="c3nosalon1" x="672" y="393" scale="0.3" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
-      <character-ref idTarget="c3RocioSalon1" x="499" y="389" scale="0.3" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="c3Eduardo" x="-100" y="393" scale="0.3" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="c3Jess" x="1100" y="393" scale="0.3" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="c3nasalon1" x="340" y="394" scale="0.3" orientation="2" glow="no" layer="7" hasInfluenceArea="no" />
+      <character-ref idTarget="c3nosalon1" x="672" y="393" scale="0.3" orientation="2" glow="no" layer="6" hasInfluenceArea="no" />
+      <character-ref idTarget="c3RocioSalon1" x="499" y="389" scale="0.3" orientation="2" glow="no" layer="5" hasInfluenceArea="no" />
+      <character-ref idTarget="c3Eduardo" x="-100" y="393" scale="0.3" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="c3Jess" x="1100" y="393" scale="0.3" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
     </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="relojpared" x="341" y="140" scale="0.3993644" glow="no" layer="0" />
+      <atrezzo-ref idTarget="grupo" x="344" y="203" scale="0.1405259" glow="no" layer="1" />
+    </atrezzo>
   </scene>
   <scene id="c3elpuebloCAS" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3087,9 +3131,12 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="vidaCap3" x="182" y="74" scale="0.42" glow="no" layer="1" hasInfluenceArea="no" />
+    </objects>
     <characters>
       <character-ref idTarget="c3Maite" x="683" y="233" scale="0.2963252" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
-      <character-ref idTarget="c3naSala" x="159" y="382" scale="0.4669155" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c3naSala" x="159" y="382" scale="0.4669155" orientation="2" glow="no" layer="5" hasInfluenceArea="no" />
     </characters>
     <active-areas>
       <active-area id="validatelefono" rectangular="yes" x="596" y="132" width="197" height="102" hasInfluenceArea="no" behaviour="first-action">
@@ -3114,6 +3161,11 @@
         </actions>
       </active-area>
     </active-areas>
+    <atrezzo>
+      <atrezzo-ref idTarget="relojpared" x="699" y="121" scale="0.4905314" glow="no" layer="2" />
+      <atrezzo-ref idTarget="doll" x="590" y="295" scale="0.7611932" glow="no" layer="3" />
+      <atrezzo-ref idTarget="aves" x="368" y="147" scale="0.4893115" glow="no" layer="4" />
+    </atrezzo>
   </scene>
   <scene id="c3pesadilla" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3126,7 +3178,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="574" y="1" width="67" height="74" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="737" y="6" width="61" height="69" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
@@ -3135,7 +3187,7 @@
       <character-ref idTarget="c3napesadilla" x="515" y="471" scale="0.4143467" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
     <atrezzo>
-      <atrezzo-ref idTarget="menuHamburguesa" x="607" y="75" scale="0.1523668" glow="no" layer="0" />
+      <atrezzo-ref idTarget="menuHamburguesa" x="767" y="73" scale="0.1235255" glow="no" layer="0" />
     </atrezzo>
   </scene>
   <scene id="c3p1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3378,11 +3430,14 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="vidaCap4" x="229" y="75" scale="0.4" glow="no" layer="1" hasInfluenceArea="no" />
+    </objects>
     <characters>
-      <character-ref idTarget="c4naparque" x="327" y="309" scale="0.2" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c4naparque" x="327" y="309" scale="0.2" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
       <character-ref idTarget="c4noparque" x="151" y="282" scale="0.2" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
-      <character-ref idTarget="c4paparque" x="462" y="320" scale="0.2" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
-      <character-ref idTarget="c4maparque" x="599" y="322" scale="0.2" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="c4paparque" x="462" y="320" scale="0.2" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="c4maparque" x="599" y="322" scale="0.2" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="c4elpueblo" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3424,13 +3479,14 @@ No eres buena en ciencias</speak-char>
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="c4botebasura" x="524" y="326" scale="0.7633139" glow="no" layer="8" hasInfluenceArea="no" />
-      <object-ref idTarget="c4bolsapapas" x="169" y="374" scale="0.4310166" glow="no" layer="7" hasInfluenceArea="no" />
-      <object-ref idTarget="c4lata" x="624" y="359" scale="0.3899693" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4botebasura" x="524" y="326" scale="0.7633139" glow="no" layer="9" hasInfluenceArea="no" />
+      <object-ref idTarget="c4bolsapapas" x="169" y="374" scale="0.4310166" glow="no" layer="8" hasInfluenceArea="no" />
+      <object-ref idTarget="c4lata" x="624" y="359" scale="0.3899693" glow="no" layer="7" hasInfluenceArea="no" />
       <object-ref idTarget="c4hojapapel" x="521" y="132" scale="0.3899693" glow="no" layer="1" hasInfluenceArea="no" />
       <object-ref idTarget="c4platano" x="138" y="278" scale="0.3899693" glow="no" layer="2" hasInfluenceArea="no" />
       <object-ref idTarget="c4botella" x="601" y="242" scale="0.4098773" glow="no" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="c4minimapahome" x="113" y="90" scale="0.3893066" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="118" y="118" scale="0.4972111" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="vidaCap4" x="260" y="70" scale="0.4" glow="no" layer="6" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="c4nosala1" x="326" y="279" scale="0.2877687" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
@@ -3479,6 +3535,126 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="c4montruo1" x="164" y="369" scale="0.5388556" orientation="3" glow="no" layer="0" hasInfluenceArea="no" />
       <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
+  </scene>
+  <scene id="c4lacocina" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/1740 opt.png" />
+      <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="c4copas" x="270" y="346" scale="0.6747807" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4platos" x="668" y="261" scale="0.4043634" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4tazas" x="412" y="365" scale="0.5492455" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4vasos" x="575" y="347" scale="0.5497922" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4tarja" x="416" y="271" scale="0.7" glow="yes" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="177" y="135" scale="0.3706205" glow="no" layer="1" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4noCasa" x="802" y="326" scale="0.3586387" orientation="2" glow="no" layer="5" hasInfluenceArea="no" />
+    </characters>
+    <active-areas>
+      <active-area id="fregadero" rectangular="yes" x="364" y="179" width="99" height="91" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+      </active-area>
+    </active-areas>
+  </scene>
+  <scene id="c4sala" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/saladoslimpia.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="c4botebasura" x="524" y="326" scale="0.7633139" glow="no" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="c4bolsapapas" x="225" y="357" scale="0.4310166" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4lata" x="624" y="359" scale="0.3899693" glow="no" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="c4hojapapel" x="348" y="287" scale="0.3899693" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="c4platano" x="138" y="278" scale="0.3899693" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4botella" x="601" y="242" scale="0.4098773" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="113" y="90" scale="0.3893066" glow="no" layer="1" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4nasala" x="244" y="277" scale="0.2739332" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="c4habjuan" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion juan opt.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="752" y="10" width="37" height="29" hasInfluenceArea="no" idTarget="c4MapaCasaDos" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
+    <objects>
+      <object-ref idTarget="c4ropaJ" x="680" y="354" scale="0.53464" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4calcetas" x="588" y="368" scale="0.3606828" glow="no" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="c4playera" x="444" y="294" scale="0.4705485" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="149" y="136" scale="0.7129292" glow="no" layer="8" hasInfluenceArea="no" />
+      <object-ref idTarget="c4lavadora" x="110" y="117" scale="0.2089795" glow="no" layer="9" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4nohabitacion" x="267" y="364" scale="0.4" orientation="2" glow="no" layer="7" hasInfluenceArea="no" />
+    </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="cerrar" x="769" y="38" scale="0.424778" glow="no" layer="0" />
+      <atrezzo-ref idTarget="coche" x="44" y="385" scale="0.7512276" glow="no" layer="3" />
+      <atrezzo-ref idTarget="dino" x="162" y="200" scale="1.2003" glow="no" layer="1" />
+      <atrezzo-ref idTarget="CuadroJuan" x="471" y="119" scale="0.207067" glow="no" layer="2" />
+    </atrezzo>
+  </scene>
+  <scene id="c4habMaria" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/hab maria opt.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="723" y="18" width="41" height="36" hasInfluenceArea="no" idTarget="c4MapaCasaDos" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" />
+      </exit>
+    </exits>
+    <objects>
+      <object-ref idTarget="c4ropaM" x="685" y="346" scale="0.4202371" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4calcetasM" x="415" y="265" scale="0.442893" glow="no" layer="11" hasInfluenceArea="no" />
+      <object-ref idTarget="c4playeraM" x="520" y="317" scale="0.4431922" glow="no" layer="10" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="145" y="143" scale="0.7805417" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4lavadora" x="106" y="128" scale="0.2298065" glow="no" layer="7" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="c4nahabitacion" x="253" y="368" scale="0.4" orientation="2" glow="no" layer="5" hasInfluenceArea="no" />
+    </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="cerrar" x="746" y="49" scale="0.4162836" glow="no" layer="8" />
+      <atrezzo-ref idTarget="lampara" x="308" y="233" scale="1.061312" glow="no" layer="9" />
+      <atrezzo-ref idTarget="hose" x="161" y="196" scale="1.067297" glow="no" layer="0" />
+      <atrezzo-ref idTarget="doll" x="171" y="268" scale="0.8364927" glow="no" layer="1" />
+      <atrezzo-ref idTarget="CuadroMari" x="474" y="121" scale="0.2229467" glow="no" layer="2" />
+      <atrezzo-ref idTarget="coche" x="61" y="391" scale="1" glow="no" layer="3" />
+    </atrezzo>
   </scene>
   <scene id="c4MapaCasaDos" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3569,100 +3745,6 @@ No eres buena en ciencias</speak-char>
       </active-area>
     </active-areas>
   </scene>
-  <scene id="c4lacocina" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/background/1740 opt.png" />
-      <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-    <objects>
-      <object-ref idTarget="c4copas" x="270" y="346" scale="0.6747807" glow="no" layer="6" hasInfluenceArea="no" />
-      <object-ref idTarget="c4platos" x="668" y="261" scale="0.4043634" glow="no" layer="4" hasInfluenceArea="no" />
-      <object-ref idTarget="c4tazas" x="412" y="365" scale="0.5492455" glow="no" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="c4vasos" x="575" y="347" scale="0.5497922" glow="no" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="c4tarja" x="416" y="271" scale="0.7" glow="yes" layer="0" hasInfluenceArea="no" />
-      <object-ref idTarget="c4minimapahome" x="177" y="135" scale="0.3706205" glow="no" layer="1" hasInfluenceArea="no" />
-    </objects>
-    <characters>
-      <character-ref idTarget="c4noCasa" x="802" y="326" scale="0.3586387" orientation="2" glow="no" layer="5" hasInfluenceArea="no" />
-    </characters>
-    <active-areas>
-      <active-area id="fregadero" rectangular="yes" x="364" y="179" width="99" height="91" hasInfluenceArea="no" behaviour="normal">
-        <description>
-          <name>
-          </name>
-          <brief>
-          </brief>
-          <detailed>
-          </detailed>
-        </description>
-      </active-area>
-    </active-areas>
-  </scene>
-  <scene id="c4sala" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/background/saladoslimpia.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-    <objects>
-      <object-ref idTarget="c4botebasura" x="524" y="326" scale="0.7633139" glow="no" layer="7" hasInfluenceArea="no" />
-      <object-ref idTarget="c4bolsapapas" x="225" y="357" scale="0.4310166" glow="no" layer="6" hasInfluenceArea="no" />
-      <object-ref idTarget="c4lata" x="624" y="359" scale="0.3899693" glow="no" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="c4hojapapel" x="348" y="287" scale="0.3899693" glow="no" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="c4platano" x="138" y="278" scale="0.3899693" glow="no" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="c4botella" x="601" y="242" scale="0.4098773" glow="no" layer="4" hasInfluenceArea="no" />
-      <object-ref idTarget="c4minimapahome" x="113" y="90" scale="0.3893066" glow="no" layer="1" hasInfluenceArea="no" />
-    </objects>
-    <characters>
-      <character-ref idTarget="c4nasala" x="244" y="277" scale="0.2739332" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
-    </characters>
-  </scene>
-  <scene id="c4habjuan" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/background/habitacion juan opt.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-    <objects>
-      <object-ref idTarget="c4ropaJ" x="696" y="142" scale="0.53464" glow="no" layer="0" hasInfluenceArea="no" />
-      <object-ref idTarget="c4calcetas" x="303" y="232" scale="0.3606828" glow="no" layer="1" hasInfluenceArea="no" />
-      <object-ref idTarget="c4playera" x="161" y="200" scale="0.4705485" glow="no" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="c4minimapahome" x="227" y="122" scale="0.3757482" glow="no" layer="4" hasInfluenceArea="no" />
-    </objects>
-    <characters>
-      <character-ref idTarget="c4nohabitacion" x="410" y="247" scale="0.3094963" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
-    </characters>
-  </scene>
-  <scene id="c4habMaria" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/background/hab maria opt.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-    <objects>
-      <object-ref idTarget="c4ropaM" x="617" y="223" scale="0.4202371" glow="no" layer="0" hasInfluenceArea="no" />
-      <object-ref idTarget="c4calcetasM" x="166" y="334" scale="0.442893" glow="no" layer="4" hasInfluenceArea="no" />
-      <object-ref idTarget="c4playeraM" x="542" y="292" scale="0.4431922" glow="no" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="c4minimapahome" x="150" y="150" scale="0.7805417" glow="no" layer="2" hasInfluenceArea="no" />
-    </objects>
-    <characters>
-      <character-ref idTarget="c4nahabitacion" x="414" y="259" scale="0.249084" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-    </characters>
-  </scene>
   <scene id="c4p1pesadilla2" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
@@ -3678,7 +3760,7 @@ No eres buena en ciencias</speak-char>
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4cubeta" x="401" y="385" scale="0.7161933" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4cubeta" x="70" y="460" scale="0.06757044" glow="no" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="c4montruo1" x="193" y="447" scale="0.6807835" orientation="3" glow="no" layer="2" hasInfluenceArea="no" />
@@ -3698,30 +3780,17 @@ No eres buena en ciencias</speak-char>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="865" y="9" width="70" height="100" hasInfluenceArea="no" idTarget="ControlesJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" cursor-path="" sound-path="" />
-      </exit>
-      <exit rectangular="yes" x="945" y="14" width="72" height="100" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="932" y="36" width="85" height="78" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
-    <objects>
-      <object-ref idTarget="MenuConfig" x="944" y="145" scale="0.556665" glow="no" layer="0" hasInfluenceArea="no" />
-    </objects>
     <characters>
       <character-ref idTarget="c4Mafinal" x="817" y="491" scale="0.5" orientation="0" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="c4Jufinal" x="176" y="487" scale="0.5" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c4Jufinal" x="177" y="487" scale="0.5" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
-  </scene>
-  <scene id="creditosCap1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
+    <atrezzo>
+      <atrezzo-ref idTarget="menuHamburguesa" x="973" y="123" scale="0.1660156" glow="no" layer="0" />
+    </atrezzo>
   </scene>
   <scene id="ControlesJuego1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3770,7 +3839,7 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="introvideo" start="no" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="introvideo" start="yes" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3785,20 +3854,6 @@ No eres buena en ciencias</speak-char>
     </documentation>
     <resources name="No name">
       <asset type="video" uri="assets/video/relojX02SEG.mp4" />
-      <asset type="slides" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <name>
-    </name>
-  </videoscene>
-  <videoscene canSkip="no" id="hipnosis" start="no" idTarget="pesadilla" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="1" next="new-scene" class="accesible" type="cutscene">
-    <documentation>
-    </documentation>
-    <effect>
-      <set-value var="IdVar" value="1" guid="56ab53b1-c450-46c5-a00a-fe7bb8a6672b" />
-      <condition />
-    </effect>
-    <resources name="No name">
-      <asset type="video" uri="assets/video/giphy.mp4" />
       <asset type="slides" uri="assets/special/EmptyAnimation" />
     </resources>
     <name>
@@ -3830,30 +3885,6 @@ conseguiste el corazon del valor.
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="cap2vid" start="no" idTarget="C2habitacion" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="video" uri="assets/video/capitulo2 chico.mp4" />
-      <asset type="slides" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <name>
-    </name>
-  </videoscene>
-  <videoscene canSkip="no" id="hipnosis2" start="no" idTarget="c2pesadilla2" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="1" next="new-scene" class="accesible" type="cutscene">
-    <documentation>
-    </documentation>
-    <effect>
-      <activate flag="covMostroIntroC2" guid="9ff830d1-7f1e-4af8-9efe-4efec336716d" />
-      <condition />
-    </effect>
-    <resources name="No name">
-      <asset type="video" uri="assets/video/hipnosis-murcielago.mp4" />
-      <asset type="slides" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <name>
-    </name>
-  </videoscene>
   <videoscene canSkip="no" id="cap2Sabiasque2" start="no" idTarget="hipnosis2" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
@@ -3879,36 +3910,6 @@ conseguiste la posión del valor.
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="finCapitulo" start="no" idTarget="Menu" destinyX="-2147483648" destinyY="2147483647" transitionTime="500" transitionType="5" next="new-scene" class="accesible" type="cutscene">
-    <documentation>
-    </documentation>
-    <effect>
-      <macro-ref id="GameEndig" guid="011e9d96-70fc-40de-8abb-de7a0570bbdf" />
-      <condition />
-    </effect>
-    <resources name="No name">
-      <asset type="video" uri="assets/video/Fin de capítulo2.mp4" />
-      <asset type="slides" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <name>
-    </name>
-  </videoscene>
-  <videoscene canSkip="no" id="hipnosis3" start="no" idTarget="c3pesadilla" destinyX="-2147483648" destinyY="-2147483648" transitionTime="5000" transitionType="5" next="new-scene" class="accesible" type="cutscene">
-    <documentation>
-    </documentation>
-    <effect>
-      <wait-time time="5" guid="f3f9d592-984f-4a2f-8c84-0d8731859313" />
-      <condition />
-      <activate flag="covMostroIntroC2" guid="b45fbfa0-a9f0-45be-a655-2a3862667999" />
-      <condition />
-    </effect>
-    <resources name="No name">
-      <asset type="video" uri="assets/video/hipnosis-murcielago.mp4" />
-      <asset type="slides" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <name>
-    </name>
-  </videoscene>
   <videoscene canSkip="no" id="cap3Sabiasque3" start="no" idTarget="hipnosis3" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="5" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
@@ -3926,6 +3927,59 @@ Conseguiste el gran libro de ciencias...
     </effect>
     <resources name="No name">
       <asset type="video" uri="assets/video/capitulo3-sabiasq.mp4" />
+      <asset type="slides" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <name>
+    </name>
+  </videoscene>
+  <videoscene canSkip="no" id="cap4Sabiasque4" start="no" next="go-back" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <name>
+    </name>
+  </videoscene>
+  <videoscene canSkip="no" id="hipnosis" start="no" idTarget="pesadilla" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="1" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <effect>
+      <set-value var="IdVar" value="1" guid="56ab53b1-c450-46c5-a00a-fe7bb8a6672b" />
+      <condition />
+    </effect>
+    <resources name="No name">
+      <asset type="video" uri="assets/video/giphy.mp4" />
+      <asset type="slides" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <name>
+    </name>
+  </videoscene>
+  <videoscene canSkip="no" id="hipnosis2" start="no" idTarget="c2pesadilla2" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="1" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <effect>
+      <activate flag="covMostroIntroC2" guid="9ff830d1-7f1e-4af8-9efe-4efec336716d" />
+      <condition />
+    </effect>
+    <resources name="No name">
+      <asset type="video" uri="assets/video/hipnosis-murcielago.mp4" />
+      <asset type="slides" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <name>
+    </name>
+  </videoscene>
+  <videoscene canSkip="no" id="hipnosis3" start="no" idTarget="c3pesadilla" destinyX="-2147483648" destinyY="-2147483648" transitionTime="5000" transitionType="5" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <effect>
+      <wait-time time="5" guid="f3f9d592-984f-4a2f-8c84-0d8731859313" />
+      <condition />
+      <activate flag="covMostroIntroC2" guid="b45fbfa0-a9f0-45be-a655-2a3862667999" />
+      <condition />
+    </effect>
+    <resources name="No name">
+      <asset type="video" uri="assets/video/hipnosis-murcielago.mp4" />
       <asset type="slides" uri="assets/special/EmptyAnimation" />
     </resources>
     <name>
@@ -3959,10 +4013,25 @@ Conseguiste el gran libro de ciencias...
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="cap4Sabiasque4" start="no" next="go-back" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="cap2vid" start="no" idTarget="C2habitacion" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
+      <asset type="video" uri="assets/video/capitulo2 chico.mp4" />
+      <asset type="slides" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <name>
+    </name>
+  </videoscene>
+  <videoscene canSkip="no" id="finCapitulo" start="no" idTarget="Menu" destinyX="-2147483648" destinyY="2147483647" transitionTime="500" transitionType="5" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <effect>
+      <macro-ref id="GameEndig" guid="011e9d96-70fc-40de-8abb-de7a0570bbdf" />
+      <condition />
+    </effect>
+    <resources name="No name">
+      <asset type="video" uri="assets/video/Fin de capítulo2.mp4" />
       <asset type="slides" uri="assets/special/EmptyAnimation" />
     </resources>
     <name>
@@ -3982,6 +4051,16 @@ Conseguiste el gran libro de ciencias...
     <documentation>
     </documentation>
     <resources name="No name">
+      <asset type="slides" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <name>
+    </name>
+  </videoscene>
+  <videoscene canSkip="no" id="Creditosfinal" start="no" next="go-back" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="video" uri="assets/video/creditosfinal.mp4" />
       <asset type="slides" uri="assets/special/EmptyAnimation" />
     </resources>
     <name>
@@ -4032,7 +4111,7 @@ Conseguiste el gran libro de ciencias...
       <condition>
         <inactive flag="validaCorazon" />
       </condition>
-      <asset type="image" uri="assets/image/corazondelvalor opt.png" />
+      <asset type="image" uri="assets/image/corazon diamante.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
@@ -5522,7 +5601,11 @@ Gracias
           <condition />
           <wait-time time="2" guid="cc9ddd27-182d-43bc-8272-c0e1ed5ac71c" />
           <condition />
-          <trigger-scene idTarget="c4finalchapter" x="300" y="450" transitionTime="200" transitionType="5" guid="fab2f11e-5839-45a4-8883-a4b83a06b255" />
+          <activate flag="Cap4End" guid="853b946f-7242-403e-85f7-44b91fd4c5bf" />
+          <condition />
+          <trigger-cutscene idTarget="finCapitulo" guid="bcd1a2b3-a0dd-4393-8010-a5d72298ff2a" />
+          <condition />
+          <trigger-scene idTarget="c4finalchapter" x="524" y="450" transitionTime="200" transitionType="5" guid="fd362034-0c56-4d28-9a25-2ccc26e278e2" />
           <condition />
         </effect>
       </give-to>
@@ -8201,12 +8284,20 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Rocío: ¿Lista para comenzar? </text>
+        <text> Rocío: Las mujres se deben dedicar a cosas bonitas</text>
       </speak-char>
       <condition />
       <child nodeindex="6" />
+      <effect>
+        <activate flag="CambiarSentimientoC3" guid="8f45b8ea-6f4e-42bd-a45b-055cc0d6a229" />
+        <condition />
+        <set-value var="vSentirCap3" value="1" guid="352797f0-6fe6-4cf0-9850-081f73b8edf0" />
+        <condition />
+        <trigger-scene idTarget="c3Salon" x="512" y="307" transitionTime="0" transitionType="0" guid="1d058487-7032-4612-a3a8-e54e35e28436" />
+        <condition />
+      </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="5" editor-x="244" editor-y="487">
+    <dialogue-node nodeindex="5" editor-x="418" editor-y="480">
       <speak-char idTarget="c3Eduardo">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8220,25 +8311,15 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <condition />
       </effect>
     </dialogue-node>
-    <option-node nodeindex="6" question=" ¿Lista para comenzar? " keepShowing="yes" preListening="yes" editor-x="1274" editor-y="18" x="1274" y="18">
-      <speak-player>
-        <text>Si</text>
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-      </speak-player>
+    <dialogue-node nodeindex="6" editor-x="1248" editor-y="108">
+      <speak-char idTarget="c3RocioSalon1">
+        <resources name="No name" />
+        <text>Rocío: ¿Lista para comenzar? </text>
+      </speak-char>
       <condition />
       <child nodeindex="8" />
-      <speak-player>
-        <text>No</text>
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-      </speak-player>
-      <condition />
-      <child nodeindex="9" />
-    </option-node>
-    <dialogue-node nodeindex="7" editor-x="623" editor-y="468">
+    </dialogue-node>
+    <dialogue-node nodeindex="7" editor-x="674" editor-y="437">
       <speak-char idTarget="c3Jess">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8275,48 +8356,31 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Rocío: Toma este libro de ciencia estúdialo mucho</text>
       </speak-char>
       <condition />
-      <child nodeindex="10" />
+      <child nodeindex="9" />
       <effect>
         <generate-object idTarget="c3librociencia" guid="652a9f8c-c746-4945-b358-8683c3d8fab4" />
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="8" editor-x="1604" editor-y="44">
-      <speak-char idTarget="c3nasalon1">
+    <option-node nodeindex="8" question=" ¿Lista para comenzar? " keepShowing="yes" preListening="yes" editor-x="1629" editor-y="66" x="1629" y="66">
+      <speak-player>
+        <text>Si</text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>María: Yo soy muy buena en matemáticas, me gusta la ciencia y quisiera participar en el grupo de ciencia.</text>
-      </speak-char>
+      </speak-player>
       <condition />
-      <speak-char idTarget="c3RocioSalon1">
+      <child nodeindex="10" />
+      <speak-player>
+        <text>No</text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Rocío: No María, las mujeres debemos ser buenas amas de casa y realizar actividades que vayan de acuerdo a nuestro género.</text>
-      </speak-char>
+      </speak-player>
       <condition />
       <child nodeindex="11" />
-      <effect>
-        <move-npc idTarget="c3nasalon1" x="344" y="398" guid="8bf12981-c356-4e59-85ae-118548b580ca" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="9" editor-x="1326" editor-y="339">
-      <speak-char idTarget="c3nasalon1">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>María: ¡No! No estoy lista. Yo quiero participar en las actividades de ciencia. Y seguro que a otras niñas les gustaría hacerlo también.</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="12" />
-      <effect>
-        <move-npc idTarget="c3Jess" x="620" y="393" guid="e74ab6fc-fdf7-4bf8-95e8-4984ab520798" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="10" editor-x="955" editor-y="482">
+    </option-node>
+    <dialogue-node nodeindex="9" editor-x="1081" editor-y="509">
       <speak-char idTarget="c3Rocio">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8340,7 +8404,55 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="11" editor-x="1913" editor-y="49">
+    <dialogue-node nodeindex="10" editor-x="1905" editor-y="30">
+      <speak-char idTarget="c3nasalon1">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>María: Yo soy muy buena en matemáticas, me gusta la ciencia y quisiera participar en el grupo de ciencia.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c3RocioSalon1">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>Rocío: No María, las mujeres debemos ser buenas amas de casa y realizar actividades que vayan de acuerdo a nuestro género.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c3RocioSalon1">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text> Rocío: Y sobre todo realizar actividades que vayan de acuerdo a nuestro género.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="12" />
+      <effect>
+        <move-npc idTarget="c3nasalon1" x="344" y="398" guid="8bf12981-c356-4e59-85ae-118548b580ca" />
+        <condition />
+        <activate flag="CambiarSentimientoC3" guid="9be79cad-0c2d-4048-8a0e-f082d02aaf9f" />
+        <condition />
+        <set-value var="vSentirCap3" value="2" guid="7c4900f7-5593-46f5-a17f-9db6bf84470c" />
+        <condition />
+        <trigger-scene idTarget="c3Salon" x="512" y="307" transitionTime="0" transitionType="0" guid="c739c170-998b-4a52-8f1e-e391f82a28d6" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="11" editor-x="1419" editor-y="504">
+      <speak-char idTarget="c3nasalon1">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>María: ¡No! No estoy lista. Yo quiero participar en las actividades de ciencia. Y seguro que a otras niñas les gustaría hacerlo también.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="13" />
+      <effect>
+        <move-npc idTarget="c3Jess" x="620" y="393" guid="e74ab6fc-fdf7-4bf8-95e8-4984ab520798" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="12" editor-x="2148" editor-y="24">
       <speak-char idTarget="c3nasalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8362,9 +8474,9 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Rocío: La clase ha terminado...</text>
       </speak-char>
       <condition />
-      <child nodeindex="13" />
+      <child nodeindex="14" />
     </dialogue-node>
-    <dialogue-node nodeindex="12" editor-x="1362" editor-y="503">
+    <dialogue-node nodeindex="13" editor-x="1705" editor-y="499">
       <speak-char idTarget="c3Jess">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8372,13 +8484,13 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Jess: Yo también quiero participar en el concurso de ciencia</text>
       </speak-char>
       <condition />
-      <child nodeindex="14" />
+      <child nodeindex="15" />
       <effect>
         <move-npc idTarget="c3Eduardo" x="275" y="393" guid="e53f4117-329d-43f5-9ccd-03766e77322f" />
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="13" editor-x="2351" editor-y="91">
+    <dialogue-node nodeindex="14" editor-x="2692" editor-y="68">
       <speak-char idTarget="c3RocioSalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8397,7 +8509,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="14" editor-x="1606" editor-y="589">
+    <dialogue-node nodeindex="15" editor-x="1949" editor-y="501">
       <speak-char idTarget="c3Eduardo">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8405,9 +8517,9 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Eduardo: Yo gané el premio a la mejor pintura.</text>
       </speak-char>
       <condition />
-      <child nodeindex="15" />
+      <child nodeindex="16" />
     </dialogue-node>
-    <dialogue-node nodeindex="15" editor-x="1742" editor-y="299">
+    <dialogue-node nodeindex="16" editor-x="2304" editor-y="347">
       <speak-player>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8457,13 +8569,13 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Rocío: Toma este libro de ciencia estúdialo mucho</text>
       </speak-char>
       <condition />
-      <child nodeindex="16" />
+      <child nodeindex="17" />
       <effect>
         <generate-object idTarget="c3librociencia" guid="3083f6e3-a04e-4077-ab6b-51a91c7c7206" />
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="16" editor-x="2133" editor-y="355">
+    <dialogue-node nodeindex="17" editor-x="2689" editor-y="353">
       <speak-char idTarget="c3RocioSalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -9005,7 +9117,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="12" />
     </dialogue-node>
-    <dialogue-node nodeindex="11" editor-x="3186" editor-y="498">
+    <dialogue-node nodeindex="11" editor-x="3376" editor-y="451">
       <speak-char idTarget="c4paparque">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -9036,6 +9148,14 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </speak-char>
       <condition />
       <child nodeindex="13" />
+      <effect>
+        <activate flag="CambiarSentimientoC4" guid="71c7e59f-3ef2-4e44-b11b-1a5b38a318d7" />
+        <condition />
+        <set-value var="vSentirCap4" value="1" guid="f3af5da0-c7fa-4952-9b57-f07810d113ea" />
+        <condition />
+        <trigger-scene idTarget="c4parque" x="400" y="300" transitionTime="0" transitionType="0" guid="909552f1-e077-4f7f-86c1-ff7d28dab8e1" />
+        <condition />
+      </effect>
     </dialogue-node>
     <dialogue-node nodeindex="12" editor-x="4244" editor-y="28">
       <speak-char idTarget="c4naparque">
@@ -9172,7 +9292,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" question="¿Será que me iré a dormir?" keepShowing="yes" preListening="yes" editor-x="651" editor-y="36" x="651" y="36">
+    <option-node nodeindex="1" question="¿Será que me iré a dormir?" keepShowing="yes" preListening="yes" editor-x="452" editor-y="38" x="452" y="38">
       <speak-player correct="true">
         <text>Si</text>
         <resources name="No name">
@@ -9181,8 +9301,16 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </speak-player>
       <condition />
       <child nodeindex="2" />
+      <effect>
+        <activate flag="CambiarSentimientoC4" guid="707b3bff-05cc-4896-8d0d-c493748c6f22" />
+        <condition />
+        <set-value var="vSentirCap4" value="2" guid="b7aab1df-769d-4a8f-954d-a3bb194a0133" />
+        <condition />
+        <trigger-scene idTarget="c4sala1" x="333" y="285" transitionTime="0" transitionType="0" guid="8db6cf21-960d-4b3c-bd11-e977c71af16c" />
+        <condition />
+      </effect>
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="892" editor-y="45">
+    <dialogue-node nodeindex="2" editor-x="729" editor-y="73">
       <speak-char idTarget="c4nosala1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -9755,6 +9883,61 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
+  <graph-conversation id="FinCapitulos">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="c4Jufinal">
+        <resources name="No name">
+          <asset type="image" uri="" />
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>Juan: Me gusta mucho vivir aquí, pueblo escarlata es muy bonito.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4Mafinal">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>María: Los estereotipos de género pueden ser un problema que nos hace sentir mal.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4Jufinal">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>Juan: Sin embargo, si estamos juntos podremos superarlos todos.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4Mafinal">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>María: Los estereotipos de género pueden romperse con ayuda y apoyo de tus seres queridos. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4Jufinal">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>Juan: Si tienes una duda puedes escribirnos a kiddovideogame@gmail.com </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="c4Mafinal">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>María: Gracias por jugar Kiddo.</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-cutscene idTarget="Creditosfinal" guid="34d22da2-30a7-480b-b630-544513126abc" />
+          <condition />
+          <trigger-cutscene idTarget="EndSlide" guid="119e18e0-fcab-434a-a2f7-2c7eec6bf3f7" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
   <book id="historia" xNextPage="707" yNextPage="507" xPreviousPage="20" yPreviousPage="507">
     <resources name="No name">
       <asset type="background" uri="assets/special/DefaultBook.jpg" />
@@ -9799,6 +9982,188 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
   <atrezzoobject id="atras">
     <resources name="No name">
       <asset type="image" uri="assets/image/flecha-hacia-atras.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="CuadroJuan">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/marco-de-la-foto Juan opt.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="CuadroMari">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/marco-de-la-foto Maria opt.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="relojpared">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/relojpared.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="coche">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/ventana-trasera.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="lampara">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/lamp.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="grupo">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/4b opt.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="cerrar">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/cerrar.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="ave">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/pajaro.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="aves">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/aves.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="luna">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/luna.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="doll">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/muneca.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="hose">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/casa-de-munecas.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="dino">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/dino.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
