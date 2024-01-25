@@ -1596,19 +1596,19 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="vCurrentMap" value="1" />
+          <equals var="vCurrentMap" value="2" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="cv3pueblo" guid="f7481951-b157-4566-a870-84b293445257" />
+          <trigger-conversation idTarget="Cv3iraCasa" guid="53bfdf01-1161-4438-890d-c35885e4684d" />
           <condition />
         </effect>
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="vCurrentMap" value="2" />
+          <equals var="vCurrentMap" value="1" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="Cv3iraCasa" guid="53bfdf01-1161-4438-890d-c35885e4684d" />
+          <trigger-conversation idTarget="cv3pueblo" guid="b518ac3f-7c3a-48c3-b606-4c653ad101b8" />
           <condition />
         </effect>
       </talk-to>
@@ -2420,7 +2420,7 @@
       <character-ref idTarget="noPuebloIntro" x="215" y="393" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3091,7 +3091,7 @@
       <atrezzo-ref idTarget="grupo" x="344" y="203" scale="0.1405259" glow="no" layer="1" />
     </atrezzo>
   </scene>
-  <scene id="c3elpuebloCAS" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c3elpueblogoCasa" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3102,13 +3102,15 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="286" y="347" width="100" height="100" hasInfluenceArea="no" idTarget="c3sala1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="293" y="347" width="100" height="100" hasInfluenceArea="no" idTarget="c3sala1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="validaMapac3" />
         </condition>
         <not-effect>
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="2706d4db-3eca-432c-9076-a560068a55e1">Habla con Juan</show-text>
+          <condition />
+          <activate flag="validaMapac3" guid="679a5963-f338-41e8-897f-a96a9611fb76" />
           <condition />
         </not-effect>
       </exit>
@@ -3117,8 +3119,8 @@
       <object-ref idTarget="mapa" x="661" y="557" scale="0.9386919" glow="yes" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="naPueblo" x="150" y="250" scale="0.5" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="c3nopueblo" x="153" y="504" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="naPueblo" x="147" y="542" scale="0.5" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="c3nopueblo" x="143" y="265" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="c3sala1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3634,7 +3636,7 @@ No eres buena en ciencias</speak-char>
     <default-initial-position x="400" y="450" />
     <exits>
       <exit rectangular="yes" x="723" y="18" width="41" height="36" hasInfluenceArea="no" idTarget="c4MapaCasaDos" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" />
+        <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
     <objects>
@@ -3839,7 +3841,7 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="introvideo" start="yes" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="introvideo" start="no" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -6122,237 +6124,6 @@ Gracias
       </end-conversation>
     </dialogue-node>
   </graph-conversation>
-  <graph-conversation id="csalaEstar">
-    <dialogue-node nodeindex="0" editor-x="71" editor-y="23">
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="" />
-        </resources>
-        <text>npu\fnvui</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="1" />
-    </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="432" editor-y="0">
-      <speak-char idTarget="nosalaEstar1">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Roberto, la casa es perfecta</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Lucy, aquí viviremos muy bien...</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Los niños crecerán muy bien</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="nosalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Papa María ha seleccionado color rosa para su habitación</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Que buen color rosa es bonito</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="nosalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>yo quiero también pintar de rosa mi habitación</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Juan Rosa es para las niñas</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="2" />
-      <effect>
-        <move-npc idTarget="masalaEstar" x="201" y="250" guid="c3c44bae-4947-44c3-8bac-bf111b07749b" />
-        <condition />
-        <move-npc idTarget="pasalaEstar" x="351" y="250" guid="e64397db-bd84-477d-943d-60e94753b227" />
-        <condition />
-        <wait-time time="1" guid="318447ec-187d-40eb-8962-ec9fc4994d29" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="2" editor-x="651" editor-y="51">
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>mmm...</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="3" />
-      <effect>
-        <wait-time time="1" guid="14f1c2e1-f43c-4931-a79e-078c2a7526c2" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="865" editor-y="40">
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Juan los hombres no usamos el color rosa, eso es de mujeres</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="nosalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>pero el rosa es un color bonito</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="nosalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>en la escuela nos dijeron que los colores no tienen género</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="4" />
-      <effect>
-        <move-npc idTarget="masalaEstar" x="202" y="250" guid="0d5bb2d9-d78e-47f2-9c71-8c1235cc4833" />
-        <condition />
-        <wait-time time="1" guid="3f71734e-3c11-44f5-bcc9-5a050506a50e" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="4" editor-x="1036" editor-y="207">
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Roberto...</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>¿Recuerdas la boda de mi hermano?</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>sí, claro</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>ese día usaste una camisa rosa</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="5" />
-      <effect>
-        <move-npc idTarget="pasalaEstar" x="352" y="250" guid="2ad73545-d428-4585-a532-2c6027342755" />
-        <condition />
-        <wait-time time="1" guid="2907b120-bcd2-47bb-be0e-ed3285af4f30" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="5" editor-x="40" editor-y="326">
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>es cierto...  era una camisa fantástica</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>era color rosa </text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>si, con botones negros muy hermosos</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="6" />
-    </dialogue-node>
-    <dialogue-node nodeindex="6" editor-x="281" editor-y="305">
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>hijo, perdóname</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>tienes razón acerca de los colores</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Me he equivocado</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="7" />
-      <effect>
-        <wait-time time="1" guid="3c0b5ffe-130e-43a3-85b4-2f71ce9ac0c7" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="709" editor-y="276">
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Tú puedes usar el color que quieras </text>
-      </speak-char>
-      <condition />
-      <child nodeindex="8" />
-      <effect>
-        <move-npc idTarget="pasalaEstar" x="320" y="250" guid="9b7a7a74-578b-43ba-9739-0e58e55f404b" />
-        <condition />
-        <wait-time time="1" guid="84863005-0505-44de-9192-bae7e19176e5" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="8" editor-x="446" editor-y="557">
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Recuerda hijo: Los colores no tienen género</text>
-      </speak-char>
-      <condition />
-      <end-conversation />
-    </dialogue-node>
-  </graph-conversation>
   <graph-conversation id="cSala">
     <dialogue-node nodeindex="0" editor-x="0" editor-y="148">
       <speak-char idTarget="masalaEstar">
@@ -8027,7 +7798,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Cv3iraCasa">
-    <dialogue-node nodeindex="0" editor-x="167" editor-y="154">
+    <dialogue-node nodeindex="0" editor-x="94" editor-y="21">
       <speak-char idTarget="c3nopueblo">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8049,19 +7820,24 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>María: Investigaré más acerca de ciencias en mi teléfono.</text>
       </speak-char>
       <condition />
-      <speak-player>
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>#! ingresa a casa</text>
-      </speak-player>
+      <speak-char idTarget="c3nopueblo">
+        <resources name="No name" />
+        <text>Juan: Entremos a casa </text>
+      </speak-char>
       <condition />
-      <end-conversation>
-        <effect>
-          <activate flag="validaMapac3" guid="ce7ce674-3fc9-401b-8575-e20cd0ec790d" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <child nodeindex="1" />
+      <effect>
+        <activate flag="validaMapac3" guid="ce7ce674-3fc9-401b-8575-e20cd0ec790d" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="733" editor-y="79">
+      <speak-char idTarget="c3nopueblo">
+        <resources name="No name" />
+        <text>#! Juan: Entremos a casa </text>
+      </speak-char>
+      <condition />
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="cv3Pasillo">
@@ -8380,7 +8156,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="11" />
     </option-node>
-    <dialogue-node nodeindex="9" editor-x="1081" editor-y="509">
+    <dialogue-node nodeindex="9" editor-x="926" editor-y="465">
       <speak-char idTarget="c3Rocio">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8388,23 +8164,13 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>La clase ha terminado, vayan directo a casa</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="c3RocioSalon1">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>#!  vayan directo a casa</text>
-      </speak-char>
-      <condition />
-      <end-conversation>
-        <effect>
-          <set-value var="vCurrentMap" value="2" guid="9b95de2a-c9f5-49f1-b8d1-4b2c645865fc" />
-          <condition />
-          <trigger-scene idTarget="c3elpuebloCAS" x="524" y="450" transitionTime="0" transitionType="5" guid="33c943aa-21b8-4be1-a13d-9098b2f1a7e8" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <child nodeindex="12" />
+      <effect>
+        <set-value var="vCurrentMap" value="2" guid="9b95de2a-c9f5-49f1-b8d1-4b2c645865fc" />
+        <condition />
+      </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="10" editor-x="1905" editor-y="30">
+    <dialogue-node nodeindex="10" editor-x="1950" editor-y="25">
       <speak-char idTarget="c3nasalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8426,15 +8192,13 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text> Rocío: Y sobre todo realizar actividades que vayan de acuerdo a nuestro género.</text>
       </speak-char>
       <condition />
-      <child nodeindex="12" />
+      <child nodeindex="13" />
       <effect>
         <move-npc idTarget="c3nasalon1" x="344" y="398" guid="8bf12981-c356-4e59-85ae-118548b580ca" />
         <condition />
         <activate flag="CambiarSentimientoC3" guid="9be79cad-0c2d-4048-8a0e-f082d02aaf9f" />
         <condition />
         <set-value var="vSentirCap3" value="2" guid="7c4900f7-5593-46f5-a17f-9db6bf84470c" />
-        <condition />
-        <trigger-scene idTarget="c3Salon" x="512" y="307" transitionTime="0" transitionType="0" guid="c739c170-998b-4a52-8f1e-e391f82a28d6" />
         <condition />
       </effect>
     </dialogue-node>
@@ -8446,13 +8210,50 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>María: ¡No! No estoy lista. Yo quiero participar en las actividades de ciencia. Y seguro que a otras niñas les gustaría hacerlo también.</text>
       </speak-char>
       <condition />
-      <child nodeindex="13" />
+      <child nodeindex="14" />
       <effect>
         <move-npc idTarget="c3Jess" x="620" y="393" guid="e74ab6fc-fdf7-4bf8-95e8-4984ab520798" />
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="12" editor-x="2148" editor-y="24">
+    <dialogue-node nodeindex="12" editor-x="1175" editor-y="470">
+      <speak-player>
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>#!  vayan directo a casa</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="c3elpueblogoCasa" x="524" y="450" transitionTime="0" transitionType="0" guid="3fa50051-8579-4102-b8d0-8df97e166b14" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="13" editor-x="2401" editor-y="38">
+      <speak-char idTarget="c3nasalon1">
+        <resources name="No name" />
+        <text>María: Está bien maestra. </text>
+      </speak-char>
+      <condition />
+      <child nodeindex="15" />
+    </dialogue-node>
+    <dialogue-node nodeindex="14" editor-x="1705" editor-y="499">
+      <speak-char idTarget="c3Jess">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>Jess: Yo también quiero participar en el concurso de ciencia</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="16" />
+      <effect>
+        <move-npc idTarget="c3Eduardo" x="275" y="393" guid="e53f4117-329d-43f5-9ccd-03766e77322f" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="15" editor-x="3023" editor-y="22">
       <speak-char idTarget="c3nasalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8474,42 +8275,9 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Rocío: La clase ha terminado...</text>
       </speak-char>
       <condition />
-      <child nodeindex="14" />
+      <child nodeindex="17" />
     </dialogue-node>
-    <dialogue-node nodeindex="13" editor-x="1705" editor-y="499">
-      <speak-char idTarget="c3Jess">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Jess: Yo también quiero participar en el concurso de ciencia</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="15" />
-      <effect>
-        <move-npc idTarget="c3Eduardo" x="275" y="393" guid="e53f4117-329d-43f5-9ccd-03766e77322f" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="14" editor-x="2692" editor-y="68">
-      <speak-char idTarget="c3RocioSalon1">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>#!  vayan directo a casa</text>
-      </speak-char>
-      <condition />
-      <end-conversation>
-        <effect>
-          <wait-time time="2" guid="4b945e43-d3d7-4a8b-aaf7-20db08194010" />
-          <condition />
-          <set-value var="vCurrentMap" value="2" guid="060d3fc1-fd75-43cb-9a6f-b7d8d82904dd" />
-          <condition />
-          <trigger-scene idTarget="c3elpuebloCAS" x="524" y="450" transitionTime="0" transitionType="4" guid="5a390ac3-c8a9-4718-9bb2-cae77946240e" />
-          <condition />
-        </effect>
-      </end-conversation>
-    </dialogue-node>
-    <dialogue-node nodeindex="15" editor-x="1949" editor-y="501">
+    <dialogue-node nodeindex="16" editor-x="1949" editor-y="501">
       <speak-char idTarget="c3Eduardo">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8517,9 +8285,23 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Eduardo: Yo gané el premio a la mejor pintura.</text>
       </speak-char>
       <condition />
-      <child nodeindex="16" />
+      <child nodeindex="18" />
     </dialogue-node>
-    <dialogue-node nodeindex="16" editor-x="2304" editor-y="347">
+    <dialogue-node nodeindex="17" editor-x="3387" editor-y="66">
+      <speak-char idTarget="c3RocioSalon1">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>#! Rocío: La clase ha terminado...</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="19" />
+      <effect>
+        <set-value var="vCurrentMap" value="2" guid="70f8df92-4e98-48af-b586-7d2a1cc71602" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="18" editor-x="2304" editor-y="347">
       <speak-player>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8569,13 +8351,26 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Rocío: Toma este libro de ciencia estúdialo mucho</text>
       </speak-char>
       <condition />
-      <child nodeindex="17" />
+      <child nodeindex="20" />
       <effect>
         <generate-object idTarget="c3librociencia" guid="3083f6e3-a04e-4077-ab6b-51a91c7c7206" />
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="17" editor-x="2689" editor-y="353">
+    <dialogue-node nodeindex="19" editor-x="3711" editor-y="77">
+      <speak-player>
+        <resources name="No name" />
+        <text>#!  vayan directo a casa</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="c3elpueblogoCasa" x="524" y="450" transitionTime="0" transitionType="0" guid="27843217-34d2-48af-bd18-3e161a5a89e8" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="20" editor-x="2689" editor-y="353">
       <speak-char idTarget="c3RocioSalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8583,18 +8378,21 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>La clase ha terminado, vayan directo a casa</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="c3RocioSalon1">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text> vayan directo a casa</text>
-      </speak-char>
+      <child nodeindex="21" />
+      <effect>
+        <set-value var="vCurrentMap" value="2" guid="866045a4-50b1-47ee-801c-6fd3249b2761" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="21" editor-x="2924" editor-y="353">
+      <speak-player>
+        <resources name="No name" />
+        <text>#!  vayan directo a casa</text>
+      </speak-player>
       <condition />
       <end-conversation>
         <effect>
-          <set-value var="vCurrentMap" value="1" guid="866045a4-50b1-47ee-801c-6fd3249b2761" />
-          <condition />
-          <trigger-scene idTarget="c3elpuebloCAS" x="524" y="450" transitionTime="0" transitionType="5" guid="c2316069-fb75-4104-a228-98d1530e3326" />
+          <trigger-scene idTarget="c3elpueblogoCasa" x="524" y="450" transitionTime="0" transitionType="0" guid="89bc0dfd-1322-4937-9143-c94252b263eb" />
           <condition />
         </effect>
       </end-conversation>
@@ -10231,7 +10029,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <milestone type="SCENE" targetId="c3elpuebloES" />
       <milestone type="SCENE" targetId="c3escuela" />
       <milestone type="SCENE" targetId="c3Salon" />
-      <milestone type="SCENE" targetId="c3elpuebloCAS" />
+      <milestone type="SCENE" targetId="c3elpueblogoCasa" />
       <milestone type="SCENE" targetId="c3sala1" />
       <milestone type="SCENE" targetId="c3pesadilla" />
       <milestone type="SCENE" targetId="c3p1" />
