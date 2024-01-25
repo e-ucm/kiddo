@@ -2394,14 +2394,14 @@
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/backgroundsmall optimo.jpg" />
+      <asset type="background" uri="assets/background/Ilustracion gatos opt.png" />
       <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="367" y="226" width="252" height="312" hasInfluenceArea="no" idTarget="relojgif" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="402" y="282" width="176" height="236" hasInfluenceArea="no" idTarget="relojgif" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="validaReloj" />
@@ -2413,14 +2413,14 @@
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="reloj" x="508" y="626" scale="0.9852092" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="reloj" x="492" y="590" scale="0.7341872" glow="no" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="naPuebloIntro" x="766" y="395" scale="0.5" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="noPuebloIntro" x="215" y="393" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="naPuebloIntro" x="748" y="505" scale="0.64" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="noPuebloIntro" x="210" y="503" scale="0.64" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3528,14 +3528,14 @@ No eres buena en ciencias</speak-char>
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/FONDO MONSTRUOS-1-opt.png" />
+      <asset type="background" uri="assets/background/pesadilla cap4 1opt.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="c4montruo1" x="164" y="369" scale="0.5388556" orientation="3" glow="no" layer="0" hasInfluenceArea="no" />
-      <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c4montruo1" x="296" y="574" scale="0.6389953" orientation="3" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="c4nopesadilla" x="729" y="521" scale="0.5835775" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="c4lacocina" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3751,25 +3751,25 @@ No eres buena en ciencias</speak-char>
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/FONDO MONSTRUOS-1-opt.png" />
+      <asset type="background" uri="assets/background/Pesadilla cap4 opt.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="675" y="15" width="74" height="94" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="675" y="17" width="74" height="111" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4cubeta" x="70" y="460" scale="0.06757044" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4cubeta" x="70" y="544" scale="0.07996502" glow="no" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="c4montruo1" x="193" y="447" scale="0.6807835" orientation="3" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="c4montruo1" x="204" y="489" scale="0.6467712" orientation="3" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="c4nopesadilla" x="587" y="383" scale="0.4559199" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
     </characters>
     <atrezzo>
-      <atrezzo-ref idTarget="menuHamburguesa" x="717" y="107" scale="0.1494174" glow="no" layer="0" />
+      <atrezzo-ref idTarget="menuHamburguesa" x="717" y="126" scale="0.1768253" glow="no" layer="0" />
     </atrezzo>
   </scene>
   <scene id="c4finalchapter" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3841,7 +3841,7 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="introvideo" start="no" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="introvideo" start="yes" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
