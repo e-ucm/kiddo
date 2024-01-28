@@ -2371,7 +2371,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="374" y="190" width="284" height="196" hasInfluenceArea="no" idTarget="elpuebloIntro" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="374" y="178" width="286" height="208" hasInfluenceArea="no" idTarget="elpuebloIntro" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="validaIntro" />
@@ -2431,30 +2431,51 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="43" y="130" width="434" height="198" hasInfluenceArea="no" idTarget="elpueblo" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="43" y="130" width="434" height="183" hasInfluenceArea="no" idTarget="elpueblo" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <inactive flag="f1block" />
+        </condition>
         <post-effect>
           <set-value var="vCurrentChapter" value="1" guid="477966f7-ae29-4d28-8aab-35cf28507ab1" />
           <condition />
         </post-effect>
+        <not-effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="3bab5489-fe2a-4b3a-9fe4-c12d9dc62244">Ya jugaste este Capítulo, selecciona otro.</show-text>
+          <condition />
+        </not-effect>
       </exit>
-      <exit rectangular="yes" x="527" y="128" width="445" height="211" hasInfluenceArea="no" idTarget="cap2vid" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="527" y="128" width="429" height="192" hasInfluenceArea="no" idTarget="cap2vid" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <inactive flag="f2block" />
+        </condition>
         <post-effect>
           <set-value var="vCurrentChapter" value="1" guid="33cf4d11-ad6b-4a16-9f42-1a29528ae802" />
           <condition />
         </post-effect>
+        <not-effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="adc65588-823b-4d4b-b1b6-6a3d82520a5c">Ya jugaste este Capítulo, selecciona otro.</show-text>
+          <condition />
+        </not-effect>
       </exit>
-      <exit rectangular="yes" x="54" y="360" width="425" height="208" hasInfluenceArea="no" idTarget="c3elpuebloES" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="4" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="54" y="360" width="425" height="223" hasInfluenceArea="no" idTarget="c3elpuebloES" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="4" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <inactive flag="f3block" />
+        </condition>
         <post-effect>
           <set-value var="vCurrentChapter" value="3" guid="a638d737-66cf-4b59-8898-95c8a6e49db9" />
           <condition />
           <set-value var="vCurrentMap" value="1" guid="6a6d6333-7776-4042-b53c-c22756dc1535" />
           <condition />
         </post-effect>
+        <not-effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="a935174a-fe24-4fbb-a1bf-bf7f46cb1cdf">Ya jugaste este Capítulo, selecciona otro.</show-text>
+          <condition />
+        </not-effect>
       </exit>
-      <exit rectangular="yes" x="515" y="370" width="452" height="197" hasInfluenceArea="no" idTarget="c4parque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="538" y="363" width="414" height="207" hasInfluenceArea="no" idTarget="c4parque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <set-value var="vCurrentMap" value="4" guid="94b9c3f2-ce63-48a5-aea3-a0e6d92ad1ea" />
@@ -2485,6 +2506,12 @@
         </actions>
       </active-area>
     </active-areas>
+    <atrezzo>
+      <atrezzo-ref idTarget="uno" x="400" y="312" scale="0.7" glow="no" layer="1" />
+      <atrezzo-ref idTarget="dos" x="872" y="315" scale="0.7" glow="no" layer="2" />
+      <atrezzo-ref idTarget="tres" x="401" y="575" scale="0.7" glow="no" layer="4" />
+      <atrezzo-ref idTarget="cuatro" x="872" y="575" scale="0.7" glow="no" layer="3" />
+    </atrezzo>
   </scene>
   <scene id="elpueblo" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2873,7 +2900,7 @@
       <character-ref idTarget="nacofre" x="142" y="519" scale="0.7" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="c2cofre4" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c2cofre4" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3841,7 +3868,7 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="introvideo" start="yes" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="introvideo" start="no" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3897,7 +3924,7 @@ conseguiste el corazon del valor.
       <condition />
       <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4aac2d29-2e79-4918-9331-c27ad50d0771">Gracias a que aprendiste algo nuevo 
 sobre estereotipos de genero, 
-conseguiste la posión del valor.
+conseguiste la poción del valor.
 ¡Regresa y derrota al monstruo!</show-text>
       <condition />
       <generate-object idTarget="posion" guid="2801fd4e-bf88-45f4-8d09-04819b299b58" />
@@ -3922,7 +3949,7 @@ conseguiste la posión del valor.
 Conseguiste el gran libro de ciencias...
 ¡Con el podrás vencer cualquier estereotipo!</show-text>
       <condition />
-      <wait-time time="5" guid="b7f6d3cc-7696-4763-a1f0-74675ee7d25c" />
+      <wait-time time="2" guid="b7f6d3cc-7696-4763-a1f0-74675ee7d25c" />
       <condition />
       <set-value var="vcurrentpesadilla" value="1" guid="db1a6525-a92a-4f6e-a559-6c12b8636af3" />
       <condition />
@@ -4033,7 +4060,7 @@ Conseguiste el gran libro de ciencias...
       <condition />
     </effect>
     <resources name="No name">
-      <asset type="video" uri="assets/video/Fin de capítulo2.mp4" />
+      <asset type="video" uri="assets/video/Fin de capitulo.mp4" />
       <asset type="slides" uri="assets/special/EmptyAnimation" />
     </resources>
     <name>
@@ -4158,9 +4185,8 @@ Has ganado...</show-text>
           <condition />
           <wait-time time="1" guid="a1d6bdb5-efc4-4b36-93e7-6b027b39eb54" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FA1212FF" borderColor="#000000FF" uri="" guid="eef01ecd-fcfd-4786-adae-2793633e63a3">Toma esta estrella. 
-Si me pudiste vencer, tal vez te pueda ayudar a vencer al mas fuerte de los monstruos de genero. 
-Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
+          <show-text x="300" y="300" frontColor="#FA1212FF" borderColor="#000000FF" uri="" guid="eef01ecd-fcfd-4786-adae-2793633e63a3">Si me pudiste vencer, tal vez te pueda ayudar a vencer al mas fuerte de los monstruos de genero. 
+Recuerda que hay muchos otros, más fuertes que yo.</show-text>
           <condition />
           <wait-time time="5" guid="19c54c6e-a148-49ed-96bb-088c426f1d28" />
           <condition />
@@ -4169,6 +4195,8 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <trigger-cutscene idTarget="finCapitulo" guid="369fb9f4-ebdc-483f-ad46-fe3220b62991" />
           <condition />
           <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="0" guid="fe457279-45c2-48b3-bf4f-b36d6999b485" />
+          <condition />
+          <activate flag="f1block" guid="9897bfea-0b6c-4bdd-84d6-e50389f7d9e9" />
           <condition />
         </effect>
       </give-to>
@@ -4378,22 +4406,6 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </object>
-  <object id="vidaotro" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
-    <documentation>
-    </documentation>
-    <resources name="">
-      <asset type="image" uri="assets/image/002-life-1.png" />
-      <asset type="icon" uri="assets/special/EmptyIcon.png" />
-    </resources>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-  </object>
   <object id="aprendeCap1-Alex" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/Alex-mini.png" />
@@ -4571,7 +4583,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
           <generate-object idTarget="c2Guantes" guid="4451779f-0cff-4ba0-a35d-ed5d9970c966" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="dd6aa886-066f-44ab-9199-6350be25ba8e">Los Guantes son uy importantes...</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="dd6aa886-066f-44ab-9199-6350be25ba8e">Los Guantes son muy importantes...</show-text>
           <condition />
           <increment var="vEncuentraObjetosBox" value="1" guid="25c20e02-0c0b-4fe9-9bf3-e08055c62d78" />
           <condition />
@@ -4647,7 +4659,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
           <generate-object idTarget="c2playera" guid="1a85203c-46c3-447f-b2d6-e3b7059058f0" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="fc50a198-cb61-4975-8b0d-f889f96d4640">son uy importantes...</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="fc50a198-cb61-4975-8b0d-f889f96d4640">son muy importantes...</show-text>
           <condition />
           <increment var="vEncuentraObjetosBox" value="1" guid="b9d06c27-927d-4ee5-ba45-4f85a2b94282" />
           <condition />
@@ -4685,7 +4697,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
           <generate-object idTarget="c2zapatos" guid="a6b937d2-c793-44b5-8061-169214b6aeb9" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1b40e3f9-2a4b-4615-8e69-499bbe2aad2a">son uy importantes...</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1b40e3f9-2a4b-4615-8e69-499bbe2aad2a">son muy importantes...</show-text>
           <condition />
           <increment var="vEncuentraObjetosBox" value="1" guid="0c20be47-997d-4a05-a16b-7464f5a2e82a" />
           <condition />
@@ -4875,6 +4887,8 @@ Gracias
           <trigger-cutscene idTarget="finCapitulo" guid="5c2ee802-e5fc-4cf4-b212-81c751cfe502" />
           <condition />
           <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="2" guid="bc333c94-c55a-4a3a-b9a4-8201232ac777" />
+          <condition />
+          <activate flag="f3block" guid="f46a5376-1adb-40f3-b678-0e98bb8247a1" />
           <condition />
         </effect>
       </give-to>
@@ -5761,20 +5775,6 @@ Gracias
       </examine>
     </actions>
   </object>
-  <object id="MenuConfig" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
-    <resources name="No name">
-      <asset type="image" uri="assets/image/boton-config.png" />
-      <asset type="icon" uri="assets/special/EmptyIcon.png" />
-    </resources>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-  </object>
   <object id="back" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/flecha-hacia-atras.png" />
@@ -5802,7 +5802,7 @@ Gracias
         <resources name="No name">
           <asset type="image" uri="" />
         </resources>
-        <text>María: Este Reloj te permite viajar en el tiempo, puedes ver nuestros recuerdos. </text>
+        <text>María: Este Reloj te permite viajar en el tiempo y puedes ver nuestros sueños. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="noPuebloIntro">
@@ -7476,7 +7476,7 @@ Gracias
       <end-conversation>
         <effect>
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="79ea588d-a1dc-436d-9999-8821fb2b51fe">Lista de Objetos para iniciar clases de Boxeo
-Protrctor Bucal
+Protector Bucal
 Casco
 Espinilleras
 Short
@@ -7713,10 +7713,6 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <condition>
           <equals var="ListaObjetosBox" value="7" />
         </condition>
-        <generate-object idTarget="star" guid="894c7b3a-0cd3-493a-84db-1ec01d6f61f9" />
-        <condition>
-          <equals var="ListaObjetosBox" value="7" />
-        </condition>
       </effect>
     </dialogue-node>
     <dialogue-node nodeindex="1" editor-x="322" editor-y="64">
@@ -7731,10 +7727,15 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     </dialogue-node>
     <dialogue-node nodeindex="2" editor-x="694" editor-y="65">
       <speak-char idTarget="nasueno2">
+        <resources name="No name" />
+        <text>¡Los deportes se hicieron para divertirnos con nuestros amigos y para mantenernos saludables! </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="nasueno2">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>¡Los deportes se hicieron para divertirnos con nuestros amigos y para mantenernos saludables! No dejes que nadie te diga que no puedes hacer algún deporte solo por ser niño o niña. ¡Todos tenemos las mismas capacidades y oportunidades!</text>
+        <text>No dejes que nadie te diga que no puedes hacer algún deporte solo por ser niño o niña. ¡Todos tenemos las mismas capacidades y oportunidades!</text>
       </speak-char>
       <condition>
         <equals var="ListaObjetosBox" value="7" />
@@ -7746,6 +7747,8 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <trigger-cutscene idTarget="finCapitulo" guid="c926af6e-6f12-4431-8c57-1342137c06b2" />
           <condition />
           <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="0" guid="fa22883b-410e-4551-bea5-bb7239064de7" />
+          <condition />
+          <activate flag="f2block" guid="c825e065-fe95-47f7-a336-c06cbbbf6666" />
           <condition />
         </effect>
       </end-conversation>
@@ -9494,7 +9497,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Hemos reminado de limpiar la casa</text>
+        <text>Hemos terminado de limpiar la casa</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4namapahome">
@@ -9508,21 +9511,21 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>El trabajo en euipo es mucho mejor</text>
+        <text>El trabajo en equipo es mucho mejor</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>#! Has obtenido la cubeta con jabón</text>
+        <text>#O Has obtenido la cubeta con jabón</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>#! Usala con sabiiduría</text>
+        <text>#! Usala con sabiduría</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -9559,7 +9562,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Seguiré ensuciando todo para que ma{ia y mamá vuelvan a limpiar la casa</text>
+        <text>Seguiré ensuciando todo para que María y mamá vuelvan a limpiar la casa</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4montruo1">
@@ -9571,7 +9574,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" question=" ¿a caso tienes un jabón mágico?" keepShowing="yes" preListening="yes" editor-x="292" editor-y="31" x="292" y="31">
+    <option-node nodeindex="1" question=" ¿a caso tienes un jabón mágico?" keepShowing="yes" preListening="yes" editor-x="621" editor-y="0" x="621" y="0">
       <speak-player>
         <text>Si</text>
         <resources name="No name">
@@ -9589,7 +9592,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="560" editor-y="30">
+    <dialogue-node nodeindex="2" editor-x="1089" editor-y="53">
       <speak-char idTarget="c4montruo1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -9601,7 +9604,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan, tu eres niño... deja esas actividades</text>
+        <text>Juan, tú eres niño... deja esas actividades</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4montruo1">
@@ -9613,7 +9616,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="4" />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="284" editor-y="471">
+    <dialogue-node nodeindex="3" editor-x="504" editor-y="382">
       <speak-char idTarget="c4montruo1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -9625,7 +9628,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>#! Regresa y busca la cubta con jabón para vencer a Apestosín </text>
+        <text>#! Regresa y busca la cubeta con jabón para vencer a Apestosín</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -9654,28 +9657,28 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>tu solo eres un estereotipo viejo.</text>
+        <text>Tú solo eres un estereotipo viejo.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4nopesadilla">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>un estereotipo sucio y anticuado.</text>
+        <text>Un estereotipo sucio y anticuado.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4nopesadilla">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Así que te limpiaremos com a la casa.</text>
+        <text>Así que te limpiaremos como a la casa.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4nopesadilla">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>#! Tira la cubeta de agua con jabón al monstruo apestosin.</text>
+        <text>#! Tira la cubeta de agua con jabón al monstruo Apestosín.</text>
       </speak-char>
       <condition />
       <end-conversation />
@@ -9731,6 +9734,8 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <trigger-cutscene idTarget="Creditosfinal" guid="34d22da2-30a7-480b-b630-544513126abc" />
           <condition />
           <trigger-cutscene idTarget="EndSlide" guid="119e18e0-fcab-434a-a2f7-2c7eec6bf3f7" />
+          <condition />
+          <activate flag="Cap4End" guid="49e91fc4-79fd-4544-a9af-220c46b02452" />
           <condition />
         </effect>
       </end-conversation>
@@ -9973,6 +9978,62 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </atrezzoobject>
+  <atrezzoobject id="uno">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/numero-1.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="dos">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/numero-2.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="tres">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/numero-3.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="cuatro">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/numero-4.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
   <macro id="GameEndig">
     <documentation>
     </documentation>
@@ -9981,6 +10042,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <active flag="Cap1End" />
       <active flag="Cap2End" />
       <active flag="Cap3End" />
+      <active flag="Cap4End" />
     </condition>
   </macro>
   <completable id="CompletableCapitulo1" repeatable="false" type="completable">
