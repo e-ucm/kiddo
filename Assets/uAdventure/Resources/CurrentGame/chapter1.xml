@@ -4093,7 +4093,7 @@ Conseguiste el gran libro de ciencias...
     <name>
     </name>
   </videoscene>
-  <slidescene id="EndSlide" start="no" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <slidescene id="EndSlide" start="no" next="end-chapter" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
