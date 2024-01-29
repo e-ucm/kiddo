@@ -1888,7 +1888,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="c4nosala1" behaviour="normal">
+  <character id="c4nosala1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -3796,7 +3796,7 @@ No eres buena en ciencias</speak-char>
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4cubeta" x="98" y="567" scale="0.3268775" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4cubeta" x="93" y="575" scale="0.05230964" glow="no" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="c4montruo1" x="204" y="489" scale="0.6467712" orientation="3" glow="no" layer="2" hasInfluenceArea="no" />
@@ -5773,7 +5773,8 @@ Regresa al mapa, da click en el mini mapa superior izquierdo.</show-text>
 3.- Limpiar la sala
 4.- Limpiar la cocina 
 5.- Colocar la ropa de María en la lavadora
-6.- Colocar la ropa de Juan en la lavadora</show-text>
+6.- Colocar la ropa de Juan en la lavadora
+Finalmente habla con María.</show-text>
           <condition />
         </effect>
       </examine>
