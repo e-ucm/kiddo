@@ -1958,7 +1958,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c4nopesadilla" behaviour="normal">
+  <character id="c4nopesadilla" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -2231,7 +2231,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="c4montruo1" behaviour="normal">
+  <character id="c4montruo1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/c4apestosinanimate.eaa.xml" />
       <asset type="standdown" uri="assets/animation/c4apestosinblue.eaa.xml" />
@@ -2420,7 +2420,7 @@
       <character-ref idTarget="noPuebloIntro" x="210" y="503" scale="0.64" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -2431,7 +2431,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="43" y="130" width="434" height="183" hasInfluenceArea="no" idTarget="elpueblo" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="46" y="125" width="430" height="194" hasInfluenceArea="no" idTarget="elpueblo" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <inactive flag="f1block" />
@@ -2475,12 +2475,19 @@
           <condition />
         </not-effect>
       </exit>
-      <exit rectangular="yes" x="538" y="363" width="414" height="207" hasInfluenceArea="no" idTarget="c4parque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="538" y="363" width="414" height="207" hasInfluenceArea="no" idTarget="c4parque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <inactive flag="f4block" />
+        </condition>
         <post-effect>
           <set-value var="vCurrentMap" value="4" guid="94b9c3f2-ce63-48a5-aea3-a0e6d92ad1ea" />
           <condition />
         </post-effect>
+        <not-effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="914198e6-3fb4-43ff-b77b-6528260cc5c1">Ya jugaste este Capítulo, selecciona otro.</show-text>
+          <condition />
+        </not-effect>
       </exit>
     </exits>
     <objects>
@@ -2900,7 +2907,7 @@
       <character-ref idTarget="nacofre" x="142" y="519" scale="0.7" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="c2cofre4" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c2cofre4" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3631,14 +3638,14 @@ No eres buena en ciencias</speak-char>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="752" y="10" width="37" height="29" hasInfluenceArea="no" idTarget="c4MapaCasaDos" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="705" y="15" width="37" height="29" hasInfluenceArea="no" idTarget="c4MapaCasaDos" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4ropaJ" x="680" y="354" scale="0.53464" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4ropaJ" x="441" y="372" scale="0.53464" glow="no" layer="4" hasInfluenceArea="no" />
       <object-ref idTarget="c4calcetas" x="588" y="368" scale="0.3606828" glow="no" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="c4playera" x="444" y="294" scale="0.4705485" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4playera" x="402" y="249" scale="0.4705485" glow="no" layer="6" hasInfluenceArea="no" />
       <object-ref idTarget="c4minimapahome" x="149" y="136" scale="0.7129292" glow="no" layer="8" hasInfluenceArea="no" />
       <object-ref idTarget="c4lavadora" x="110" y="117" scale="0.2089795" glow="no" layer="9" hasInfluenceArea="no" />
     </objects>
@@ -3646,7 +3653,7 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="c4nohabitacion" x="267" y="364" scale="0.4" orientation="2" glow="no" layer="7" hasInfluenceArea="no" />
     </characters>
     <atrezzo>
-      <atrezzo-ref idTarget="cerrar" x="769" y="38" scale="0.424778" glow="no" layer="0" />
+      <atrezzo-ref idTarget="cerrar" x="724" y="46" scale="0.424778" glow="no" layer="0" />
       <atrezzo-ref idTarget="coche" x="44" y="385" scale="0.7512276" glow="no" layer="3" />
       <atrezzo-ref idTarget="dino" x="162" y="200" scale="1.2003" glow="no" layer="1" />
       <atrezzo-ref idTarget="CuadroJuan" x="471" y="119" scale="0.207067" glow="no" layer="2" />
@@ -3667,7 +3674,7 @@ No eres buena en ciencias</speak-char>
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4ropaM" x="685" y="346" scale="0.4202371" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4ropaM" x="614" y="242" scale="0.5826592" glow="no" layer="4" hasInfluenceArea="no" />
       <object-ref idTarget="c4calcetasM" x="415" y="265" scale="0.442893" glow="no" layer="11" hasInfluenceArea="no" />
       <object-ref idTarget="c4playeraM" x="520" y="317" scale="0.4431922" glow="no" layer="10" hasInfluenceArea="no" />
       <object-ref idTarget="c4minimapahome" x="145" y="143" scale="0.7805417" glow="no" layer="6" hasInfluenceArea="no" />
@@ -3789,7 +3796,7 @@ No eres buena en ciencias</speak-char>
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4cubeta" x="70" y="544" scale="0.07996502" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4cubeta" x="98" y="567" scale="0.3268775" glow="no" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="c4montruo1" x="204" y="489" scale="0.6467712" orientation="3" glow="no" layer="2" hasInfluenceArea="no" />
@@ -4076,16 +4083,7 @@ Conseguiste el gran libro de ciencias...
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="video" start="no" next="go-back" class="accesible" type="cutscene">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="slides" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <name>
-    </name>
-  </videoscene>
-  <videoscene canSkip="no" id="Creditosfinal" start="no" next="go-back" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="Creditosfinal" start="no" next="end-chapter" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -4846,6 +4844,8 @@ Recuerda que hay muchos otros, más fuertes que yo.</show-text>
       <examine needsGoTo="no" keepDistance="0" not-effects="no">
         <effect>
           <trigger-scene idTarget="c3aprende3" x="385" y="384" transitionTime="0" transitionType="5" guid="61067b3d-00f2-40d5-b887-6c7e1ecbc350" />
+          <condition />
+          <consume-object idTarget="c3telefono" guid="41fad116-fdd0-47f8-b8ae-5ac2d891933f" />
           <condition />
         </effect>
       </examine>
@@ -5619,9 +5619,9 @@ Gracias
           <condition />
           <activate flag="Cap4End" guid="853b946f-7242-403e-85f7-44b91fd4c5bf" />
           <condition />
-          <trigger-cutscene idTarget="finCapitulo" guid="bcd1a2b3-a0dd-4393-8010-a5d72298ff2a" />
+          <activate flag="f4block" guid="6de0b940-2d19-4f55-b941-cdfe422ee502" />
           <condition />
-          <trigger-scene idTarget="c4finalchapter" x="524" y="450" transitionTime="200" transitionType="5" guid="fd362034-0c56-4d28-9a25-2ccc26e278e2" />
+          <trigger-cutscene idTarget="finCapitulo" guid="78f5436e-36e0-4fcc-a0ca-6725954cea40" />
           <condition />
         </effect>
       </give-to>
@@ -9616,7 +9616,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="4" />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="504" editor-y="382">
+    <dialogue-node nodeindex="3" editor-x="1230" editor-y="531">
       <speak-char idTarget="c4montruo1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -9638,7 +9638,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="4" editor-x="0" editor-y="328">
+    <dialogue-node nodeindex="4" editor-x="319" editor-y="315">
       <speak-char idTarget="c4nopesadilla">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -9729,16 +9729,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>María: Gracias por jugar Kiddo.</text>
       </speak-char>
       <condition />
-      <end-conversation>
-        <effect>
-          <trigger-cutscene idTarget="Creditosfinal" guid="34d22da2-30a7-480b-b630-544513126abc" />
-          <condition />
-          <trigger-cutscene idTarget="EndSlide" guid="119e18e0-fcab-434a-a2f7-2c7eec6bf3f7" />
-          <condition />
-          <activate flag="Cap4End" guid="49e91fc4-79fd-4544-a9af-220c46b02452" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <book id="historia" xNextPage="707" yNextPage="507" xPreviousPage="20" yPreviousPage="507">
@@ -10044,6 +10035,21 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <active flag="Cap3End" />
       <active flag="Cap4End" />
     </condition>
+  </macro>
+  <macro id="GameEnding2">
+    <documentation>
+    </documentation>
+    <trigger-scene idTarget="c4finalchapter" x="524" y="450" transitionTime="0" transitionType="0" guid="4d821426-09cb-4c4d-b079-bc66b63c96b5" />
+    <condition />
+    <trigger-cutscene idTarget="EndSlide" guid="25721c6b-f374-403d-8f0d-dd2554c20767" />
+    <condition>
+      <active flag="Cap1End" />
+      <active flag="Cap2End" />
+      <active flag="Cap3End" />
+      <active flag="Cap4End" />
+    </condition>
+    <trigger-cutscene idTarget="Creditosfinal" guid="720280f3-0fbf-4f8f-8e1f-ba465c7a97eb" />
+    <condition />
   </macro>
   <completable id="CompletableCapitulo1" repeatable="false" type="completable">
     <start-milestone type="SCENE" targetId="elpueblo" />
