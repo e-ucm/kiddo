@@ -1596,19 +1596,19 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="vCurrentMap" value="1" />
+          <equals var="vCurrentMap" value="2" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="cv3pueblo" guid="f7481951-b157-4566-a870-84b293445257" />
+          <trigger-conversation idTarget="Cv3iraCasa" guid="53bfdf01-1161-4438-890d-c35885e4684d" />
           <condition />
         </effect>
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="vCurrentMap" value="2" />
+          <equals var="vCurrentMap" value="1" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="Cv3iraCasa" guid="53bfdf01-1161-4438-890d-c35885e4684d" />
+          <trigger-conversation idTarget="cv3pueblo" guid="b518ac3f-7c3a-48c3-b606-4c653ad101b8" />
           <condition />
         </effect>
       </talk-to>
@@ -1888,7 +1888,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="c4nosala1" behaviour="normal">
+  <character id="c4nosala1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -1958,7 +1958,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="c4nopesadilla" behaviour="normal">
+  <character id="c4nopesadilla" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/normalito.eaa.xml" />
@@ -2231,7 +2231,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="c4montruo1" behaviour="normal">
+  <character id="c4montruo1" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/c4apestosinanimate.eaa.xml" />
       <asset type="standdown" uri="assets/animation/c4apestosinblue.eaa.xml" />
@@ -2371,7 +2371,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="374" y="190" width="284" height="196" hasInfluenceArea="no" idTarget="elpuebloIntro" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="374" y="178" width="286" height="208" hasInfluenceArea="no" idTarget="elpuebloIntro" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="validaIntro" />
@@ -2394,14 +2394,14 @@
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/backgroundsmall optimo.jpg" />
+      <asset type="background" uri="assets/background/Ilustracion gatos opt.png" />
       <asset type="bgmusic" uri="assets/audio/set-standar.mp3" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="367" y="226" width="252" height="312" hasInfluenceArea="no" idTarget="relojgif" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="402" y="282" width="176" height="236" hasInfluenceArea="no" idTarget="relojgif" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="validaReloj" />
@@ -2413,11 +2413,11 @@
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="reloj" x="508" y="626" scale="0.9852092" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="reloj" x="492" y="590" scale="0.7341872" glow="no" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="naPuebloIntro" x="766" y="395" scale="0.5" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="noPuebloIntro" x="215" y="393" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="naPuebloIntro" x="748" y="505" scale="0.64" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="noPuebloIntro" x="210" y="503" scale="0.64" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -2431,35 +2431,63 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="43" y="130" width="434" height="198" hasInfluenceArea="no" idTarget="elpueblo" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="46" y="125" width="430" height="194" hasInfluenceArea="no" idTarget="elpueblo" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <inactive flag="f1block" />
+        </condition>
         <post-effect>
           <set-value var="vCurrentChapter" value="1" guid="477966f7-ae29-4d28-8aab-35cf28507ab1" />
           <condition />
         </post-effect>
+        <not-effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="3bab5489-fe2a-4b3a-9fe4-c12d9dc62244">Ya jugaste este Capítulo, selecciona otro.</show-text>
+          <condition />
+        </not-effect>
       </exit>
-      <exit rectangular="yes" x="527" y="128" width="445" height="211" hasInfluenceArea="no" idTarget="cap2vid" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="527" y="128" width="429" height="192" hasInfluenceArea="no" idTarget="cap2vid" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <inactive flag="f2block" />
+        </condition>
         <post-effect>
           <set-value var="vCurrentChapter" value="1" guid="33cf4d11-ad6b-4a16-9f42-1a29528ae802" />
           <condition />
         </post-effect>
+        <not-effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="adc65588-823b-4d4b-b1b6-6a3d82520a5c">Ya jugaste este Capítulo, selecciona otro.</show-text>
+          <condition />
+        </not-effect>
       </exit>
-      <exit rectangular="yes" x="54" y="360" width="425" height="208" hasInfluenceArea="no" idTarget="c3elpuebloES" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="4" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="54" y="360" width="425" height="223" hasInfluenceArea="no" idTarget="c3elpuebloES" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="4" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <inactive flag="f3block" />
+        </condition>
         <post-effect>
           <set-value var="vCurrentChapter" value="3" guid="a638d737-66cf-4b59-8898-95c8a6e49db9" />
           <condition />
           <set-value var="vCurrentMap" value="1" guid="6a6d6333-7776-4042-b53c-c22756dc1535" />
           <condition />
         </post-effect>
+        <not-effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="a935174a-fe24-4fbb-a1bf-bf7f46cb1cdf">Ya jugaste este Capítulo, selecciona otro.</show-text>
+          <condition />
+        </not-effect>
       </exit>
-      <exit rectangular="yes" x="515" y="370" width="452" height="197" hasInfluenceArea="no" idTarget="c4parque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="538" y="363" width="414" height="207" hasInfluenceArea="no" idTarget="c4parque" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <inactive flag="f4block" />
+        </condition>
         <post-effect>
           <set-value var="vCurrentMap" value="4" guid="94b9c3f2-ce63-48a5-aea3-a0e6d92ad1ea" />
           <condition />
         </post-effect>
+        <not-effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="914198e6-3fb4-43ff-b77b-6528260cc5c1">Ya jugaste este Capítulo, selecciona otro.</show-text>
+          <condition />
+        </not-effect>
       </exit>
     </exits>
     <objects>
@@ -2485,6 +2513,12 @@
         </actions>
       </active-area>
     </active-areas>
+    <atrezzo>
+      <atrezzo-ref idTarget="uno" x="400" y="312" scale="0.7" glow="no" layer="1" />
+      <atrezzo-ref idTarget="dos" x="872" y="315" scale="0.7" glow="no" layer="2" />
+      <atrezzo-ref idTarget="tres" x="401" y="575" scale="0.7" glow="no" layer="4" />
+      <atrezzo-ref idTarget="cuatro" x="872" y="575" scale="0.7" glow="no" layer="3" />
+    </atrezzo>
   </scene>
   <scene id="elpueblo" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3091,7 +3125,7 @@
       <atrezzo-ref idTarget="grupo" x="344" y="203" scale="0.1405259" glow="no" layer="1" />
     </atrezzo>
   </scene>
-  <scene id="c3elpuebloCAS" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="c3elpueblogoCasa" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3102,13 +3136,15 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="286" y="347" width="100" height="100" hasInfluenceArea="no" idTarget="c3sala1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
+      <exit rectangular="yes" x="293" y="347" width="100" height="100" hasInfluenceArea="no" idTarget="c3sala1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="yes">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="validaMapac3" />
         </condition>
         <not-effect>
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="2706d4db-3eca-432c-9076-a560068a55e1">Habla con Juan</show-text>
+          <condition />
+          <activate flag="validaMapac3" guid="679a5963-f338-41e8-897f-a96a9611fb76" />
           <condition />
         </not-effect>
       </exit>
@@ -3117,8 +3153,8 @@
       <object-ref idTarget="mapa" x="661" y="557" scale="0.9386919" glow="yes" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="naPueblo" x="150" y="250" scale="0.5" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="c3nopueblo" x="153" y="504" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="naPueblo" x="147" y="542" scale="0.5" orientation="0" glow="yes" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="c3nopueblo" x="143" y="265" scale="0.5" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="c3sala1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3526,14 +3562,14 @@ No eres buena en ciencias</speak-char>
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/FONDO MONSTRUOS-1-opt.png" />
+      <asset type="background" uri="assets/background/pesadilla cap4 1opt.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="c4montruo1" x="164" y="369" scale="0.5388556" orientation="3" glow="no" layer="0" hasInfluenceArea="no" />
-      <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c4montruo1" x="296" y="574" scale="0.6389953" orientation="3" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="c4nopesadilla" x="729" y="521" scale="0.5835775" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="c4lacocina" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3552,7 +3588,7 @@ No eres buena en ciencias</speak-char>
       <object-ref idTarget="c4tazas" x="412" y="365" scale="0.5492455" glow="no" layer="3" hasInfluenceArea="no" />
       <object-ref idTarget="c4vasos" x="575" y="347" scale="0.5497922" glow="no" layer="2" hasInfluenceArea="no" />
       <object-ref idTarget="c4tarja" x="416" y="271" scale="0.7" glow="yes" layer="0" hasInfluenceArea="no" />
-      <object-ref idTarget="c4minimapahome" x="177" y="135" scale="0.3706205" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="191" y="155" scale="0.5651431" glow="no" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="c4noCasa" x="802" y="326" scale="0.3586387" orientation="2" glow="no" layer="5" hasInfluenceArea="no" />
@@ -3602,14 +3638,14 @@ No eres buena en ciencias</speak-char>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="752" y="10" width="37" height="29" hasInfluenceArea="no" idTarget="c4MapaCasaDos" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="705" y="15" width="37" height="29" hasInfluenceArea="no" idTarget="c4MapaCasaDos" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4ropaJ" x="680" y="354" scale="0.53464" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4ropaJ" x="441" y="372" scale="0.53464" glow="no" layer="4" hasInfluenceArea="no" />
       <object-ref idTarget="c4calcetas" x="588" y="368" scale="0.3606828" glow="no" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="c4playera" x="444" y="294" scale="0.4705485" glow="no" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="c4playera" x="402" y="249" scale="0.4705485" glow="no" layer="6" hasInfluenceArea="no" />
       <object-ref idTarget="c4minimapahome" x="149" y="136" scale="0.7129292" glow="no" layer="8" hasInfluenceArea="no" />
       <object-ref idTarget="c4lavadora" x="110" y="117" scale="0.2089795" glow="no" layer="9" hasInfluenceArea="no" />
     </objects>
@@ -3617,7 +3653,7 @@ No eres buena en ciencias</speak-char>
       <character-ref idTarget="c4nohabitacion" x="267" y="364" scale="0.4" orientation="2" glow="no" layer="7" hasInfluenceArea="no" />
     </characters>
     <atrezzo>
-      <atrezzo-ref idTarget="cerrar" x="769" y="38" scale="0.424778" glow="no" layer="0" />
+      <atrezzo-ref idTarget="cerrar" x="724" y="46" scale="0.424778" glow="no" layer="0" />
       <atrezzo-ref idTarget="coche" x="44" y="385" scale="0.7512276" glow="no" layer="3" />
       <atrezzo-ref idTarget="dino" x="162" y="200" scale="1.2003" glow="no" layer="1" />
       <atrezzo-ref idTarget="CuadroJuan" x="471" y="119" scale="0.207067" glow="no" layer="2" />
@@ -3634,11 +3670,11 @@ No eres buena en ciencias</speak-char>
     <default-initial-position x="400" y="450" />
     <exits>
       <exit rectangular="yes" x="723" y="18" width="41" height="36" hasInfluenceArea="no" idTarget="c4MapaCasaDos" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" />
+        <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4ropaM" x="685" y="346" scale="0.4202371" glow="no" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="c4ropaM" x="614" y="242" scale="0.5826592" glow="no" layer="4" hasInfluenceArea="no" />
       <object-ref idTarget="c4calcetasM" x="415" y="265" scale="0.442893" glow="no" layer="11" hasInfluenceArea="no" />
       <object-ref idTarget="c4playeraM" x="520" y="317" scale="0.4431922" glow="no" layer="10" hasInfluenceArea="no" />
       <object-ref idTarget="c4minimapahome" x="145" y="143" scale="0.7805417" glow="no" layer="6" hasInfluenceArea="no" />
@@ -3749,25 +3785,25 @@ No eres buena en ciencias</speak-char>
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/FONDO MONSTRUOS-1-opt.png" />
+      <asset type="background" uri="assets/background/Pesadilla cap4 opt.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="675" y="15" width="74" height="94" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="675" y="17" width="74" height="111" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4cubeta" x="70" y="460" scale="0.06757044" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4cubeta" x="93" y="575" scale="0.05230964" glow="no" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="c4montruo1" x="193" y="447" scale="0.6807835" orientation="3" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="c4nopesadilla" x="587" y="324" scale="0.3852523" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="c4montruo1" x="204" y="489" scale="0.6467712" orientation="3" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="c4nopesadilla" x="587" y="383" scale="0.4559199" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
     </characters>
     <atrezzo>
-      <atrezzo-ref idTarget="menuHamburguesa" x="717" y="107" scale="0.1494174" glow="no" layer="0" />
+      <atrezzo-ref idTarget="menuHamburguesa" x="717" y="126" scale="0.1768253" glow="no" layer="0" />
     </atrezzo>
   </scene>
   <scene id="c4finalchapter" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -3829,7 +3865,7 @@ No eres buena en ciencias</speak-char>
       <atrezzo-ref idTarget="atras" x="1166" y="152" scale="0.2531845" glow="no" layer="0" />
     </atrezzo>
   </scene>
-  <videoscene canSkip="no" id="PesentacionKidoo1" start="no" idTarget="introvideo" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="PesentacionKidoo1" start="yes" idTarget="introvideo" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3839,7 +3875,7 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="introvideo" start="yes" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="introvideo" start="no" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3895,7 +3931,7 @@ conseguiste el corazon del valor.
       <condition />
       <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4aac2d29-2e79-4918-9331-c27ad50d0771">Gracias a que aprendiste algo nuevo 
 sobre estereotipos de genero, 
-conseguiste la posión del valor.
+conseguiste la poción del valor.
 ¡Regresa y derrota al monstruo!</show-text>
       <condition />
       <generate-object idTarget="posion" guid="2801fd4e-bf88-45f4-8d09-04819b299b58" />
@@ -3920,7 +3956,7 @@ conseguiste la posión del valor.
 Conseguiste el gran libro de ciencias...
 ¡Con el podrás vencer cualquier estereotipo!</show-text>
       <condition />
-      <wait-time time="5" guid="b7f6d3cc-7696-4763-a1f0-74675ee7d25c" />
+      <wait-time time="2" guid="b7f6d3cc-7696-4763-a1f0-74675ee7d25c" />
       <condition />
       <set-value var="vcurrentpesadilla" value="1" guid="db1a6525-a92a-4f6e-a559-6c12b8636af3" />
       <condition />
@@ -3985,7 +4021,7 @@ Conseguiste el gran libro de ciencias...
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="hipnosis41" start="no" idTarget="c4p1pesadilla" destinyX="-2147483648" destinyY="-2147483648" transitionTime="500" transitionType="5" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="hipnosis41" start="no" idTarget="c4p1pesadilla" destinyX="-2147483648" destinyY="-2147483648" transitionTime="200" transitionType="5" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <effect>
@@ -4031,7 +4067,7 @@ Conseguiste el gran libro de ciencias...
       <condition />
     </effect>
     <resources name="No name">
-      <asset type="video" uri="assets/video/Fin de capítulo2.mp4" />
+      <asset type="video" uri="assets/video/Fin de capitulo.mp4" />
       <asset type="slides" uri="assets/special/EmptyAnimation" />
     </resources>
     <name>
@@ -4047,16 +4083,7 @@ Conseguiste el gran libro de ciencias...
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="video" start="no" next="go-back" class="accesible" type="cutscene">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="slides" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <name>
-    </name>
-  </videoscene>
-  <videoscene canSkip="no" id="Creditosfinal" start="no" next="go-back" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="Creditosfinal" start="no" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -4156,9 +4183,8 @@ Has ganado...</show-text>
           <condition />
           <wait-time time="1" guid="a1d6bdb5-efc4-4b36-93e7-6b027b39eb54" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FA1212FF" borderColor="#000000FF" uri="" guid="eef01ecd-fcfd-4786-adae-2793633e63a3">Toma esta estrella. 
-Si me pudiste vencer, tal vez te pueda ayudar a vencer al mas fuerte de los monstruos de genero. 
-Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
+          <show-text x="300" y="300" frontColor="#FA1212FF" borderColor="#000000FF" uri="" guid="eef01ecd-fcfd-4786-adae-2793633e63a3">Si me pudiste vencer, tal vez te pueda ayudar a vencer al mas fuerte de los monstruos de genero. 
+Recuerda que hay muchos otros, más fuertes que yo.</show-text>
           <condition />
           <wait-time time="5" guid="19c54c6e-a148-49ed-96bb-088c426f1d28" />
           <condition />
@@ -4167,6 +4193,8 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <trigger-cutscene idTarget="finCapitulo" guid="369fb9f4-ebdc-483f-ad46-fe3220b62991" />
           <condition />
           <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="0" guid="fe457279-45c2-48b3-bf4f-b36d6999b485" />
+          <condition />
+          <activate flag="f1block" guid="9897bfea-0b6c-4bdd-84d6-e50389f7d9e9" />
           <condition />
         </effect>
       </give-to>
@@ -4376,22 +4404,6 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </object>
-  <object id="vidaotro" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
-    <documentation>
-    </documentation>
-    <resources name="">
-      <asset type="image" uri="assets/image/002-life-1.png" />
-      <asset type="icon" uri="assets/special/EmptyIcon.png" />
-    </resources>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-  </object>
   <object id="aprendeCap1-Alex" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/Alex-mini.png" />
@@ -4569,7 +4581,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
           <generate-object idTarget="c2Guantes" guid="4451779f-0cff-4ba0-a35d-ed5d9970c966" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="dd6aa886-066f-44ab-9199-6350be25ba8e">Los Guantes son uy importantes...</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="dd6aa886-066f-44ab-9199-6350be25ba8e">Los Guantes son muy importantes...</show-text>
           <condition />
           <increment var="vEncuentraObjetosBox" value="1" guid="25c20e02-0c0b-4fe9-9bf3-e08055c62d78" />
           <condition />
@@ -4645,7 +4657,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
           <generate-object idTarget="c2playera" guid="1a85203c-46c3-447f-b2d6-e3b7059058f0" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="fc50a198-cb61-4975-8b0d-f889f96d4640">son uy importantes...</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="fc50a198-cb61-4975-8b0d-f889f96d4640">son muy importantes...</show-text>
           <condition />
           <increment var="vEncuentraObjetosBox" value="1" guid="b9d06c27-927d-4ee5-ba45-4f85a2b94282" />
           <condition />
@@ -4683,7 +4695,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <condition />
           <generate-object idTarget="c2zapatos" guid="a6b937d2-c793-44b5-8061-169214b6aeb9" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1b40e3f9-2a4b-4615-8e69-499bbe2aad2a">son uy importantes...</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1b40e3f9-2a4b-4615-8e69-499bbe2aad2a">son muy importantes...</show-text>
           <condition />
           <increment var="vEncuentraObjetosBox" value="1" guid="0c20be47-997d-4a05-a16b-7464f5a2e82a" />
           <condition />
@@ -4833,6 +4845,8 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <effect>
           <trigger-scene idTarget="c3aprende3" x="385" y="384" transitionTime="0" transitionType="5" guid="61067b3d-00f2-40d5-b887-6c7e1ecbc350" />
           <condition />
+          <consume-object idTarget="c3telefono" guid="41fad116-fdd0-47f8-b8ae-5ac2d891933f" />
+          <condition />
         </effect>
       </examine>
     </actions>
@@ -4873,6 +4887,8 @@ Gracias
           <trigger-cutscene idTarget="finCapitulo" guid="5c2ee802-e5fc-4cf4-b212-81c751cfe502" />
           <condition />
           <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="2" guid="bc333c94-c55a-4a3a-b9a4-8201232ac777" />
+          <condition />
+          <activate flag="f3block" guid="f46a5376-1adb-40f3-b678-0e98bb8247a1" />
           <condition />
         </effect>
       </give-to>
@@ -4920,8 +4936,11 @@ Gracias
           <trigger-scene idTarget="c4lacocina" x="512" y="307" transitionTime="0" transitionType="0" guid="d6fe379f-ec64-43cb-8b6e-502a19da1a5b" />
           <condition />
           <increment var="vPlatosLista" value="1" guid="dc7e938b-4f6d-477f-9e90-9e0aa738beac" />
-          <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c41d3fa1-b038-457c-bf7f-a5c66246044f">Genial he terminado de lavar los platos</show-text>
+          <condition>
+            <less-than var="vPlatosLista" value="4" />
+          </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c41d3fa1-b038-457c-bf7f-a5c66246044f">Genial he terminado de lavar los platos, 
+Regresa al mapa, da click en el mini mapa superior izquierdo.</show-text>
           <condition>
             <equals var="vPlatosLista" value="4" />
           </condition>
@@ -4962,7 +4981,8 @@ Gracias
           <condition />
           <increment var="vPlatosLista" value="1" guid="b31c5188-4a68-4f0f-9517-d1af9762b22f" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c1de0f64-be8d-44aa-8f64-027a9bb971e5">Genial he terminado de lavar los platos</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c1de0f64-be8d-44aa-8f64-027a9bb971e5">Genial he terminado de lavar los platos
+Regresa al mapa, da click en el mini mapa superior izquierdo.</show-text>
           <condition>
             <equals var="vPlatosLista" value="4" />
           </condition>
@@ -5003,7 +5023,8 @@ Gracias
           <condition />
           <increment var="vPlatosLista" value="1" guid="d8ee5d2f-e0ce-4336-88f5-ea250b91856d" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1e9d466f-ab6c-40e3-b2f1-e20ea294169b">Genial he terminado de lavar los platos</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1e9d466f-ab6c-40e3-b2f1-e20ea294169b">Genial he terminado de lavar los platos,
+Regresa al mapa, da click en el mini mapa superior izquierdo.</show-text>
           <condition>
             <equals var="vPlatosLista" value="4" />
           </condition>
@@ -5044,8 +5065,7 @@ Gracias
           <condition />
           <increment var="vPlatosLista" value="1" guid="e84dc481-69e8-41b5-8189-f73fe1310d85" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="e13dff39-cd3a-4c77-a368-cf81d1a58bb9">
-          </show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="e13dff39-cd3a-4c77-a368-cf81d1a58bb9">Regresa al mapa, da click en el mini mapa superior izquierdo.</show-text>
           <condition>
             <equals var="vPlatosLista" value="4" />
           </condition>
@@ -5537,7 +5557,7 @@ Gracias
         <effect>
           <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="69c3b037-cd48-4b19-9aed-6627bbd173c9" />
           <condition>
-            <equals var="vPlatosLista" value="4" />
+            <greater-equals-than var="vPlatosLista" value="4" />
             <equals var="vLugarenCasa" value="1" />
           </condition>
           <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="aafa2014-9a6e-49cc-8a15-48ab486a86b1" />
@@ -5603,9 +5623,9 @@ Gracias
           <condition />
           <activate flag="Cap4End" guid="853b946f-7242-403e-85f7-44b91fd4c5bf" />
           <condition />
-          <trigger-cutscene idTarget="finCapitulo" guid="bcd1a2b3-a0dd-4393-8010-a5d72298ff2a" />
+          <activate flag="f4block" guid="6de0b940-2d19-4f55-b941-cdfe422ee502" />
           <condition />
-          <trigger-scene idTarget="c4finalchapter" x="524" y="450" transitionTime="200" transitionType="5" guid="fd362034-0c56-4d28-9a25-2ccc26e278e2" />
+          <trigger-cutscene idTarget="finCapitulo" guid="78f5436e-36e0-4fcc-a0ca-6725954cea40" />
           <condition />
         </effect>
       </give-to>
@@ -5750,28 +5770,15 @@ Gracias
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#1927E5FF" uri="" guid="aa61db2d-cfa3-4f29-a102-e7d4047439a7">Tareas por hacer:
 1.- Limpiar la habitación de de Juan
 2.- Limpiar la habitación de María
-3.- Limpiar la sal
+3.- Limpiar la sala
 4.- Limpiar la cocina 
 5.- Colocar la ropa de María en la lavadora
-6.- Colocar la ropa de Juan en la lavadora</show-text>
+6.- Colocar la ropa de Juan en la lavadora
+Finalmente habla con María.</show-text>
           <condition />
         </effect>
       </examine>
     </actions>
-  </object>
-  <object id="MenuConfig" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
-    <resources name="No name">
-      <asset type="image" uri="assets/image/boton-config.png" />
-      <asset type="icon" uri="assets/special/EmptyIcon.png" />
-    </resources>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
   </object>
   <object id="back" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
@@ -5800,7 +5807,7 @@ Gracias
         <resources name="No name">
           <asset type="image" uri="" />
         </resources>
-        <text>María: Este Reloj te permite viajar en el tiempo, puedes ver nuestros recuerdos. </text>
+        <text>María: Este Reloj te permite viajar en el tiempo y puedes ver nuestros sueños. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="noPuebloIntro">
@@ -6120,237 +6127,6 @@ Gracias
           <condition />
         </effect>
       </end-conversation>
-    </dialogue-node>
-  </graph-conversation>
-  <graph-conversation id="csalaEstar">
-    <dialogue-node nodeindex="0" editor-x="71" editor-y="23">
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="" />
-        </resources>
-        <text>npu\fnvui</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="1" />
-    </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="432" editor-y="0">
-      <speak-char idTarget="nosalaEstar1">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Roberto, la casa es perfecta</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Lucy, aquí viviremos muy bien...</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Los niños crecerán muy bien</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="nosalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Papa María ha seleccionado color rosa para su habitación</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Que buen color rosa es bonito</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="nosalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>yo quiero también pintar de rosa mi habitación</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Juan Rosa es para las niñas</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="2" />
-      <effect>
-        <move-npc idTarget="masalaEstar" x="201" y="250" guid="c3c44bae-4947-44c3-8bac-bf111b07749b" />
-        <condition />
-        <move-npc idTarget="pasalaEstar" x="351" y="250" guid="e64397db-bd84-477d-943d-60e94753b227" />
-        <condition />
-        <wait-time time="1" guid="318447ec-187d-40eb-8962-ec9fc4994d29" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="2" editor-x="651" editor-y="51">
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>mmm...</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="3" />
-      <effect>
-        <wait-time time="1" guid="14f1c2e1-f43c-4931-a79e-078c2a7526c2" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="865" editor-y="40">
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Juan los hombres no usamos el color rosa, eso es de mujeres</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="nosalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>pero el rosa es un color bonito</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="nosalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>en la escuela nos dijeron que los colores no tienen género</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="4" />
-      <effect>
-        <move-npc idTarget="masalaEstar" x="202" y="250" guid="0d5bb2d9-d78e-47f2-9c71-8c1235cc4833" />
-        <condition />
-        <wait-time time="1" guid="3f71734e-3c11-44f5-bcc9-5a050506a50e" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="4" editor-x="1036" editor-y="207">
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Roberto...</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>¿Recuerdas la boda de mi hermano?</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>sí, claro</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>ese día usaste una camisa rosa</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="5" />
-      <effect>
-        <move-npc idTarget="pasalaEstar" x="352" y="250" guid="2ad73545-d428-4585-a532-2c6027342755" />
-        <condition />
-        <wait-time time="1" guid="2907b120-bcd2-47bb-be0e-ed3285af4f30" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="5" editor-x="40" editor-y="326">
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>es cierto...  era una camisa fantástica</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>era color rosa </text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>si, con botones negros muy hermosos</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="6" />
-    </dialogue-node>
-    <dialogue-node nodeindex="6" editor-x="281" editor-y="305">
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>hijo, perdóname</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>tienes razón acerca de los colores</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Me he equivocado</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="7" />
-      <effect>
-        <wait-time time="1" guid="3c0b5ffe-130e-43a3-85b4-2f71ce9ac0c7" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="709" editor-y="276">
-      <speak-char idTarget="pasalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Tú puedes usar el color que quieras </text>
-      </speak-char>
-      <condition />
-      <child nodeindex="8" />
-      <effect>
-        <move-npc idTarget="pasalaEstar" x="320" y="250" guid="9b7a7a74-578b-43ba-9739-0e58e55f404b" />
-        <condition />
-        <wait-time time="1" guid="84863005-0505-44de-9192-bae7e19176e5" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="8" editor-x="446" editor-y="557">
-      <speak-char idTarget="masalaEstar">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Recuerda hijo: Los colores no tienen género</text>
-      </speak-char>
-      <condition />
-      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="cSala">
@@ -7705,7 +7481,7 @@ Gracias
       <end-conversation>
         <effect>
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="79ea588d-a1dc-436d-9999-8821fb2b51fe">Lista de Objetos para iniciar clases de Boxeo
-Protrctor Bucal
+Protector Bucal
 Casco
 Espinilleras
 Short
@@ -7942,10 +7718,6 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <condition>
           <equals var="ListaObjetosBox" value="7" />
         </condition>
-        <generate-object idTarget="star" guid="894c7b3a-0cd3-493a-84db-1ec01d6f61f9" />
-        <condition>
-          <equals var="ListaObjetosBox" value="7" />
-        </condition>
       </effect>
     </dialogue-node>
     <dialogue-node nodeindex="1" editor-x="322" editor-y="64">
@@ -7960,10 +7732,15 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     </dialogue-node>
     <dialogue-node nodeindex="2" editor-x="694" editor-y="65">
       <speak-char idTarget="nasueno2">
+        <resources name="No name" />
+        <text>¡Los deportes se hicieron para divertirnos con nuestros amigos y para mantenernos saludables! </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="nasueno2">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>¡Los deportes se hicieron para divertirnos con nuestros amigos y para mantenernos saludables! No dejes que nadie te diga que no puedes hacer algún deporte solo por ser niño o niña. ¡Todos tenemos las mismas capacidades y oportunidades!</text>
+        <text>No dejes que nadie te diga que no puedes hacer algún deporte solo por ser niño o niña. ¡Todos tenemos las mismas capacidades y oportunidades!</text>
       </speak-char>
       <condition>
         <equals var="ListaObjetosBox" value="7" />
@@ -7975,6 +7752,8 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
           <trigger-cutscene idTarget="finCapitulo" guid="c926af6e-6f12-4431-8c57-1342137c06b2" />
           <condition />
           <trigger-scene idTarget="Menu" x="400" y="349" transitionTime="0" transitionType="0" guid="fa22883b-410e-4551-bea5-bb7239064de7" />
+          <condition />
+          <activate flag="f2block" guid="c825e065-fe95-47f7-a336-c06cbbbf6666" />
           <condition />
         </effect>
       </end-conversation>
@@ -8027,7 +7806,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Cv3iraCasa">
-    <dialogue-node nodeindex="0" editor-x="167" editor-y="154">
+    <dialogue-node nodeindex="0" editor-x="94" editor-y="21">
       <speak-char idTarget="c3nopueblo">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8049,19 +7828,24 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>María: Investigaré más acerca de ciencias en mi teléfono.</text>
       </speak-char>
       <condition />
-      <speak-player>
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>#! ingresa a casa</text>
-      </speak-player>
+      <speak-char idTarget="c3nopueblo">
+        <resources name="No name" />
+        <text>Juan: Entremos a casa </text>
+      </speak-char>
       <condition />
-      <end-conversation>
-        <effect>
-          <activate flag="validaMapac3" guid="ce7ce674-3fc9-401b-8575-e20cd0ec790d" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <child nodeindex="1" />
+      <effect>
+        <activate flag="validaMapac3" guid="ce7ce674-3fc9-401b-8575-e20cd0ec790d" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="733" editor-y="79">
+      <speak-char idTarget="c3nopueblo">
+        <resources name="No name" />
+        <text>#! Juan: Entremos a casa </text>
+      </speak-char>
+      <condition />
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="cv3Pasillo">
@@ -8380,7 +8164,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="11" />
     </option-node>
-    <dialogue-node nodeindex="9" editor-x="1081" editor-y="509">
+    <dialogue-node nodeindex="9" editor-x="926" editor-y="465">
       <speak-char idTarget="c3Rocio">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8388,23 +8172,13 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>La clase ha terminado, vayan directo a casa</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="c3RocioSalon1">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>#!  vayan directo a casa</text>
-      </speak-char>
-      <condition />
-      <end-conversation>
-        <effect>
-          <set-value var="vCurrentMap" value="2" guid="9b95de2a-c9f5-49f1-b8d1-4b2c645865fc" />
-          <condition />
-          <trigger-scene idTarget="c3elpuebloCAS" x="524" y="450" transitionTime="0" transitionType="5" guid="33c943aa-21b8-4be1-a13d-9098b2f1a7e8" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <child nodeindex="12" />
+      <effect>
+        <set-value var="vCurrentMap" value="2" guid="9b95de2a-c9f5-49f1-b8d1-4b2c645865fc" />
+        <condition />
+      </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="10" editor-x="1905" editor-y="30">
+    <dialogue-node nodeindex="10" editor-x="1950" editor-y="25">
       <speak-char idTarget="c3nasalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8426,15 +8200,13 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text> Rocío: Y sobre todo realizar actividades que vayan de acuerdo a nuestro género.</text>
       </speak-char>
       <condition />
-      <child nodeindex="12" />
+      <child nodeindex="13" />
       <effect>
         <move-npc idTarget="c3nasalon1" x="344" y="398" guid="8bf12981-c356-4e59-85ae-118548b580ca" />
         <condition />
         <activate flag="CambiarSentimientoC3" guid="9be79cad-0c2d-4048-8a0e-f082d02aaf9f" />
         <condition />
         <set-value var="vSentirCap3" value="2" guid="7c4900f7-5593-46f5-a17f-9db6bf84470c" />
-        <condition />
-        <trigger-scene idTarget="c3Salon" x="512" y="307" transitionTime="0" transitionType="0" guid="c739c170-998b-4a52-8f1e-e391f82a28d6" />
         <condition />
       </effect>
     </dialogue-node>
@@ -8446,13 +8218,50 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>María: ¡No! No estoy lista. Yo quiero participar en las actividades de ciencia. Y seguro que a otras niñas les gustaría hacerlo también.</text>
       </speak-char>
       <condition />
-      <child nodeindex="13" />
+      <child nodeindex="14" />
       <effect>
         <move-npc idTarget="c3Jess" x="620" y="393" guid="e74ab6fc-fdf7-4bf8-95e8-4984ab520798" />
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="12" editor-x="2148" editor-y="24">
+    <dialogue-node nodeindex="12" editor-x="1175" editor-y="470">
+      <speak-player>
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>#!  vayan directo a casa</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="c3elpueblogoCasa" x="524" y="450" transitionTime="0" transitionType="0" guid="3fa50051-8579-4102-b8d0-8df97e166b14" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="13" editor-x="2401" editor-y="38">
+      <speak-char idTarget="c3nasalon1">
+        <resources name="No name" />
+        <text>María: Está bien maestra. </text>
+      </speak-char>
+      <condition />
+      <child nodeindex="15" />
+    </dialogue-node>
+    <dialogue-node nodeindex="14" editor-x="1705" editor-y="499">
+      <speak-char idTarget="c3Jess">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>Jess: Yo también quiero participar en el concurso de ciencia</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="16" />
+      <effect>
+        <move-npc idTarget="c3Eduardo" x="275" y="393" guid="e53f4117-329d-43f5-9ccd-03766e77322f" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="15" editor-x="3023" editor-y="22">
       <speak-char idTarget="c3nasalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8474,42 +8283,9 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Rocío: La clase ha terminado...</text>
       </speak-char>
       <condition />
-      <child nodeindex="14" />
+      <child nodeindex="17" />
     </dialogue-node>
-    <dialogue-node nodeindex="13" editor-x="1705" editor-y="499">
-      <speak-char idTarget="c3Jess">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>Jess: Yo también quiero participar en el concurso de ciencia</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="15" />
-      <effect>
-        <move-npc idTarget="c3Eduardo" x="275" y="393" guid="e53f4117-329d-43f5-9ccd-03766e77322f" />
-        <condition />
-      </effect>
-    </dialogue-node>
-    <dialogue-node nodeindex="14" editor-x="2692" editor-y="68">
-      <speak-char idTarget="c3RocioSalon1">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text>#!  vayan directo a casa</text>
-      </speak-char>
-      <condition />
-      <end-conversation>
-        <effect>
-          <wait-time time="2" guid="4b945e43-d3d7-4a8b-aaf7-20db08194010" />
-          <condition />
-          <set-value var="vCurrentMap" value="2" guid="060d3fc1-fd75-43cb-9a6f-b7d8d82904dd" />
-          <condition />
-          <trigger-scene idTarget="c3elpuebloCAS" x="524" y="450" transitionTime="0" transitionType="4" guid="5a390ac3-c8a9-4718-9bb2-cae77946240e" />
-          <condition />
-        </effect>
-      </end-conversation>
-    </dialogue-node>
-    <dialogue-node nodeindex="15" editor-x="1949" editor-y="501">
+    <dialogue-node nodeindex="16" editor-x="1949" editor-y="501">
       <speak-char idTarget="c3Eduardo">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8517,9 +8293,23 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Eduardo: Yo gané el premio a la mejor pintura.</text>
       </speak-char>
       <condition />
-      <child nodeindex="16" />
+      <child nodeindex="18" />
     </dialogue-node>
-    <dialogue-node nodeindex="16" editor-x="2304" editor-y="347">
+    <dialogue-node nodeindex="17" editor-x="3387" editor-y="66">
+      <speak-char idTarget="c3RocioSalon1">
+        <resources name="No name">
+          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
+        </resources>
+        <text>#! Rocío: La clase ha terminado...</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="19" />
+      <effect>
+        <set-value var="vCurrentMap" value="2" guid="70f8df92-4e98-48af-b586-7d2a1cc71602" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="18" editor-x="2304" editor-y="347">
       <speak-player>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8569,13 +8359,26 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>Rocío: Toma este libro de ciencia estúdialo mucho</text>
       </speak-char>
       <condition />
-      <child nodeindex="17" />
+      <child nodeindex="20" />
       <effect>
         <generate-object idTarget="c3librociencia" guid="3083f6e3-a04e-4077-ab6b-51a91c7c7206" />
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="17" editor-x="2689" editor-y="353">
+    <dialogue-node nodeindex="19" editor-x="3711" editor-y="77">
+      <speak-player>
+        <resources name="No name" />
+        <text>#!  vayan directo a casa</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="c3elpueblogoCasa" x="524" y="450" transitionTime="0" transitionType="0" guid="27843217-34d2-48af-bd18-3e161a5a89e8" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="20" editor-x="2689" editor-y="353">
       <speak-char idTarget="c3RocioSalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8583,18 +8386,21 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>La clase ha terminado, vayan directo a casa</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="c3RocioSalon1">
-        <resources name="No name">
-          <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
-        </resources>
-        <text> vayan directo a casa</text>
-      </speak-char>
+      <child nodeindex="21" />
+      <effect>
+        <set-value var="vCurrentMap" value="2" guid="866045a4-50b1-47ee-801c-6fd3249b2761" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="21" editor-x="2924" editor-y="353">
+      <speak-player>
+        <resources name="No name" />
+        <text>#!  vayan directo a casa</text>
+      </speak-player>
       <condition />
       <end-conversation>
         <effect>
-          <set-value var="vCurrentMap" value="1" guid="866045a4-50b1-47ee-801c-6fd3249b2761" />
-          <condition />
-          <trigger-scene idTarget="c3elpuebloCAS" x="524" y="450" transitionTime="0" transitionType="5" guid="c2316069-fb75-4104-a228-98d1530e3326" />
+          <trigger-scene idTarget="c3elpueblogoCasa" x="524" y="450" transitionTime="0" transitionType="0" guid="89bc0dfd-1322-4937-9143-c94252b263eb" />
           <condition />
         </effect>
       </end-conversation>
@@ -9369,7 +9175,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Mientras más hombres esten deacuerdo con la siguiente frase.</text>
+        <text>Mientras más hombres estén de acuerdo con la siguiente frase.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4montruo1">
@@ -9383,7 +9189,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>yo seguiré siendo invensible...</text>
+        <text>Yo seguiré siendo invencible...</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
@@ -9435,7 +9241,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Jajaja, Juan pero eso escosa de niñas, tu eres un niño.</text>
+        <text>Jajaja, Juan pero eso es cosa de niñas, tu eres un niño.</text>
       </speak-char>
       <condition />
       <child nodeindex="2" />
@@ -9473,14 +9279,14 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Para ello deberan limpiar toda la casa y tú te has quedado dormido jajajaja</text>
+        <text>Para ello deberán limpiar toda la casa y tú te has quedado dormido jajajaja</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4nosala1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>¡No eres invensible y te lo demostraré!</text>
+        <text>¡No eres invencible y te lo demostraré!</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -9548,7 +9354,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan: Soy un niño grande y es hora e aprender a lavar mi ropa</text>
+        <text>Juan: Soy un niño grande y es hora de aprender a lavar mi ropa</text>
       </speak-char>
       <condition />
       <end-conversation />
@@ -9696,7 +9502,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Hemos reminado de limpiar la casa</text>
+        <text>Hemos terminado de limpiar la casa</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4namapahome">
@@ -9710,21 +9516,21 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>El trabajo en euipo es mucho mejor</text>
+        <text>El trabajo en equipo es mucho mejor</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>#! Has obtenido la cubeta con jabón</text>
+        <text>#O Has obtenido la cubeta con jabón</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>#! Usala con sabiiduría</text>
+        <text>#! Usala con sabiduría</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -9761,7 +9567,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Seguiré ensuciando todo para que ma{ia y mamá vuelvan a limpiar la casa</text>
+        <text>Seguiré ensuciando todo para que María y mamá vuelvan a limpiar la casa</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4montruo1">
@@ -9773,7 +9579,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" question=" ¿a caso tienes un jabón mágico?" keepShowing="yes" preListening="yes" editor-x="292" editor-y="31" x="292" y="31">
+    <option-node nodeindex="1" question=" ¿a caso tienes un jabón mágico?" keepShowing="yes" preListening="yes" editor-x="621" editor-y="0" x="621" y="0">
       <speak-player>
         <text>Si</text>
         <resources name="No name">
@@ -9791,7 +9597,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="560" editor-y="30">
+    <dialogue-node nodeindex="2" editor-x="1089" editor-y="53">
       <speak-char idTarget="c4montruo1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -9803,7 +9609,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan, tu eres niño... deja esas actividades</text>
+        <text>Juan, tú eres niño... deja esas actividades</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4montruo1">
@@ -9815,7 +9621,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="4" />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="284" editor-y="471">
+    <dialogue-node nodeindex="3" editor-x="1230" editor-y="531">
       <speak-char idTarget="c4montruo1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -9827,7 +9633,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>#! Regresa y busca la cubta con jabón para vencer a Apestosín </text>
+        <text>#! Regresa y busca la cubeta con jabón para vencer a Apestosín</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -9837,7 +9643,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="4" editor-x="0" editor-y="328">
+    <dialogue-node nodeindex="4" editor-x="319" editor-y="315">
       <speak-char idTarget="c4nopesadilla">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -9856,28 +9662,28 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>tu solo eres un estereotipo viejo.</text>
+        <text>Tú solo eres un estereotipo viejo.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4nopesadilla">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>un estereotipo sucio y anticuado.</text>
+        <text>Un estereotipo sucio y anticuado.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4nopesadilla">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Así que te limpiaremos com a la casa.</text>
+        <text>Así que te limpiaremos como a la casa.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4nopesadilla">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>#! Tira la cubeta de agua con jabón al monstruo apestosin.</text>
+        <text>#! Tira la cubeta de agua con jabón al monstruo Apestosín.</text>
       </speak-char>
       <condition />
       <end-conversation />
@@ -9928,14 +9734,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <text>María: Gracias por jugar Kiddo.</text>
       </speak-char>
       <condition />
-      <end-conversation>
-        <effect>
-          <trigger-cutscene idTarget="Creditosfinal" guid="34d22da2-30a7-480b-b630-544513126abc" />
-          <condition />
-          <trigger-cutscene idTarget="EndSlide" guid="119e18e0-fcab-434a-a2f7-2c7eec6bf3f7" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <book id="historia" xNextPage="707" yNextPage="507" xPreviousPage="20" yPreviousPage="507">
@@ -10175,6 +9974,62 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </detailed>
     </description>
   </atrezzoobject>
+  <atrezzoobject id="uno">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/numero-1.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="dos">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/numero-2.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="tres">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/numero-3.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="cuatro">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/numero-4.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
   <macro id="GameEndig">
     <documentation>
     </documentation>
@@ -10183,7 +10038,23 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <active flag="Cap1End" />
       <active flag="Cap2End" />
       <active flag="Cap3End" />
+      <active flag="Cap4End" />
     </condition>
+  </macro>
+  <macro id="GameEnding2">
+    <documentation>
+    </documentation>
+    <trigger-scene idTarget="c4finalchapter" x="524" y="450" transitionTime="0" transitionType="0" guid="4d821426-09cb-4c4d-b079-bc66b63c96b5" />
+    <condition />
+    <trigger-cutscene idTarget="EndSlide" guid="25721c6b-f374-403d-8f0d-dd2554c20767" />
+    <condition>
+      <active flag="Cap1End" />
+      <active flag="Cap2End" />
+      <active flag="Cap3End" />
+      <active flag="Cap4End" />
+    </condition>
+    <trigger-cutscene idTarget="Creditosfinal" guid="720280f3-0fbf-4f8f-8e1f-ba465c7a97eb" />
+    <condition />
   </macro>
   <completable id="CompletableCapitulo1" repeatable="false" type="completable">
     <start-milestone type="SCENE" targetId="elpueblo" />
@@ -10231,7 +10102,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <milestone type="SCENE" targetId="c3elpuebloES" />
       <milestone type="SCENE" targetId="c3escuela" />
       <milestone type="SCENE" targetId="c3Salon" />
-      <milestone type="SCENE" targetId="c3elpuebloCAS" />
+      <milestone type="SCENE" targetId="c3elpueblogoCasa" />
       <milestone type="SCENE" targetId="c3sala1" />
       <milestone type="SCENE" targetId="c3pesadilla" />
       <milestone type="SCENE" targetId="c3p1" />
