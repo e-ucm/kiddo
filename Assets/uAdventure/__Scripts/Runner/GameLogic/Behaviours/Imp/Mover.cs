@@ -74,7 +74,8 @@ namespace uAdventure.Runner
 
         private void OnDestroy()
         {
-            onMovementCancelled?.Invoke(data);
+            if(moving && onMovementCancelled != null)
+                onMovementCancelled?.Invoke(data);
         }
 
         // Public movement methods
