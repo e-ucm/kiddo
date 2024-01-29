@@ -2420,7 +2420,7 @@
       <character-ref idTarget="noPuebloIntro" x="210" y="503" scale="0.64" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3588,7 +3588,7 @@ No eres buena en ciencias</speak-char>
       <object-ref idTarget="c4tazas" x="412" y="365" scale="0.5492455" glow="no" layer="3" hasInfluenceArea="no" />
       <object-ref idTarget="c4vasos" x="575" y="347" scale="0.5497922" glow="no" layer="2" hasInfluenceArea="no" />
       <object-ref idTarget="c4tarja" x="416" y="271" scale="0.7" glow="yes" layer="0" hasInfluenceArea="no" />
-      <object-ref idTarget="c4minimapahome" x="177" y="135" scale="0.3706205" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4minimapahome" x="191" y="155" scale="0.5651431" glow="no" layer="1" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="c4noCasa" x="802" y="326" scale="0.3586387" orientation="2" glow="no" layer="5" hasInfluenceArea="no" />
@@ -3865,7 +3865,7 @@ No eres buena en ciencias</speak-char>
       <atrezzo-ref idTarget="atras" x="1166" y="152" scale="0.2531845" glow="no" layer="0" />
     </atrezzo>
   </scene>
-  <videoscene canSkip="no" id="PesentacionKidoo1" start="no" idTarget="introvideo" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="PesentacionKidoo1" start="yes" idTarget="introvideo" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -4021,7 +4021,7 @@ Conseguiste el gran libro de ciencias...
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="hipnosis41" start="no" idTarget="c4p1pesadilla" destinyX="-2147483648" destinyY="-2147483648" transitionTime="500" transitionType="5" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="hipnosis41" start="no" idTarget="c4p1pesadilla" destinyX="-2147483648" destinyY="-2147483648" transitionTime="200" transitionType="5" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <effect>
@@ -4083,7 +4083,7 @@ Conseguiste el gran libro de ciencias...
     <name>
     </name>
   </videoscene>
-  <videoscene canSkip="no" id="Creditosfinal" start="no" next="end-chapter" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="Creditosfinal" start="no" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -4093,7 +4093,7 @@ Conseguiste el gran libro de ciencias...
     <name>
     </name>
   </videoscene>
-  <slidescene id="EndSlide" start="no" next="end-chapter" class="accesible" type="cutscene">
+  <slidescene id="EndSlide" start="no" idTarget="ControlesJuego" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -4936,8 +4936,11 @@ Gracias
           <trigger-scene idTarget="c4lacocina" x="512" y="307" transitionTime="0" transitionType="0" guid="d6fe379f-ec64-43cb-8b6e-502a19da1a5b" />
           <condition />
           <increment var="vPlatosLista" value="1" guid="dc7e938b-4f6d-477f-9e90-9e0aa738beac" />
-          <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c41d3fa1-b038-457c-bf7f-a5c66246044f">Genial he terminado de lavar los platos</show-text>
+          <condition>
+            <less-than var="vPlatosLista" value="4" />
+          </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c41d3fa1-b038-457c-bf7f-a5c66246044f">Genial he terminado de lavar los platos, 
+Regresa al mapa, da click en el mini mapa superior izquierdo.</show-text>
           <condition>
             <equals var="vPlatosLista" value="4" />
           </condition>
@@ -4978,7 +4981,8 @@ Gracias
           <condition />
           <increment var="vPlatosLista" value="1" guid="b31c5188-4a68-4f0f-9517-d1af9762b22f" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c1de0f64-be8d-44aa-8f64-027a9bb971e5">Genial he terminado de lavar los platos</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c1de0f64-be8d-44aa-8f64-027a9bb971e5">Genial he terminado de lavar los platos
+Regresa al mapa, da click en el mini mapa superior izquierdo.</show-text>
           <condition>
             <equals var="vPlatosLista" value="4" />
           </condition>
@@ -5019,7 +5023,8 @@ Gracias
           <condition />
           <increment var="vPlatosLista" value="1" guid="d8ee5d2f-e0ce-4336-88f5-ea250b91856d" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1e9d466f-ab6c-40e3-b2f1-e20ea294169b">Genial he terminado de lavar los platos</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1e9d466f-ab6c-40e3-b2f1-e20ea294169b">Genial he terminado de lavar los platos,
+Regresa al mapa, da click en el mini mapa superior izquierdo.</show-text>
           <condition>
             <equals var="vPlatosLista" value="4" />
           </condition>
@@ -5060,8 +5065,7 @@ Gracias
           <condition />
           <increment var="vPlatosLista" value="1" guid="e84dc481-69e8-41b5-8189-f73fe1310d85" />
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="e13dff39-cd3a-4c77-a368-cf81d1a58bb9">
-          </show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="e13dff39-cd3a-4c77-a368-cf81d1a58bb9">Regresa al mapa, da click en el mini mapa superior izquierdo.</show-text>
           <condition>
             <equals var="vPlatosLista" value="4" />
           </condition>
@@ -5553,7 +5557,7 @@ Gracias
         <effect>
           <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="69c3b037-cd48-4b19-9aed-6627bbd173c9" />
           <condition>
-            <equals var="vPlatosLista" value="4" />
+            <greater-equals-than var="vPlatosLista" value="4" />
             <equals var="vLugarenCasa" value="1" />
           </condition>
           <trigger-scene idTarget="c4MapaCasaDos" x="960" y="1224" transitionTime="200" transitionType="5" guid="aafa2014-9a6e-49cc-8a15-48ab486a86b1" />
@@ -5766,7 +5770,7 @@ Gracias
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#1927E5FF" uri="" guid="aa61db2d-cfa3-4f29-a102-e7d4047439a7">Tareas por hacer:
 1.- Limpiar la habitación de de Juan
 2.- Limpiar la habitación de María
-3.- Limpiar la sal
+3.- Limpiar la sala
 4.- Limpiar la cocina 
 5.- Colocar la ropa de María en la lavadora
 6.- Colocar la ropa de Juan en la lavadora</show-text>
@@ -9170,7 +9174,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Mientras más hombres esten deacuerdo con la siguiente frase.</text>
+        <text>Mientras más hombres estén de acuerdo con la siguiente frase.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4montruo1">
@@ -9184,7 +9188,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>yo seguiré siendo invensible...</text>
+        <text>Yo seguiré siendo invencible...</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
@@ -9236,7 +9240,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Jajaja, Juan pero eso escosa de niñas, tu eres un niño.</text>
+        <text>Jajaja, Juan pero eso es cosa de niñas, tu eres un niño.</text>
       </speak-char>
       <condition />
       <child nodeindex="2" />
@@ -9274,14 +9278,14 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Para ello deberan limpiar toda la casa y tú te has quedado dormido jajajaja</text>
+        <text>Para ello deberán limpiar toda la casa y tú te has quedado dormido jajajaja</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c4nosala1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>¡No eres invensible y te lo demostraré!</text>
+        <text>¡No eres invencible y te lo demostraré!</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -9349,7 +9353,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Juan: Soy un niño grande y es hora e aprender a lavar mi ropa</text>
+        <text>Juan: Soy un niño grande y es hora de aprender a lavar mi ropa</text>
       </speak-char>
       <condition />
       <end-conversation />
