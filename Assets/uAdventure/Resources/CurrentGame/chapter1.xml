@@ -991,7 +991,7 @@
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
       <asset type="speakleft" uri="assets/special/EmptyAnimation" />
-      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/animation/sportinoanimation1.eaa.xml" />
       <asset type="useleft" uri="assets/special/EmptyAnimation" />
       <asset type="walkup" uri="assets/special/EmptyAnimation" />
       <asset type="walkdown" uri="assets/special/EmptyAnimation" />
@@ -1097,7 +1097,7 @@
       </talk-to>
     </actions>
   </character>
-  <character id="nasuenoc2mic" behaviour="normal">
+  <character id="nasuenoc2mic" behaviour="first-action">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/nanormal.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
@@ -2721,11 +2721,6 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
-    <exits>
-      <exit rectangular="yes" x="649" y="15" width="57" height="61" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" cursor-path="" sound-path="" />
-      </exit>
-    </exits>
     <objects>
       <object-ref idTarget="vidav1" x="175" y="60" scale="0.38" glow="no" layer="2" hasInfluenceArea="no" />
     </objects>
@@ -2771,9 +2766,6 @@
         <point x="114" y="193" />
       </active-area>
     </active-areas>
-    <atrezzo>
-      <atrezzo-ref idTarget="menuHamburguesa" x="677" y="78" scale="0.13" glow="no" layer="3" />
-    </atrezzo>
   </scene>
   <scene id="aprende" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -2979,18 +2971,10 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
-    <exits>
-      <exit rectangular="yes" x="1880" y="60" width="124" height="136" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" cursor-path="" sound-path="" />
-      </exit>
-    </exits>
     <characters>
-      <character-ref idTarget="sportino" x="1435" y="1006" scale="1.715454" orientation="0" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="nasueno2" x="389" y="910" scale="1.244913" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="sportino" x="1435" y="1006" scale="1.715454" orientation="0" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="nasueno2" x="389" y="910" scale="1.244913" orientation="0" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
-    <atrezzo>
-      <atrezzo-ref idTarget="menuHamburguesa" x="1934" y="182" scale="0.2081833" glow="no" layer="0" />
-    </atrezzo>
   </scene>
   <scene id="c3elpuebloES" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3213,18 +3197,10 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
-    <exits>
-      <exit rectangular="yes" x="737" y="6" width="61" height="69" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" cursor-path="" sound-path="" />
-      </exit>
-    </exits>
     <characters>
-      <character-ref idTarget="c3monstruo3" x="146" y="498" scale="1" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="c3napesadilla" x="515" y="471" scale="0.4143467" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c3monstruo3" x="146" y="498" scale="1" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c3napesadilla" x="515" y="471" scale="0.4143467" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
-    <atrezzo>
-      <atrezzo-ref idTarget="menuHamburguesa" x="767" y="73" scale="0.1235255" glow="no" layer="0" />
-    </atrezzo>
   </scene>
   <scene id="c3p1" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3730,9 +3706,16 @@ No eres buena en ciencias</speak-char>
           <condition />
         </effect>
       </exit>
+      <exit rectangular="yes" x="1720" y="1006" width="55" height="56" hasInfluenceArea="no" idTarget="c4p1pesadilla2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+        <post-effect>
+          <generate-object idTarget="c4cubeta" guid="506e61ef-0708-4c87-8c58-378b0597754f" />
+          <condition />
+        </post-effect>
+      </exit>
     </exits>
     <objects>
-      <object-ref idTarget="c4lavadora" x="506" y="1456" scale="2.951157" glow="no" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="c4lavadora" x="506" y="1456" scale="2.951157" glow="no" layer="4" hasInfluenceArea="no" />
       <object-ref idTarget="c4ayuda" x="1725" y="278" scale="0.4547339" glow="no" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
@@ -3780,6 +3763,9 @@ No eres buena en ciencias</speak-char>
         </actions>
       </active-area>
     </active-areas>
+    <atrezzo>
+      <atrezzo-ref idTarget="cerrar" x="1751" y="1063" scale="0.916102" glow="no" layer="3" />
+    </atrezzo>
   </scene>
   <scene id="c4p1pesadilla2" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3790,21 +3776,13 @@ No eres buena en ciencias</speak-char>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
-    <exits>
-      <exit rectangular="yes" x="675" y="17" width="74" height="111" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" cursor-path="" sound-path="" />
-      </exit>
-    </exits>
     <objects>
-      <object-ref idTarget="c4cubeta" x="93" y="575" scale="0.05230964" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="c4cubeta" x="93" y="575" scale="0.05230964" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="c4montruo1" x="204" y="489" scale="0.6467712" orientation="3" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="c4nopesadilla" x="587" y="383" scale="0.4559199" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="c4montruo1" x="204" y="489" scale="0.6467712" orientation="3" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="c4nopesadilla" x="587" y="383" scale="0.4559199" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
     </characters>
-    <atrezzo>
-      <atrezzo-ref idTarget="menuHamburguesa" x="717" y="126" scale="0.1768253" glow="no" layer="0" />
-    </atrezzo>
   </scene>
   <scene id="c4finalchapter" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -7355,7 +7333,7 @@ Finalmente habla con María.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Michell: Usa la opción para entrar al ring</text>
+        <text>Michell: Usa la poción para entrar al ring</text>
       </speak-char>
       <condition />
       <speak-char idTarget="nasuenoc2mic">
@@ -7368,16 +7346,16 @@ Finalmente habla con María.</show-text>
       <end-conversation />
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="1668" editor-y="243">
-      <speak-char idTarget="michelle">
-        <resources name="No name" />
-        <text>Michell: Es necesario tener la poción del valor</text>
-      </speak-char>
-      <condition />
       <speak-char idTarget="nasuenoc2mic">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
         <text>María: Revisaré si tengo algo en mi mochila</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="michelle">
+        <resources name="No name" />
+        <text>Michell: Es necesario tener la poción del valor</text>
       </speak-char>
       <condition />
       <speak-char idTarget="michelle">
@@ -7729,6 +7707,14 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       </speak-char>
       <condition />
       <child nodeindex="2" />
+      <effect>
+        <move-npc idTarget="sportino" x="1445" y="1016" guid="39134034-db6e-48b2-b8e5-99b208bc7e25" />
+        <condition />
+        <move-npc idTarget="sportino" x="1455" y="1026" guid="1cc4b3b2-8b0b-4a16-9249-85d4e5648a82" />
+        <condition />
+        <play-animation uri="assets/animation/sportinovencido.eaa.xml" x="1455" y="1026" guid="6240346f-fb98-4e6e-a983-aefe6dc1b541" />
+        <condition />
+      </effect>
     </dialogue-node>
     <dialogue-node nodeindex="2" editor-x="694" editor-y="65">
       <speak-char idTarget="nasueno2">
@@ -7977,7 +7963,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" question="¿Estás de acuerdo Juan?" keepShowing="yes" preListening="yes" editor-x="252" editor-y="134" x="252" y="134">
+    <option-node nodeindex="1" question="¿Estás de acuerdo Juan?" keepShowing="yes" preListening="yes" editor-x="272" editor-y="13" x="272" y="13">
       <speak-player>
         <text>Si</text>
         <resources name="No name" />
@@ -7991,7 +7977,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="507" editor-y="136">
+    <dialogue-node nodeindex="2" editor-x="586" editor-y="37">
       <speak-char idTarget="c3nasalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8001,7 +7987,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
       <condition />
       <child nodeindex="4" />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="0" editor-y="486">
+    <dialogue-node nodeindex="3" editor-x="0" editor-y="750">
       <speak-char idTarget="c3nosalon1">
         <resources name="No name" />
         <text>Juan: No lo creo, ¡María y yo somos igual de buenos para contar y dibujar! </text>
@@ -8028,7 +8014,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="4" editor-x="914" editor-y="50">
+    <dialogue-node nodeindex="4" editor-x="645" editor-y="305">
       <speak-char idTarget="c3nasalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8047,7 +8033,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>María: ¡Yo también soy buena en matemáticas! y nunca he visto los dibujos de Juan…</text>
+        <text>María: ¡Yo también soy buena en matemáticas! y nunca ha visto los dibujos de Juan…</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3nasalon1">
@@ -8068,7 +8054,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text> Rocío: Las mujres se deben dedicar a cosas bonitas</text>
+        <text> Rocío: Las mujeres se deben dedicar a cosas bonitas</text>
       </speak-char>
       <condition />
       <child nodeindex="6" />
@@ -8129,7 +8115,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Rocío: el grupo de la derecha será para los que quieran concursar en ciencias.</text>
+        <text>Rocío: El grupo de la derecha será para los que quieran concursar en ciencias.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3nosalon1">
@@ -8178,7 +8164,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="10" editor-x="1950" editor-y="25">
+    <dialogue-node nodeindex="10" editor-x="1826" editor-y="142">
       <speak-char idTarget="c3nasalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8309,7 +8295,7 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="18" editor-x="2304" editor-y="347">
+    <dialogue-node nodeindex="18" editor-x="2254" editor-y="431">
       <speak-player>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
@@ -8342,14 +8328,14 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Rocío: Está bien niños, lamento traer estereotipos viejos a la clase. Tomen asiento donde se sientan más cómodo, y vamos a elegir nuestras actividades </text>
+        <text>Rocío: Está bien niños, lamento traer estereotipos viejos a la clase.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3RocioSalon1">
         <resources name="No name">
           <asset type="audio" uri="assets/audio/lclick-13694.mp3" />
         </resources>
-        <text>Rocío: Está bien niños, lamento traer estereotipos viejos a la clase. Tomen asiento donde se sientan más cómodo, y vamos a elegir nuestras actividades </text>
+        <text>Rocío: Tomen asiento donde se sientan más cómodo, y vamos a elegir nuestras actividades </text>
       </speak-char>
       <condition />
       <speak-char idTarget="c3RocioSalon1">
