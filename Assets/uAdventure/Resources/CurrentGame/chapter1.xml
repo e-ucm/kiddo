@@ -10097,4 +10097,41 @@ Recuerda que hay muchos otros, mas fuertes que yo.</show-text>
     </progress>
     <score type="VARIABLE" method="SINGLE" id="vSentirCap3" />
   </completable>
+  <completable id="CompletableCapitulo4" repeatable="false" type="completable">
+    <start-milestone type="SCENE" targetId="c4parque" />
+    <end-milestone type="CONDITION">
+      <condition>
+        <active flag="Cap4End" />
+      </condition>
+    </end-milestone>
+    <progress type="SUM">
+      <milestone type="SCENE" targetId="c4elpueblo" />
+      <milestone type="SCENE" targetId="c4sala1" />
+      <milestone type="SCENE" targetId="c4p1pesadilla" />
+      <milestone type="SCENE" targetId="c4lacocina" />
+      <milestone type="SCENE" targetId="c4sala" />
+      <milestone type="SCENE" targetId="c4habjuan" />
+      <milestone type="SCENE" targetId="c4habMaria" />
+      <milestone type="SCENE" targetId="c4MapaCasaDos" />
+      <milestone type="SCENE" targetId="c4p1pesadilla2" />
+      <milestone type="SCENE" targetId="c4finalchapter" />
+      <milestone type="ITEM" targetId="c4copas" />
+      <milestone type="ITEM" targetId="c4platos" />
+      <milestone type="ITEM" targetId="c4tazas" />
+      <milestone type="ITEM" targetId="c4vasos" />
+      <milestone type="ITEM" targetId="c4platano" />
+      <milestone type="ITEM" targetId="c4hojapapel" />
+      <milestone type="ITEM" targetId="c4lata" />
+      <milestone type="ITEM" targetId="c4bolsapapas" />
+      <milestone type="ITEM" targetId="c4botella" />
+      <milestone type="ITEM" targetId="c4ropaJ" />
+      <milestone type="ITEM" targetId="c4ropaM" />
+      <milestone type="ITEM" targetId="c4calcetas" />
+      <milestone type="ITEM" targetId="c4calcetasM" />
+      <milestone type="ITEM" targetId="c4playera" />
+      <milestone type="ITEM" targetId="c4playeraM" />
+      <milestone type="ITEM" targetId="c4cubeta" />
+    </progress>
+    <score type="VARIABLE" method="SINGLE" id="vSentirCap4" />
+  </completable>
 </eAdventure>
