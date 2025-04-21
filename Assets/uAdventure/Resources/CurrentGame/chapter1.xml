@@ -2420,7 +2420,7 @@
       <character-ref idTarget="noPuebloIntro" x="210" y="503" scale="0.64" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Menu" hideInventory="yes" allowsZoom="yes" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3843,7 +3843,7 @@ No eres buena en ciencias</speak-char>
       <atrezzo-ref idTarget="atras" x="1166" y="152" scale="0.2531845" glow="no" layer="0" />
     </atrezzo>
   </scene>
-  <videoscene canSkip="no" id="PesentacionKidoo1" start="yes" idTarget="introvideo" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <videoscene canSkip="no" id="PesentacionKidoo1" start="no" idTarget="introvideo" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
