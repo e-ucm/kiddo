@@ -3783,7 +3783,7 @@ namespace uAdventure.Editor
                     {
                         System.Action onConfigReady = () =>
                         {
-                            api.Api.GetSchedule(SimvaConf.Local.Study)
+                            api.Api.GetSchedule(SimvaConf.Local.Simlet)
                             .Then(schedule =>
                             {
                                 var act = schedule.Activities.First(a => a.Value.Name == "Gameplay");
