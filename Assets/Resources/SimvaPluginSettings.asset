@@ -13,17 +13,10 @@ MonoBehaviour:
   m_Name: SimvaPluginSettings
   m_EditorClassIdentifier: 
   SaveAuthUntilCompleted: 1
-  ShowLoginOnStartup: 1
   RunGameIfSimvaIsNotConfigured: 1
   ContinueOnQuit: 1
-  EnableLoginDemoButton: 0
-  EnableLanguageScene: 0
-  SelectedLanguages:
-  - "Espa\xF1ol (ES) [es_ES]"
+  EnableLoginDemoButton: 1
   LanguageByDefault: "Espa\xF1ol (ES) [es_ES]"
-  AutoStart: 0
-  StartScene: 
-  GamePlayScene: 
-  SaveDisclaimerAccepted: 1
+  SaveDisclaimerAccepted: 0
   BasicScormXAPIDataManagementByGame: 0
   EnableDebugLogging: 1

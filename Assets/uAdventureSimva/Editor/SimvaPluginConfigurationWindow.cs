@@ -5,7 +5,6 @@ using UnityEditor;
 using UnityEngine;
 using uAdventure.Core;
 using uAdventure.Editor;
-using Simva;
 
 namespace uAdventure.Simva
 {
@@ -42,8 +41,6 @@ namespace uAdventure.Simva
 
                 DrawGeneralSettings();
                 DrawLanguageSettings();
-                DrawSceneSettings();
-                DrawAdvancedSettings();
 
                 EditorGUILayout.Space();
                 EditorGUILayout.Space();
@@ -59,13 +56,9 @@ namespace uAdventure.Simva
         private void DrawGeneralSettings()
         {
             EditorGUILayout.LabelField(TC.get("Simva.Tab.Configuration"), EditorStyles.boldLabel);
-            
-            EditorGUI.BeginChangeCheck();
-            settings.SaveAuthUntilCompleted = EditorGUILayout.Toggle(TC.get("Simva.SaveAuthUntilCompleted"), settings.SaveAuthUntilCompleted);
-            if (EditorGUI.EndChangeCheck()) MarkDirty();
 
             EditorGUI.BeginChangeCheck();
-            settings.ShowLoginOnStartup = EditorGUILayout.Toggle(TC.get("Simva.ShowLoginOnStartup"), settings.ShowLoginOnStartup);
+            settings.SaveAuthUntilCompleted = EditorGUILayout.Toggle(TC.get("Simva.SaveAuthUntilCompleted"), settings.SaveAuthUntilCompleted);
             if (EditorGUI.EndChangeCheck()) MarkDirty();
 
             EditorGUI.BeginChangeCheck();
@@ -78,10 +71,6 @@ namespace uAdventure.Simva
 
             EditorGUI.BeginChangeCheck();
             settings.EnableLoginDemoButton = EditorGUILayout.Toggle(TC.get("Simva.EnableLoginDemoButton"), settings.EnableLoginDemoButton);
-            if (EditorGUI.EndChangeCheck()) MarkDirty();
-
-            EditorGUI.BeginChangeCheck();
-            settings.EnableLanguageScene = EditorGUILayout.Toggle(TC.get("Simva.EnableLanguageScene"), settings.EnableLanguageScene);
             if (EditorGUI.EndChangeCheck()) MarkDirty();
 
             EditorGUI.BeginChangeCheck();
@@ -103,105 +92,16 @@ namespace uAdventure.Simva
         {
             EditorGUILayout.LabelField(TC.get("Simva.SelectedLanguages"), EditorStyles.boldLabel);
 
-            bool languageSceneEnabled = settings.EnableLanguageScene;
-            
-            using (new EditorGUI.DisabledGroupScope(!languageSceneEnabled))
-            {
-                EditorGUI.BeginChangeCheck();
-                
-                var newSelected = new List<string>();
-                foreach (var lang in languageOptions)
-                {
-                    bool isSelected = settings.SelectedLanguages.Contains(lang);
-                    bool newIsSelected = EditorGUILayout.ToggleLeft(lang, isSelected);
-                    if (newIsSelected)
-                    {
-                        newSelected.Add(lang);
-                    }
-                }
-                
-                if (EditorGUI.EndChangeCheck())
-                {
-                    settings.SelectedLanguages = newSelected;
-                    MarkDirty();
-                }
-            }
-
             EditorGUI.BeginChangeCheck();
             var currentIndex = string.IsNullOrEmpty(settings.LanguageByDefault) ? -1 : System.Array.IndexOf(languageOptions, settings.LanguageByDefault);
             if (currentIndex < 0 && languageOptions.Length > 0) currentIndex = 0;
             var newIndex = EditorGUILayout.Popup(TC.get("Simva.LanguageByDefault"), currentIndex, languageOptions);
-            if (EditorGUI.EndChangeCheck())
+            if (EditorGUI.EndChangeCheck() && newIndex >= 0 && newIndex < languageOptions.Length)
             {
                 settings.LanguageByDefault = languageOptions[newIndex];
                 MarkDirty();
             }
 
-            if (!languageSceneEnabled)
-            {
-                EditorGUILayout.HelpBox("Enable 'Enable Language Scene' to configure languages for the language selection scene.", MessageType.Info);
-            }
-
-            EditorGUILayout.Space();
-        }
-
-        private void DrawSceneSettings()
-        {
-            EditorGUILayout.LabelField("Scene Settings", EditorStyles.boldLabel);
-
-            EditorGUI.BeginChangeCheck();
-            settings.AutoStart = EditorGUILayout.Toggle(TC.get("Simva.AutoStart"), settings.AutoStart);
-            if (EditorGUI.EndChangeCheck()) MarkDirty();
-
-            string[] sceneNames = GetSceneNames();
-            int startSceneIndex = GetSceneIndex(sceneNames, settings.StartScene);
-            int gameplaySceneIndex = GetSceneIndex(sceneNames, settings.GamePlayScene);
-
-            using (new EditorGUI.DisabledGroupScope(settings.AutoStart))
-            {
-                EditorGUI.BeginChangeCheck();
-                startSceneIndex = EditorGUILayout.Popup(TC.get("Simva.StartScene"), startSceneIndex, sceneNames);
-                if (EditorGUI.EndChangeCheck())
-                {
-                    settings.StartScene = startSceneIndex >= 0 ? sceneNames[startSceneIndex] : "";
-                    MarkDirty();
-                }
-            }
-
-            EditorGUI.BeginChangeCheck();
-            gameplaySceneIndex = EditorGUILayout.Popup(TC.get("Simva.GamePlayScene"), gameplaySceneIndex, sceneNames);
-            if (EditorGUI.EndChangeCheck())
-            {
-                settings.GamePlayScene = gameplaySceneIndex >= 0 ? sceneNames[gameplaySceneIndex] : "";
-                MarkDirty();
-            }
-
-            EditorGUILayout.Space();
-        }
-
-        private string[] GetSceneNames()
-        {
-            var scenes = UnityEditor.EditorBuildSettings.scenes
-                .Where(s => s.enabled)
-                .Select(s => System.IO.Path.GetFileNameWithoutExtension(s.path))
-                .ToArray();
-            return scenes;
-        }
-
-        private int GetSceneIndex(string[] sceneNames, string sceneName)
-        {
-            if (string.IsNullOrEmpty(sceneName)) return 0;
-            var index = System.Array.IndexOf(sceneNames, sceneName);
-            return index >= 0 ? index : 0;
-        }
-
-        private void DrawAdvancedSettings()
-        {
-            EditorGUILayout.LabelField("Advanced Settings", EditorStyles.boldLabel);
-            
-            EditorGUILayout.HelpBox("These settings affect runtime behavior. Modify with caution.", MessageType.Info);
-            
-            // Add any additional advanced settings here if needed
             EditorGUILayout.Space();
         }
 
@@ -229,35 +129,20 @@ namespace uAdventure.Simva
         {
             EditorUtility.SetDirty(settings);
             AssetDatabase.SaveAssets();
-            ApplyToSimvaPlugin();
+            ApplyToExtension();
         }
 
-        private void ApplyToSimvaPlugin()
+        private void ApplyToExtension()
         {
             if (!Application.isPlaying)
             {
                 return;
             }
-            
-            var plugin = global::Simva.SimvaPlugin.Instance;
-            if (plugin != null)
+
+            var extension = Object.FindObjectOfType<SimvaExtension>();
+            if (extension != null)
             {
-                plugin.SaveAuthUntilCompleted = settings.SaveAuthUntilCompleted;
-                plugin.ShowLoginOnStartup = settings.ShowLoginOnStartup;
-                plugin.RunGameIfSimvaIsNotConfigured = settings.RunGameIfSimvaIsNotConfigured;
-                plugin.ContinueOnQuit = settings.ContinueOnQuit;
-                plugin.EnableLoginDemoButton = settings.EnableLoginDemoButton;
-                plugin.EnableLanguageScene = settings.EnableLanguageScene;
-                plugin.SelectedLanguages = new List<string>(settings.SelectedLanguages);
-                plugin.LanguageByDefault = settings.LanguageByDefault;
-                plugin.AutoStart = settings.AutoStart;
-                plugin.StartScene = settings.StartScene;
-                plugin.GamePlayScene = settings.GamePlayScene;
-                plugin.SaveDisclaimerAccepted = settings.SaveDisclaimerAccepted;
-                plugin.BasicScormXAPIDataManagementByGame = settings.BasicScormXAPIDataManagementByGame;
-                plugin.EnableDebugLogging = settings.EnableDebugLogging;
-                
-                EditorUtility.SetDirty(plugin);
+                extension.ApplySettings(settings);
             }
         }
 
@@ -298,10 +183,6 @@ namespace uAdventure.Simva
 
             if (languageOptions.Length > 0 && settings != null)
             {
-                if (settings.SelectedLanguages.Count == 0)
-                {
-                    settings.SelectedLanguages.Add(languageOptions[0]);
-                }
                 if (string.IsNullOrEmpty(settings.LanguageByDefault))
                 {
                     settings.LanguageByDefault = languageOptions[0];
