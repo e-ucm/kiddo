@@ -39,6 +39,7 @@ namespace uAdventure.Simva
         private bool wasAutoSave;
         private bool firstTimeDisabling = true;
         private OAuth2Token auth;
+        private bool hasStartedGameplay;
 
         private Dictionary<string, string> languageDictionary;
         private Dictionary<string, string> defaultLanguageDictionary;
@@ -214,7 +215,7 @@ namespace uAdventure.Simva
 
         public bool WantsToQuit()
         {
-            if (SimvaManager.Instance.IsActive && SimvaManager.Instance.HasStartedGameplay)
+            if (SimvaManager.Instance.IsActive && hasStartedGameplay && !SimvaManager.Instance.Finalized)
             {
                 SimvaManager.Instance.OnGameFinished();
                 return false;
@@ -286,7 +287,7 @@ namespace uAdventure.Simva
 
         public void StartGameplay()
         {
-            SimvaManager.Instance.HasStartedGameplay = true;
+            hasStartedGameplay = true;
             Game.Instance.AbortQuit();
             Log("Starting Gameplay");
             RunScene(savedGameTarget);
