@@ -15,7 +15,7 @@ MonoBehaviour:
   SaveAuthUntilCompleted: 1
   RunGameIfSimvaIsNotConfigured: 1
   ContinueOnQuit: 1
-  EnableLoginDemoButton: 1
+  EnableLoginDemoButton: 0
   LanguageByDefault: "Espa\xF1ol (ES) [es_ES]"
   SaveDisclaimerAccepted: 0
   BasicScormXAPIDataManagementByGame: 0
