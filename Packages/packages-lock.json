@@ -1,24 +1,8 @@
 {
   "dependencies": {
-    "com.unity.ai.navigation": {
-      "version": "1.1.6",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.ai": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.collab-proxy": {
-      "version": "2.7.1",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.unity.editorcoroutines": {
       "version": "1.0.0",
-      "depth": 0,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -28,15 +12,6 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.ide.rider": {
-      "version": "3.0.36",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ext.nunit": "1.0.6"
-      },
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
@@ -57,7 +32,7 @@
     },
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.2.1",
-      "depth": 0,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -82,18 +57,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.timeline": {
-      "version": "1.7.7",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.audio": "1.0.0",
-        "com.unity.modules.director": "1.0.0",
-        "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.particlesystem": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.ugui": {
       "version": "1.0.0",
       "depth": 0,
@@ -104,22 +67,24 @@
       }
     },
     "es.e-ucm.simva-unity-plugin": {
-      "version": "file:C:/GitHub/TRACKER/simva-unity-plugin",
+      "version": "https://github.com/e-ucm/simva-unity-plugin.git#device-oauth",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.0.2",
         "com.unity.editorcoroutines": "1.0.0",
         "es.e-ucm.xasu": "1.0.0"
-      }
+      },
+      "hash": "34a1a6b083764706bba97108d029c6c68d5e7e02"
     },
     "es.e-ucm.xasu": {
-      "version": "file:C:/GitHub/TRACKER/xasu",
+      "version": "https://github.com/e-ucm/xasu-unity.git#device-auth",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.0.2"
-      }
+      },
+      "hash": "e7d55d05d4d785a954f7c26173940a482bd470a7"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
